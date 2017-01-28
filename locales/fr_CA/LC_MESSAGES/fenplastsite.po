@@ -1,0 +1,7 @@
+#
+# File name: locales/en_CA/LC_MESSAGES/fenplastsite.po
+#
+# Author: Daniel Racine mailto.danielracine@gmail.com
+#
+# Copyright (c) 2015 Daniel Racine
+#

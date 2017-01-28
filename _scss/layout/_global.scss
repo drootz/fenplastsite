@@ -1,0 +1,57 @@
+/**
+ * File name: layout/_global.scss
+ *
+ */
+
+
+
+
+.is-clear {
+  filter: none;
+}
+
+.is-blur {
+  filter: blur(3px);
+}
+
+
+
+.l-mobile {
+	display: block;
+	@include breakpoint (tablet) {
+		display: none;
+	}
+}
+
+.l-desktop {
+	display: none;
+	@include breakpoint (tablet) {
+		display: block;
+	}
+}
+
+
+
+
+.is-visible {
+	display: default !important;
+}
+
+.is-hidden {
+	display: none !important;
+}
+
+
+
+
+.is-activated {
+	display: default !important;
+}
+
+.is-deactivated {
+	visibility: hidden !important;
+}
+
+.has-value {
+	background-color: yellow;
+}
