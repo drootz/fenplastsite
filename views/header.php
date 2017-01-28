@@ -84,7 +84,7 @@
     </ul> -->
 
 
-    <div class="m-loading">
+    <div class="m-loading is-hidden">
         <div><i class="fa fa-circle-o-notch fa-lg fa-spin" aria-hidden="true"></i>&nbsp;&nbsp;<?= _( 'please wait...' ) ?></div>
     </div>
 

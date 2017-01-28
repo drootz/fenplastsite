@@ -4,10 +4,28 @@
  */
 
 
+@font-face {
+  font-family: 'AsimovBold';
+  src: url('../../font/AsimovProBlack/Asimov-Pro-Black.ttf.woff') format('woff'),
+        url('../../font/AsimovProBlack/Asimov-Pro-Black.ttf.svg#Asimov-Pro-Black') format('svg'),
+        url('../../font/AsimovProBlack/Asimov-Pro-Black.ttf.eot'),
+        url('../../font/AsimovProBlack/Asimov-Pro-Black.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AsimovBlack';
+  src: url('../../font/AsimovProUltraBlack/Asimov-Pro-Ultrablack.ttf.woff') format('woff'),
+        url('../../font/AsimovProUltraBlack/Asimov-Pro-Ultrablack.ttf.svg#Asimov-Pro-Ultrablack') format('svg'),
+        url('../../font/AsimovProUltraBlack/Asimov-Pro-Ultrablack.ttf.eot'),
+        url('../../font/AsimovProUltraBlack/Asimov-Pro-Ultrablack.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 
-
-/* Typekit loding classes 
+/* Typekit loding classes
 ----------------------------*/
 .wf-loading {
   font-family: sans-serif;
@@ -22,7 +40,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222; 
+  color: #222;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-h1 { 
+h1 {
   font-size: 3em; line-height: 1.1;  letter-spacing: -.06em;
 
   @include breakpoint (laptop) {
@@ -81,3 +99,12 @@ h4 {
     letter-spacing: -0.04em;
     font-size: 1.1em;
   }
+
+
+.fenplastfontbold {
+  font-family: 'AsimovBold', Helvetica, Arial, sans-serif;
+}
+
+.fenplastfontblack {
+  font-family: 'AsimovBlack', Helvetica, Arial, sans-serif;
+}
