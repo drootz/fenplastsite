@@ -12,9 +12,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <?php if (isset($title)): ?>
-        <title><?= _( 'form-htmltag-ttl' ); ?> - <?= htmlspecialchars($title) ?></title>
+        <title><?= htmlspecialchars($title) ?> - <?= _( 'Distributeur Officiel Fenplast' ); ?> - </title>
     <?php else: ?>
-        <title><?= _( 'form-htmltag-ttl' ); ?></title>
+        <title><?= _( 'Distributeur Officiel Fenplast' ); ?></title>
     <?php endif ?>
 
     <meta name="description" <?= "content=\""._( 'form-htmlmeta-description' )."\""; ?> >
@@ -50,8 +50,9 @@
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="https://use.fontawesome.com/57fd7ffc48.js"></script>
+    <link rel="stylesheet" href="css/vendor/flickity2-0-5.css">
+
     <link rel="stylesheet" href="css/page.css">
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="css/style-ie.css"/>
     <![endif]-->
@@ -94,34 +95,8 @@
 
 
 
-      <div class="l-section">
+      <div class="m-header">
 
-        <div id="js-header-hero" class="m-hero">
-          <div class="white-overlay">
-
-            <div class="l-wrapper">
-              <div class="m-carousel">
-                <div id="js-carousel-container" class="m-carousel-container">
-                  <div class="main-carousel carousel">
-                   <div class="carousel-cell">
-                     <h1>Contenu 1</h1>
-                   </div>
-                   <div class="carousel-cell bg-white">
-                     <h1>Contenu 2</h1>
-                   </div>
-                   <div class="carousel-cell">
-                     <h1>Contenu 3</h1>
-                   </div>
-                   <div class="carousel-cell bg-white">
-                     <h1>Contenu 4</h1>
-                   </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
 
         <div class="m-top-bar clearfix">
 
@@ -132,41 +107,33 @@
             </div>
 
             <div class="m-menu-toggle">
-              <i id="js-nav" class="fa fa-bars fa-lg"></i>
+              <i id="js-nav" class="fa fa-bars fa-2x"></i>
             </div>
 
             <nav class="m-nav-primary">
 
               <!-- Mobile/Device Menu -->
               <ul id="js-nav-menu" class="clearfix">
-                <li><a href="#home-product">Portes</a></li>
-                <li><a href="#home-quote">Fenêtres</a></li>
-                <li><a href="#home-social">Rampes et Balcons</a></li>
-                <li><a href="#">Nous Joindre</a></li>
+                <li><a href="index.php">Acceuil</a></li>
+                <li><a href="produit-portes.php">Portes</a></li>
+                <li><a href="produit-fenetres.php">Fenêtres</a></li>
+                <li><a href="produit-balcons.php">Rampes et Balcons</a></li>
+                <li><a href="#nous-joindre-fenplast">Nous Joindre</a></li>
               </ul>
 
-              <!-- Laptop/Desktop Menu -->
-              <!-- <ul class="l-laptop clearfix">
-                <li><a href="#">Nous Joindre</a></li>
-                <li><a href="#">Rampe et Balcon</a></li>
-                <li><a href="#home-quote">Fenêtres</a></li>
-                <li><a href="#home-product">Portes</a></li>
-                <li><a href="#">Acceuil</a></li>
-              </ul> -->
             </nav>
 
             <div class="m-fixed-phone">
               <div>
-                <a href="tel:+14389999999">+1 (438) 999-9999</a>
+                <a href="tel:+14389999999"><i class="fa fa-phone fa-lg l-mobile-inline"></i></span>&nbsp;&nbsp;<span class="phone-number">+1 (438) 999-9999</span></a>
               </div>
               <div class="l-laptop">
-                <span>67 rue des Croquettes</span>
+                <span>67 rue des Croquettes, Montréal</span>
               </div>
             </div>
 
           </div>
 
-        </div>
+      </div>
 
-
-      </div> <!-- .l-section END -->
+    </div>

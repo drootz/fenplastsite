@@ -118,7 +118,7 @@
           fromToClass($('#js-nav'), 'fa-times', 'fa-bars')
           $('#js-header-hero').css('height', vh);
           $('#js-carousel-container').css('height', carouselHeight);
-          $('.main-carousel').flickity({
+          $('.js-main-carousel').flickity({
             // options
             autoPlay: true,
             setGallerySize: false,
@@ -129,7 +129,7 @@
         else {
           $('#js-nav-menu').hide();
           fromToClass($('#js-nav'), 'fa-times', 'fa-bars')
-          $('.main-carousel').flickity({
+          $('.js-main-carousel').flickity({
             // options
             autoPlay: true,
             wrapAround: true,
@@ -137,6 +137,9 @@
             prevNextButtons: false
           });
         }
+
+        var carouselButton = document.getElementsByClassName('flickity-prev-next-button');
+        carouselButton.clientWidth = 44;
 
   	} // resizeInit() END
 
@@ -278,6 +281,46 @@ $( document ).ready(function() {
   });
 
 
+
+  // Fluid iframe videos
+  // https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
+  // Find all YouTube videos
+  // var allVideos = $("iframe[src^='//www.youtube.com']"),
+  var allVideos = $("iframe.vimeo"),
+
+      // The element that is fluid width
+      $fluidEl = $(".m-slider-vimeo");
+
+  console.log(allVideos);
+  // Figure out and save aspect ratio for each video
+  allVideos.each(function() {
+
+    $(this)
+      .data('aspectRatio', this.height / this.width)
+
+      // and remove the hard coded width/height
+      .removeAttr('height')
+      .removeAttr('width');
+
+  });
+
+  // When the window is resized
+  $(window).resize(function() {
+
+    var newWidth = $fluidEl.width();
+
+    // Resize all videos according to their own aspect ratio
+    allVideos.each(function() {
+
+      var $el = $(this);
+      $el
+        .width(newWidth)
+        .height(newWidth * $el.data('aspectRatio'));
+
+    });
+
+  // Kick off one resize to fix all videos on page load
+  }).resize();
 
 
 

@@ -1,6 +1,8 @@
-  <section class="footer">
-
-  </section>
+  <div id="nous-joindre-fenplast" class="l-section m-footer">
+    <div class="l-wrapper">
+      <h5>Section "Nous Joindre" et "Bas de Page"</h5>
+    </div>
+  </div>
 
 
 </div> <!-- .l-container END -->
@@ -15,9 +17,10 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
     <!-- <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.js"></script> -->
     <!-- <script src="js/plugins-min.js" async></script> -->
+    <!-- <script src="js/vendor/flickity.pkgd2-0-5.js"></script> -->
 
     <script src="js/main-min.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
 
     <script type="text/javascript">
 

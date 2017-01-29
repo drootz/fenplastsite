@@ -1,9 +1,14 @@
 
+.m-header {
+  position: relative;
+}
+
 .m-fixed-phone {
   position: fixed;
   bottom: 0; left: 0; right: 0;
   width: 100%;
   z-index: 10;
+  padding: 0;
 
   @include breakpoint (laptop) {
     position: absolute;
@@ -15,14 +20,18 @@
   div:first-child {
     background-color: $accentOrange;
     color: #fff;
-    height: 40px;
-    line-height: 40px;
+    height: 50px;
+    line-height: 50px;
     text-align: center;
+    padding: 0;
     width: 100%;
     font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
 
     @include breakpoint (laptop) {
-      font-size: 1.5em;
+      height: 40px;
+      line-height: 40px;
+      font-size: 1.4em;
       background-color: transparent;
       font-weight: bold;
       text-align: right;
@@ -31,6 +40,14 @@
     a {
       color: #fff;
       text-decoration: none;
+
+      .phone-number {
+        text-decoration: underline;
+
+        @include breakpoint (laptop) {
+          text-decoration: none;
+        }
+      }
 
       @include breakpoint (laptop) {
         color: $accentOrange;
@@ -57,107 +74,7 @@
 
 
 
-.m-hero {
-  background-image: url(../img/hero/placeholder.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 70% 30%;
-  background-attachment: fixed;
-  position: relative;
-  width: 100%;
-  height: 632px;
 
-  @include breakpoint (phablet) {
-    height: 700px;
-  }
-}
-
-.white-overlay {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background-color: transparentize(#fff, 0.3);
-}
-
-.m-carousel {
-  padding-top: 107px;
-
-  .m-carousel-container {
-    padding: 5px 0;
-    // border: 11px solid red;
-
-    @include breakpoint (laptop) {
-      margin-top: 25px;
-      padding: 25px 0 50px;
-    }
-  }
-}
-
-$carouselHeightMobile: 475px;
-$carouselHeightPhablet: 550px;
-.carousel {
-  background: none;
-  height: $carouselHeightMobile;
-
-  @include breakpoint (phablet) {
-    height: $carouselHeightPhablet;
-  }
-
-  @include breakpoint (laptop) {
-    height: 100%;
-  }
-}
-
-.carousel-cell {
-  width: 95%;
-  margin-right: 10px;
-  background: none;
-  counter-increment: gallery-cell;
-  padding: 5px;
-  height: $carouselHeightMobile;
-  text-align: center;
-
-  @include breakpoint (phablet) {
-    height: $carouselHeightPhablet;
-  }
-
-  @include breakpoint (laptop) {
-    width: 100%;
-    height: 100%;
-    padding: 50px 100px;
-    background-color: rgba(255,255,255,0);
-  }
-}
-
-.bg-white {
-  background-color: rgba(255,255,255,0.90);
-}
-
-/* cell number */
-// .carousel-cell:before {
-//   display: block;
-//   text-align: center;
-//   content: counter(gallery-cell);
-//   line-height: 200px;
-//   font-size: 80px;
-//   color: white;
-// }
-
-
-/* move page dots into carousel */
-.flickity-page-dots { bottom: 10px; }
-
-.flickity-prev-next-button {
-    background: none !important;
-}
-
-.flickity-prev-next-button svg {
-    position: absolute;
-    left: 20%;
-    top: 20%;
-    width: 60%;
-    height: 60%;
-}
 
 
 .m-top-bar {
@@ -167,10 +84,10 @@ $carouselHeightPhablet: 550px;
   min-width: 320px;
   position: absolute;
   top: 0; left: 0; right: 0;
+  z-index: 10;
   @include breakpoint (laptop) {
     background-color: transparentize(#fff, 0.1);
     position: fixed;
-    z-index: 10;
   }
 }
 
@@ -254,6 +171,7 @@ $carouselHeightPhablet: 550px;
     @include breakpoint (laptop) {
       color: $accentBlue;
       padding: 0 15px;
+      font-size: 0.8em;
 
       &:hover {
         color: $accentOrange;

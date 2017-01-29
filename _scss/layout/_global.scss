@@ -5,6 +5,7 @@
 
 .l-section {
   position: relative;
+  padding: 50px 0;
 }
 
 .l-wrapper {
@@ -42,6 +43,28 @@
 	display: none;
 	@include breakpoint (desktop) {
 		display: block;
+	}
+}
+
+
+.l-mobile-inline {
+	display: inline;
+	@include breakpoint (tablet) {
+		display: none;
+	}
+}
+
+.l-laptop-inline {
+	display: none;
+	@include breakpoint (laptop) {
+		display: inline;
+	}
+}
+
+.l-desktop-inline {
+	display: none;
+	@include breakpoint (desktop) {
+		display: inline;
 	}
 }
 

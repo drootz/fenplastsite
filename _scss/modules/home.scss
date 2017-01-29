@@ -1,14 +1,178 @@
 
-.m-home-product {
-  background-color: white;
-  height: 800px;
+
+
+.m-hero {
+  background-image: url(../img/hero/placeholder.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70% 30%;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  // height: 632px;
+
+  @include breakpoint (phablet) {
+    // height: 700px;
+  }
 }
 
-.m-home-quote {
-  height: 800px;
+.white-overlay {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: transparentize(#fff, 0.3);
 }
 
-.m-home-social {
+.m-carousel {
+  padding-top: 107px;
+
+  .m-carousel-container {
+    padding: 25px 0;
+    // border: 11px solid red;
+
+    @include breakpoint (laptop) {
+      margin-top: 25px;
+      padding: 25px 0 50px;
+    }
+  }
+}
+
+$carouselHeightMobile: 525px;
+$carouselHeightPhablet: 600px;
+.carousel {
+  background: none;
+  height: $carouselHeightMobile;
+
+  @include breakpoint (phablet) {
+    height: $carouselHeightPhablet;
+  }
+
+  @include breakpoint (laptop) {
+    height: 100%;
+  }
+}
+
+.carousel-cell {
+  width: 95%;
+  margin-right: 10px;
+  background: none;
+  counter-increment: gallery-cell;
+  padding: 5px;
+  height: $carouselHeightMobile;
+  text-align: center;
+
+  @include breakpoint (phablet) {
+    height: $carouselHeightPhablet;
+  }
+
+  @include breakpoint (laptop) {
+    width: 100%;
+    height: 100%;
+    padding: 0px 100px 50px;
+    background: rgba(255,255,255,0);
+  }
+}
+
+.bg-white {
+  background-color: rgba(255,255,255,0.90);
+}
+
+/* cell number */
+// .carousel-cell:before {
+//   display: block;
+//   text-align: center;
+//   content: counter(gallery-cell);
+//   line-height: 200px;
+//   font-size: 80px;
+//   color: white;
+// }
+
+
+/* move page dots into carousel */
+// ol.flickity-page-dots { bottom: 25px; }
+/* position dots up a bit */
+ol.flickity-page-dots {
+  height: 25px;
+  top: -35px;
+  text-align: right;
+  padding-right: 15px;
+
+  @include breakpoint (laptop) {
+    height: auto;
+    top: inherit;
+    bottom: -50px;
+    text-align: center;
+    padding-right: 0px;
+  }
+}
+
+/* dots are lines */
+ol.flickity-page-dots .dot {
+  height: 10px;
+  width: 50px;
+  margin: 0;
+  border-radius: 0;
+
+  @include breakpoint (laptop) {
+    width: 100px;
+  }
+}
+
+button.flickity-prev-next-button svg {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    width: 60%;
+    height: 60%;
+}
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: $accentOrange;
+}
+.flickity-prev-next-button.no-svg {
+  color: $accentOrange;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+
+
+
+
+.m-slider-vimeo {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 15px;
+  @include breakpoint (laptop) {
+  }
+}
+
+
+
+
+.m-home-first {
   background-color: white;
-  height: 800px;
+}
+
+.m-home-second {
+}
+
+.m-home-third {
+  background-color: white;
+}
+
+.m-home-fourth {
 }
