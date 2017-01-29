@@ -3,7 +3,15 @@
  *
  */
 
+.l-section {
+  position: relative;
+}
 
+.l-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
 
 
 .is-clear {
@@ -23,9 +31,16 @@
 	}
 }
 
+.l-laptop {
+	display: none;
+	@include breakpoint (laptop) {
+		display: block;
+	}
+}
+
 .l-desktop {
 	display: none;
-	@include breakpoint (tablet) {
+	@include breakpoint (desktop) {
 		display: block;
 	}
 }

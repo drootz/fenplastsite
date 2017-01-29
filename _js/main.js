@@ -100,6 +100,49 @@
 
 
 
+  /*
+   * FUNCTION
+   * resizeInit()
+   *
+   * reload size attributes on page resize.
+   *
+   */
+  	function resizeInit() {
+
+        var heroHeaderSection = $('#js-header-hero');
+        if ($('body').hasClass('js-laptop') || $('body').hasClass('js-desktop')) {
+          // console.log("DESKTOP");
+          // top-bar - hero padding values
+          var carouselHeight = vh - 107 - 25 - 50;
+          $('#js-nav-menu').show();
+          fromToClass($('#js-nav'), 'fa-times', 'fa-bars')
+          $('#js-header-hero').css('height', vh);
+          $('#js-carousel-container').css('height', carouselHeight);
+          $('.main-carousel').flickity({
+            // options
+            autoPlay: true,
+            setGallerySize: false,
+            wrapAround: true,
+            prevNextButtons: true
+          });
+        }
+        else {
+          $('#js-nav-menu').hide();
+          fromToClass($('#js-nav'), 'fa-times', 'fa-bars')
+          $('.main-carousel').flickity({
+            // options
+            autoPlay: true,
+            wrapAround: true,
+            setGallerySize: true,
+            prevNextButtons: false
+          });
+        }
+
+  	} // resizeInit() END
+
+
+
+
 /*=======================================================================================
 	PURE JS SCRIPT
 =======================================================================================*/
@@ -135,33 +178,30 @@ function setViewportScale() {
 function jsMediaQ(){
  	var body = document.getElementsByTagName("body")[0];
 
- 	// Get theme class name on body el.
- 	var reTheme = /(th-dark|th-light)/i;
-	var themeName = reTheme.exec(body.className)[0];
-
 	function setQuery(name) {
-		body.className=themeName+' '+name;
+		body.className = name;
 	}
 
     if (vw >= vwDesktop)
     {
-		setQuery("js-desktop");
+  		setQuery("js-desktop");
     }
     else if (vw >= vwLaptop)
     {
-		setQuery("js-laptop");
+  		setQuery("js-laptop");
+
     }
     else if (vw >= vwTablet)
     {
-		setQuery("js-tablet");
+  		setQuery("js-tablet");
     }
     else if (vw >= vwPhablet)
     {
-		setQuery("js-phablet")
+  		setQuery("js-phablet")
     }
     else
     {
-		setQuery("js-mobile");
+  		setQuery("js-mobile");
     }
 
 }
@@ -175,7 +215,7 @@ function viewportIni() {
 	setWindowDimension();
 	setViewportScale();
 	jsMediaQ();
-    animPosition = vh * heightTrigger;
+  animPosition = vh * heightTrigger;
 
 	// scroll listening postion
 	st = vh * ps;
@@ -226,26 +266,40 @@ function viewportIni() {
 
 $( document ).ready(function() {
 
+  $('#js-nav').click(function(){
+    $('#js-nav-menu').slideToggle(300);
+    switchClass($('#js-nav'), 'fa-bars', 'fa-times');
+  });
+
+  resizeInit();
+
+  $( window ).resize(function() {
+    resizeInit();
+  });
 
 
-	// Manage state of input fields if contains value.
-	$("[type='text'], [type='password'], [type='email'], [type='url'], [type='tel'], textarea").focusout( function() {
-		var thisInput = $(this);
-		if (thisInput.val() != "")
-		{
-			if(!thisInput.hasClass('has-value'))
-			{
-				thisInput.addClass('has-value');
-			}
-		}
-		else
-		{
-			if(thisInput.hasClass('has-value'))
-			{
-				thisInput.removeClass('has-value');
-			}
-		}
-	});
+
+
+
+
+	// // Manage state of input fields if contains value.
+	// $("[type='text'], [type='password'], [type='email'], [type='url'], [type='tel'], textarea").focusout( function() {
+	// 	var thisInput = $(this);
+	// 	if (thisInput.val() != "")
+	// 	{
+	// 		if(!thisInput.hasClass('has-value'))
+	// 		{
+	// 			thisInput.addClass('has-value');
+	// 		}
+	// 	}
+	// 	else
+	// 	{
+	// 		if(thisInput.hasClass('has-value'))
+	// 		{
+	// 			thisInput.removeClass('has-value');
+	// 		}
+	// 	}
+	// });
 
 
     // Smooth link transition
@@ -295,29 +349,29 @@ $( document ).ready(function() {
 	 *
 	 */
 
-	// function to get cookie by key
-	function getCookie(key) {
-		var regexp = new RegExp("(?:^" + key + "|;\s*"+ key + ")=(.*?)(?:;|$)", "g");
-		var result = regexp.exec(document.cookie);
-		return (result === null) ? null : result[1];
-	}
+	// // function to get cookie by key
+	// function getCookie(key) {
+	// 	var regexp = new RegExp("(?:^" + key + "|;\s*"+ key + ")=(.*?)(?:;|$)", "g");
+	// 	var result = regexp.exec(document.cookie);
+	// 	return (result === null) ? null : result[1];
+	// }
 
 
-
-	var spinner = $(".m-loading");
-	$(document).ready(function () {
-	    $(document).ajaxStart(function () {
-	    	if (!spinner.hasClass('isLoading'))
-	    	{
-	    		spinner.addClass('isLoading');
-	    	}
-	    }).ajaxStop(function () {
-	    	if (spinner.hasClass('isLoading'))
-	    	{
-	    		spinner.removeClass('isLoading');
-	    	}
-	    });
-	});
+  //
+	// var spinner = $(".m-loading");
+	// $(document).ready(function () {
+	//     $(document).ajaxStart(function () {
+	//     	if (!spinner.hasClass('isLoading'))
+	//     	{
+	//     		spinner.addClass('isLoading');
+	//     	}
+	//     }).ajaxStop(function () {
+	//     	if (spinner.hasClass('isLoading'))
+	//     	{
+	//     		spinner.removeClass('isLoading');
+	//     	}
+	//     });
+	// });
 
 
 	// Localize the form validation error labels
@@ -339,49 +393,49 @@ $( document ).ready(function() {
 	// 		&& /\d/.test(value) // has a digit
 	// }, v_pwdCheck);
 
-	$.validator.addMethod("nameCheck", function(value) {
-		return /^[a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ\s\-]+$/.test(value);
-	}, v_nameCheck);
+	// $.validator.addMethod("nameCheck", function(value) {
+	// 	return /^[a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ\s\-]+$/.test(value);
+	// }, v_nameCheck);
 
 
 
 
 
-	// Clear form input fields and re-instate their default placeholders (bug fix)
-	function clearForm(el) {
-		var inputs = el.find('input');
-		el.trigger('reset');
-		inputs.each(function() {
-			$(this).val("");
-			$(this).focus();
-		});
-	    inputs.last().blur();
-	}
-
-	// Reset form (single form on a page)
-	function formFailReset(el) {
-		if ($('#captcha').length)
-		{
-			grecaptcha.reset();
-		}
-		clearForm(el);
-		$(document).scrollTop(el.offset().top);
-	}
-
-
-	var formContact = $('#contact');
-	formContact.validate({
-		submitHandler: function(form) {
-			$.post('contact.php', formContact.serialize())
-			.done(function( data ) {
-				formDone(formContact, data);
-			})
-			.fail(function() {
-				$('#js-form-output').html("<span>" + ajxFailContact + "</span>");
-				formFailReset(formContact);
-			});
-		}
-	});
+	// // Clear form input fields and re-instate their default placeholders (bug fix)
+	// function clearForm(el) {
+	// 	var inputs = el.find('input');
+	// 	el.trigger('reset');
+	// 	inputs.each(function() {
+	// 		$(this).val("");
+	// 		$(this).focus();
+	// 	});
+	//     inputs.last().blur();
+	// }
+  //
+	// // Reset form (single form on a page)
+	// function formFailReset(el) {
+	// 	if ($('#captcha').length)
+	// 	{
+	// 		grecaptcha.reset();
+	// 	}
+	// 	clearForm(el);
+	// 	$(document).scrollTop(el.offset().top);
+	// }
+  //
+  //
+	// var formContact = $('#contact');
+	// formContact.validate({
+	// 	submitHandler: function(form) {
+	// 		$.post('contact.php', formContact.serialize())
+	// 		.done(function( data ) {
+	// 			formDone(formContact, data);
+	// 		})
+	// 		.fail(function() {
+	// 			$('#js-form-output').html("<span>" + ajxFailContact + "</span>");
+	// 			formFailReset(formContact);
+	// 		});
+	// 	}
+	// });
 
 
 
@@ -414,122 +468,122 @@ $( document ).ready(function() {
 
 $( window ).scroll(function() {
 
-
-  scrollPostion = $(document).scrollTop();
-  // console.log("POS: "+scrollPostion+"\n");
-
-	var hintSel = $(".js-hint");
-	if (hintSel.length) {
-	    // Trigger animation of "more info" block when info button is visible in viewport
-		if (!hintSel.hasClass("anim-buzz"))
-		{
-	    	var hintPos = hintSel.offset().top;
-		    if (scrollPostion > (hintPos - st) && scrollPostion < (hintPos - nd) )
-		    {
-			    hintSel.each( function() {
-			    	var thisButton = $(this);
-					if (verge.inY(thisButton, -animPosition))
-					{
-						thisButton.addClass("anim-buzz");
-					}
-			    });
-		    }
-	    }
-	}
-
-
-  // on vwTablet and larger, trigger animation of action-section icons in sequence.
-
-	var jsActionFirstSel = $(".js-action-first");
-	if (jsActionFirstSel.length)
-	{
-	    if (vw >= vwTablet)
-	    {
-			if (!jsActionFirstSel.hasClass("anim-lock"))
-			{
-				var actionPos = jsActionFirstSel.offset().top;
-		    	if ( scrollPostion > (actionPos - st) && scrollPostion < (actionPos - nd) )
-		    	{
-					if (verge.inY(jsActionFirstSel, -animPosition))
-					{
-						jsActionFirstSel.addClass("anim-lock");
-						var icoSelectors = $("[class*='js-action']");
-
-						var check = 1;
-						var x = 0;
-			            function spring( ico ) {
-
-							var thisIco = ico.find(".m-ico-wrapper");
-
-			                switch (check !== 0) {
-								case (check == 1):
-			                    	x = x + 300;
-									break;
-								case (check == 2):
-			                    	x = x + 200;
-									break;
-								case (check == 3):
-			                    	x = x + 100;
-									break;
-								default:
-				                    x = 0;
-									break;
-			                }
-
-			            	check++;
-
-			                setTimeout( function() {
-								if (!thisIco.hasClass("js-in-view"))
-								{
-								    thisIco.addClass("js-in-view");
-								}
-			                }, x);
-
-			            }
-
-			            icoSelectors.each( function() {
-			            	spring($(this));
-			            });
-					}
-				}
-			}
-	    }
-	}
-
-    // On mobilish display, trigger animation of action-section icons and action badge in .m-hero as they apear in viewport
-    if (vw < vwTablet)
-    {
-    	if ( scrollPostion < 2000 )
-		{
-
-			$(".m-ico-square").each( function() {
-				var thisIco = $(this);
-				var thisIcoWrapper = thisIco.find(".m-ico-wrapper");
-				if (!thisIcoWrapper.hasClass('js-in-view'))
-				{
-					if (verge.inY(thisIco, -animPosition))
-					{
-						thisIcoWrapper.addClass('js-in-view');
-					}
-				}
-
-			});
-
-		}
-    }
-
-
-
-
-    // Triger divider CCS3 animation as they come close to view.
-    $(".th-divider").each( function() {
-    	thisSection = $(this);
-    	var sectionOff = thisSection.offset().top - vh - 200;
-    	if (scrollPostion > sectionOff && !thisSection.hasClass("animate"))
-    	{
-    		thisSection.addClass("animate");
-    	}
-    });
+  //
+  // scrollPostion = $(document).scrollTop();
+  // // console.log("POS: "+scrollPostion+"\n");
+  //
+	// var hintSel = $(".js-hint");
+	// if (hintSel.length) {
+	//     // Trigger animation of "more info" block when info button is visible in viewport
+	// 	if (!hintSel.hasClass("anim-buzz"))
+	// 	{
+	//     	var hintPos = hintSel.offset().top;
+	// 	    if (scrollPostion > (hintPos - st) && scrollPostion < (hintPos - nd) )
+	// 	    {
+	// 		    hintSel.each( function() {
+	// 		    	var thisButton = $(this);
+	// 				if (verge.inY(thisButton, -animPosition))
+	// 				{
+	// 					thisButton.addClass("anim-buzz");
+	// 				}
+	// 		    });
+	// 	    }
+	//     }
+	// }
+  //
+  //
+  // // on vwTablet and larger, trigger animation of action-section icons in sequence.
+  //
+	// var jsActionFirstSel = $(".js-action-first");
+	// if (jsActionFirstSel.length)
+	// {
+	//     if (vw >= vwTablet)
+	//     {
+	// 		if (!jsActionFirstSel.hasClass("anim-lock"))
+	// 		{
+	// 			var actionPos = jsActionFirstSel.offset().top;
+	// 	    	if ( scrollPostion > (actionPos - st) && scrollPostion < (actionPos - nd) )
+	// 	    	{
+	// 				if (verge.inY(jsActionFirstSel, -animPosition))
+	// 				{
+	// 					jsActionFirstSel.addClass("anim-lock");
+	// 					var icoSelectors = $("[class*='js-action']");
+  //
+	// 					var check = 1;
+	// 					var x = 0;
+	// 		            function spring( ico ) {
+  //
+	// 						var thisIco = ico.find(".m-ico-wrapper");
+  //
+	// 		                switch (check !== 0) {
+	// 							case (check == 1):
+	// 		                    	x = x + 300;
+	// 								break;
+	// 							case (check == 2):
+	// 		                    	x = x + 200;
+	// 								break;
+	// 							case (check == 3):
+	// 		                    	x = x + 100;
+	// 								break;
+	// 							default:
+	// 			                    x = 0;
+	// 								break;
+	// 		                }
+  //
+	// 		            	check++;
+  //
+	// 		                setTimeout( function() {
+	// 							if (!thisIco.hasClass("js-in-view"))
+	// 							{
+	// 							    thisIco.addClass("js-in-view");
+	// 							}
+	// 		                }, x);
+  //
+	// 		            }
+  //
+	// 		            icoSelectors.each( function() {
+	// 		            	spring($(this));
+	// 		            });
+	// 				}
+	// 			}
+	// 		}
+	//     }
+	// }
+  //
+  //   // On mobilish display, trigger animation of action-section icons and action badge in .m-hero as they apear in viewport
+  //   if (vw < vwTablet)
+  //   {
+  //   	if ( scrollPostion < 2000 )
+	// 	{
+  //
+	// 		$(".m-ico-square").each( function() {
+	// 			var thisIco = $(this);
+	// 			var thisIcoWrapper = thisIco.find(".m-ico-wrapper");
+	// 			if (!thisIcoWrapper.hasClass('js-in-view'))
+	// 			{
+	// 				if (verge.inY(thisIco, -animPosition))
+	// 				{
+	// 					thisIcoWrapper.addClass('js-in-view');
+	// 				}
+	// 			}
+  //
+	// 		});
+  //
+	// 	}
+  //   }
+  //
+  //
+  //
+  //
+  //   // Triger divider CCS3 animation as they come close to view.
+  //   $(".th-divider").each( function() {
+  //   	thisSection = $(this);
+  //   	var sectionOff = thisSection.offset().top - vh - 200;
+  //   	if (scrollPostion > sectionOff && !thisSection.hasClass("animate"))
+  //   	{
+  //   		thisSection.addClass("animate");
+  //   	}
+  //   });
 
 
 });

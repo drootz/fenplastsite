@@ -51,6 +51,7 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="https://use.fontawesome.com/57fd7ffc48.js"></script>
     <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="css/style-ie.css"/>
     <![endif]-->
@@ -64,8 +65,9 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+
     <!-- Media queries helper module -->
-    <!--
+    <!-- 
     <ul class="breakpoints clearfix">
         <li class="landscape">landscape</li>
         <li class="portrait">portrait</li>
@@ -83,9 +85,88 @@
         <li class="js-viewport-size"><span id="js-vw"></span> x <span id="js-vh"></span></li>
     </ul> -->
 
-
-    <div class="m-loading is-hidden">
+    <!-- Loading Spinner -->
+    <!-- <div class="m-loading is-hidden">
         <div><i class="fa fa-circle-o-notch fa-lg fa-spin" aria-hidden="true"></i>&nbsp;&nbsp;<?= _( 'please wait...' ) ?></div>
-    </div>
+    </div> -->
 
-    <div class="container">
+    <div class="l-container">
+
+
+
+      <div class="l-section">
+
+        <div id="js-header-hero" class="m-hero">
+          <div class="white-overlay">
+
+            <div class="l-wrapper">
+              <div class="m-carousel">
+                <div id="js-carousel-container" class="m-carousel-container">
+                  <div class="main-carousel carousel">
+                   <div class="carousel-cell">
+                     <h1>Contenu 1</h1>
+                   </div>
+                   <div class="carousel-cell bg-white">
+                     <h1>Contenu 2</h1>
+                   </div>
+                   <div class="carousel-cell">
+                     <h1>Contenu 3</h1>
+                   </div>
+                   <div class="carousel-cell bg-white">
+                     <h1>Contenu 4</h1>
+                   </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="m-top-bar clearfix">
+
+          <div class="l-wrapper">
+
+            <div class="m-logo">
+              <img src="img/logos/logo_fenplast_small_600.png" alt="Logo Distributeur Officiel Fenplast" />
+            </div>
+
+            <div class="m-menu-toggle">
+              <i id="js-nav" class="fa fa-bars fa-lg"></i>
+            </div>
+
+            <nav class="m-nav-primary">
+
+              <!-- Mobile/Device Menu -->
+              <ul id="js-nav-menu" class="clearfix">
+                <li><a href="#home-product">Portes</a></li>
+                <li><a href="#home-quote">Fenêtres</a></li>
+                <li><a href="#home-social">Rampes et Balcons</a></li>
+                <li><a href="#">Nous Joindre</a></li>
+              </ul>
+
+              <!-- Laptop/Desktop Menu -->
+              <!-- <ul class="l-laptop clearfix">
+                <li><a href="#">Nous Joindre</a></li>
+                <li><a href="#">Rampe et Balcon</a></li>
+                <li><a href="#home-quote">Fenêtres</a></li>
+                <li><a href="#home-product">Portes</a></li>
+                <li><a href="#">Acceuil</a></li>
+              </ul> -->
+            </nav>
+
+            <div class="m-fixed-phone">
+              <div>
+                <a href="tel:+14389999999">+1 (438) 999-9999</a>
+              </div>
+              <div class="l-laptop">
+                <span>67 rue des Croquettes</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div> <!-- .l-section END -->

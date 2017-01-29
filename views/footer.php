@@ -3,7 +3,7 @@
   </section>
 
 
-</div> <!-- container END -->
+</div> <!-- .l-container END -->
 
 
 
@@ -17,6 +17,7 @@
     <!-- <script src="js/plugins-min.js" async></script> -->
 
     <script src="js/main-min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <script type="text/javascript">
 
