@@ -211,6 +211,8 @@
       margin-left: 5px;
       margin-top: 31px;
       border: none;
+      height: 40px;
+      
       &:first-child {
         margin-left: 15px;
       }
@@ -233,6 +235,8 @@
       color: $accentBlue;
       padding: 0 15px;
       font-size: 0.8em;
+      height: 40px;
+      line-height: 40px;
 
       &:hover {
         color: $accentOrange;
