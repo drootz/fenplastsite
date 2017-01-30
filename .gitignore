@@ -1,0 +1,12 @@
+assets
+dandelion.yml
+_dev
+*.codekit
+*.codekit3
+.sass-cache
+*sublime-*
+_debug/
+.DS_Store
+locales/en_CA/LC_MESSAGES/nocache
+locales/fr_CA/LC_MESSAGES/nocache
+prepros-6.config

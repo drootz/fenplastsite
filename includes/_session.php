@@ -26,7 +26,8 @@
 
         // DEV environemnt root:
         // var_dump($_SESSION["server_root"]);
-        $_SESSION["server_root"] = "/~dracine/clients/2017_fenplastsite/public";
+        // $_SESSION["server_root"] = "/~dracine/clients/2017_fenplastsite/public";
+        // $_SESSION["server_root"] = "C:\xampp\htdocs\Sites\fenplastsite";
 
 
     }
@@ -68,7 +69,7 @@
 
     // PO gettext() ini
     $domain = "fenplastsite";
-    bindtextdomain($domain, "../locales/nocache");
+    // bindtextdomain($domain, "../locales/nocache");
     bindtextdomain($domain, "../locales");
     bind_textdomain_codeset($domain, "UTF-8");
     textdomain($domain);

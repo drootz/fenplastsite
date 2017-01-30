@@ -119,7 +119,7 @@
 
               <!-- Mobile/Device Menu -->
               <ul id="js-nav-menu" class="clearfix">
-                <li><a href="index.php"><?= _( 'Acceuil' ); ?></a></li>
+                <li><a href="index.php"><?= gettext( 'Acceuil' ); ?></a></li>
                 <li><a href="produit-portes.php"><?= _( 'Portes' ); ?></a></li>
                 <li><a href="produit-fenetres.php"><?= _( 'Fenêtres' ); ?></a></li>
                 <li><a href="produit-balcons.php"><?= _( 'Rampes et Balcons' ); ?></a></li>

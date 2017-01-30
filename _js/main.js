@@ -4,8 +4,11 @@
  * Copyright (c) 2015 Daniel Racine
  */
 
+//@prepros-prepend ../public/js/vendor/jquery-1.10.2.min.js
+//@prepros-prepend ../public/js/vendor/jqueryValidate/jquery.validate.min.js
+//@prepros-prepend ../public/js/vendor/flickity.pkgd2-0-5.js
 
-
+//@prepros-append plugins.js
 
 
 /*=======================================================================================
