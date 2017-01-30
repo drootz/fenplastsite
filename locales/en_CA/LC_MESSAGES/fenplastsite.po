@@ -1,7 +1,119 @@
-#
-# File name: locales/en_CA/LC_MESSAGES/fenplastsite.po
-#
-# Author: Daniel Racine mailto.danielracine@gmail.com
-#
-# Copyright (c) 2015 Daniel Racine
-#
+msgid ""
+msgstr ""
+"Project-Id-Version: Fenplast Distributor Site\n"
+"POT-Creation-Date: 2017-01-29 23:32-0500\n"
+"PO-Revision-Date: 2017-01-29 23:32-0500\n"
+"Last-Translator: Daniel Racine <idaniel.racine@gmail.com>\n"
+"Language-Team: Daniel Racine <mailto.danielracine@gmail.com>\n"
+"Language: en_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.11\n"
+"X-Poedit-Basepath: ../../..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: views\n"
+"X-Poedit-SearchPath-1: public\n"
+"X-Poedit-SearchPathExcluded-0: public/css\n"
+"X-Poedit-SearchPathExcluded-1: public/font\n"
+"X-Poedit-SearchPathExcluded-2: public/img\n"
+"X-Poedit-SearchPathExcluded-3: public/js\n"
+
+#: public/index.php:6 views/header.php:122
+msgid "Acceuil"
+msgstr "Home"
+
+#: public/produit-balcons.php:6
+msgid "Balcons"
+msgstr "Balcony"
+
+#: public/produit-fenetres.php:6
+msgid "Fenêtres Fenplast"
+msgstr "Fenplast Windows"
+
+#: public/produit-portes.php:6
+msgid "Portes Fenplast"
+msgstr "Fenplast Doors"
+
+#: views/_apology.php:2
+msgid "Désolé"
+msgstr "Sorry"
+
+#: views/contact_form.php:7
+msgid "Contactez-Nous"
+msgstr "Contact Us"
+
+#: views/contact_form.php:16
+msgid " -- choisir une option -- "
+msgstr " -- select an option -- "
+
+#: views/contact_form.php:17
+msgid "value=\"Demande de renseignements\""
+msgstr "value=\"Information Request\""
+
+#: views/contact_form.php:17
+msgid "Demande de renseignements"
+msgstr "Information Request"
+
+#: views/contact_form.php:27
+msgid "Soumettre"
+msgstr "Submit"
+
+#: views/header.php:15 views/header.php:17
+msgid "Distributeur Officiel Fenplast"
+msgstr "Fenplast Dealer"
+
+#: views/header.php:20
+msgid "htmlmeta-description"
+msgstr ""
+
+#: views/header.php:28
+msgid "head-og-title"
+msgstr ""
+
+#: views/header.php:29
+msgid "head-og-image"
+msgstr ""
+
+#: views/header.php:33
+msgid "head-og-url"
+msgstr ""
+
+#: views/header.php:35
+msgid "head-og-fb-locale"
+msgstr ""
+
+#: views/header.php:36
+msgid "head-og-description"
+msgstr ""
+
+#: views/header.php:95
+msgid "Patientez s'il vous plaît..."
+msgstr "Please wait…"
+
+#: views/header.php:123
+msgid "Portes"
+msgstr "Doors\t"
+
+#: views/header.php:124
+msgid "Fenêtres"
+msgstr "Windows"
+
+#: views/header.php:125
+msgid "Rampes et Balcons"
+msgstr "Ramps and Balcony"
+
+#: views/header.php:126
+msgid "Nous Joindre"
+msgstr "Contact Us"
+
+#: views/header.php:136
+msgid "67 rue des Croquettes, Montréal"
+msgstr "67 rue des Croquettes, Montreal"
+
+#~ msgid "Porte"
+#~ msgstr "Door"
+
+#~ msgid "Fenêtre"
+#~ msgstr "Window"

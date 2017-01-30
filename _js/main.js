@@ -269,10 +269,35 @@ function viewportIni() {
 
 $( document ).ready(function() {
 
+
   $('#js-nav').click(function(){
-    $('#js-nav-menu').slideToggle(300);
+    $('#js-nav-menu').slideToggle({
+        start: function () {
+          if ($('#js-nav').hasClass('fa-times')) {
+            fromToClass($('.m-nav-primary'),'is-opened','is-closed');
+          }
+      },
+        complete: function () {
+          if ($('#js-nav').hasClass('fa-times')) {
+            fromToClass($('.m-nav-primary'),'is-closed','is-opened');
+          }
+      }
+    });
     switchClass($('#js-nav'), 'fa-bars', 'fa-times');
   });
+
+  // $('#js-nav').click(function(){
+  //   $('#js-nav-menu').slideToggle(300, function(){
+  //     if ($('#js-nav').hasClass('fa-bars')) {
+  //       // $('m-nav-primary').css('width', 200 + 'px');
+  //       fromToClass($('.m-nav-primary'),'is-opened','is-closed');
+  //     } else {
+  //       // $('m-nav-primary').css('width', '100%');
+  //       fromToClass($('.m-nav-primary'),'is-closed','is-opened');
+  //     }
+  //   });
+  //   switchClass($('#js-nav'), 'fa-bars', 'fa-times');
+  // });
 
   resizeInit();
 
@@ -291,7 +316,6 @@ $( document ).ready(function() {
       // The element that is fluid width
       $fluidEl = $(".m-slider-vimeo");
 
-  console.log(allVideos);
   // Figure out and save aspect ratio for each video
   allVideos.each(function() {
 

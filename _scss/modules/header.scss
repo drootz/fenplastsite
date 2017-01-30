@@ -3,6 +3,46 @@
   position: relative;
 }
 
+.m-langage {
+  position: absolute;
+  top: 84px; left: -3px;
+  z-index: 15;
+  line-height: 15px;
+
+  @include breakpoint (laptop) {
+    top: -11px; right: 0; left: inherit;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-size: 1em;
+
+    @include breakpoint (laptop) {
+      font-size: 0.6em;
+    }
+
+    &:first-child {
+      a {
+        border-right: 1px solid $accentOrange;
+      }
+    }
+  }
+
+  a {
+    padding: 0 5px;
+    text-decoration: none;
+  }
+
+}
+
 .m-fixed-phone {
   position: fixed;
   bottom: 0; left: 0; right: 0;
@@ -123,13 +163,23 @@
 .m-nav-primary {
   position: absolute;
   width: 200px;
-  top: 67px; right: 0px;
-  // outline: 1px solid red;
+  top: 61px; right: 0px;
+  z-index: 20;
+
+  &.is-opened {
+    width: 100%;
+    transition: width 300ms ease-out;
+  }
+
+  &.is-closed {
+    width: 200px;
+    transition: width 300ms ease-in;
+  }
 
   @include breakpoint (laptop) {
     position: static;
     float: left;
-    width: 70%;
+    width: 70% !important;
     margin-top: 0;
   }
 
@@ -139,10 +189,20 @@
 
   li {
     float: left;
-    height: 40px;
+    height: 60px;
     margin: 0;
     width: 100%;
     background-color: $accentOrange;
+    border-top: 1px solid transparentize(#fff,0.80);
+    border-bottom: 1px solid darken($accentOrange,10%);
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
 
     @include breakpoint (laptop) {
       float: left;
@@ -150,6 +210,7 @@
       background-color: transparent;
       margin-left: 5px;
       margin-top: 31px;
+      border: none;
       &:first-child {
         margin-left: 15px;
       }
@@ -158,15 +219,15 @@
 
   a {
     display: block;
-    height: 40px;
-    line-height: 40px;
+    height: 60px;
+    line-height: 60px;
     text-align: center;
     width: 100%;
     color: #fff;
     padding: 0 10px;
     text-decoration: none;
     font-weight: bold;
-    // font-size: 0.8em;
+    font-size: 1.2em;
 
     @include breakpoint (laptop) {
       color: $accentBlue;

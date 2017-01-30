@@ -17,7 +17,7 @@
         <title><?= _( 'Distributeur Officiel Fenplast' ); ?></title>
     <?php endif ?>
 
-    <meta name="description" <?= "content=\""._( 'form-htmlmeta-description' )."\""; ?> >
+    <meta name="description" <?= "content=\""._( 'htmlmeta-description' )."\""; ?> >
     <link rel="author" href="humans.txt" />
 
     <!-- Mobile Specific Metas
@@ -36,13 +36,17 @@
     <meta property="og:description" <?= "content=\"" . _( 'head-og-description' ) . "\""; ?>/>
 
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory
+    <!-- Place favicon.ico in the root directory
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="apple-touch-icon" href="touch-icon-iphone.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="touch-icon-iphone-retina.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- FONT
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -68,7 +72,7 @@
 
 
     <!-- Media queries helper module -->
-    <!-- 
+    <!--
     <ul class="breakpoints clearfix">
         <li class="landscape">landscape</li>
         <li class="portrait">portrait</li>
@@ -88,12 +92,13 @@
 
     <!-- Loading Spinner -->
     <!-- <div class="m-loading is-hidden">
-        <div><i class="fa fa-circle-o-notch fa-lg fa-spin" aria-hidden="true"></i>&nbsp;&nbsp;<?= _( 'please wait...' ) ?></div>
+        <div><i class="fa fa-circle-o-notch fa-lg fa-spin" aria-hidden="true"></i>&nbsp;&nbsp;<?= _( 'Patientez s\'il vous plaît...' ) ?></div>
     </div> -->
 
     <div class="l-container">
 
-
+      <div class="l-wrapper">
+      </div>
 
       <div class="m-header">
 
@@ -110,15 +115,15 @@
               <i id="js-nav" class="fa fa-bars fa-2x"></i>
             </div>
 
-            <nav class="m-nav-primary">
+            <nav class="m-nav-primary is-closed">
 
               <!-- Mobile/Device Menu -->
               <ul id="js-nav-menu" class="clearfix">
-                <li><a href="index.php">Acceuil</a></li>
-                <li><a href="produit-portes.php">Portes</a></li>
-                <li><a href="produit-fenetres.php">Fenêtres</a></li>
-                <li><a href="produit-balcons.php">Rampes et Balcons</a></li>
-                <li><a href="#nous-joindre-fenplast">Nous Joindre</a></li>
+                <li><a href="index.php"><?= _( 'Acceuil' ); ?></a></li>
+                <li><a href="produit-portes.php"><?= _( 'Portes' ); ?></a></li>
+                <li><a href="produit-fenetres.php"><?= _( 'Fenêtres' ); ?></a></li>
+                <li><a href="produit-balcons.php"><?= _( 'Rampes et Balcons' ); ?></a></li>
+                <li><a href="#nous-joindre-fenplast"><?= _( 'Nous Joindre' ); ?></a></li>
               </ul>
 
             </nav>
@@ -128,8 +133,19 @@
                 <a href="tel:+14389999999"><i class="fa fa-phone fa-lg l-mobile-inline"></i></span>&nbsp;&nbsp;<span class="phone-number">+1 (438) 999-9999</span></a>
               </div>
               <div class="l-laptop">
-                <span>67 rue des Croquettes, Montréal</span>
+                <span><?= _( '67 rue des Croquettes, Montréal' ); ?></span>
               </div>
+            </div>
+
+            <div class="m-langage">
+              <ul>
+                <!-- <li><a href="?lang=fr_CA">FRANÇAIS</a></li>
+                <li><a href="?lang=en_CA">ENGLISH</a></li> -->
+
+                <li><a href="?lang=fr_CA"><span class="l-laptop-inline">FRANÇAIS</span><span class="l-mobile-inline">FR&nbsp;</span></a></li>
+                <li><a href="?lang=en_CA"><span class="l-laptop-inline">ENGLISH</span><span class="l-mobile-inline">&nbsp;EN</span></a></li>
+
+              </ul>
             </div>
 
           </div>

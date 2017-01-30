@@ -49,7 +49,7 @@
 
 .l-mobile-inline {
 	display: inline;
-	@include breakpoint (tablet) {
+	@include breakpoint (laptop) {
 		display: none;
 	}
 }
