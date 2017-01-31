@@ -294,9 +294,9 @@ function initMap() {
   //   content: '<span>Direction</span>'
   // });
 
-  var infoWindow = new google.maps.InfoWindow({
-    map: map
-  });
+  // var infoWindow = new google.maps.InfoWindow({
+  //   map: map
+  // });
 
   //
   // // Try HTML5 geolocation.
@@ -332,9 +332,9 @@ function initMap() {
 }
 
 
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-  infoWindow.setPosition(pos);
-  infoWindow.setContent(browserHasGeolocation ?
+function handleLocationError(browserHasGeolocation, infoWindowFenplast, posFenplast) {
+  infoWindowFenplast.setPosition(posFenplast);
+  infoWindowFenplast.setContent(browserHasGeolocation ?
                         'Error: The Geolocation service failed.' :
                         'Error: Your browser doesn\'t support geolocation.');
 }

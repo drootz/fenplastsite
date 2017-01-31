@@ -7,6 +7,9 @@
       <div class="row">
 
         <div class="col-06">
+
+         <h3 class="l-mobile">Nous Joindre</h3>
+
           <div class="m-googlemap-container">
             <!-- Google Maps API Key - mailto.danielracine@gmail.com: AIzaSyAsNjXlBV6NkmDOSCXHXVdhGEtmXVeW6K8 -->
             <div id="map" class="m-map"></div>
@@ -15,7 +18,7 @@
 
         <div class="col-06">
 
-          <h3>Nous Joindre</h3>
+          <h3 class="l-laptop">Nous Joindre</h3>
 
           <div class="row">
             <div class="col-pad-06">

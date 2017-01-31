@@ -9,8 +9,8 @@
   max-width: 550px;
   height: 400px;
   position: relative;
-  padding: 0 15px;
-  margin: auto;
+  padding: 0;
+  margin: 0 auto 75px;
 
   @include breakpoint (tablet) {
     margin: 0;
