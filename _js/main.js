@@ -271,174 +271,165 @@ function viewportIni() {
 
 
 
+// Google Map Integration
+function initMap() {
+  var posFenplast = {lat: 45.8830136, lng: -73.2761306};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: posFenplast
+  });
+  var markerFenplast = new google.maps.Marker({
+    position: posFenplast,
+    map: map
+  });
+  // var markerUser = new google.maps.Marker({
+  //   map: map
+  // });
 
-// // Google Map Integration
+
+  var infoWindowFenplast = new google.maps.InfoWindow({
+    content: '<span>Fenplast</span>'
+  });
+  // var infoWindowUser = new google.maps.InfoWindow({
+  //   content: '<span>Direction</span>'
+  // });
+
+  var infoWindow = new google.maps.InfoWindow({
+    map: map
+  });
+
+  //
+  // // Try HTML5 geolocation.
+  // if (navigator.geolocation) {
+  //   navigator.geolocation.getCurrentPosition(function(position) {
+  //     var pos = {
+  //       lat: position.coords.latitude,
+  //       lng: position.coords.longitude
+  //     };
+  //
+  //     // infoWindow.setPosition(pos);
+  //     // infoWindow.setContent('<span>Vous êtes ici</span>');
+  //
+  //     markerUser.setPosition(pos);
+  //
+  //     map.setCenter(pos);
+  //   }, function() {
+  //     handleLocationError(true, infoWindow, map.getCenter());
+  //   });
+  // } else {
+  //   // Browser doesn't support Geolocation
+  //   handleLocationError(false, infoWindow, map.getCenter());
+  // }
+
+  infoWindowFenplast.open(map, markerFenplast);
+
+  // markerFenplast.addListener('click', function() {
+  //   infoWindowFenplast.open(map, markerFenplast);
+  // });
+  // markerUser.addListener('click', function() {
+  //   infoWindowUser.open(map, markerUser);
+  // });
+}
+
+
+function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+  infoWindow.setPosition(pos);
+  infoWindow.setContent(browserHasGeolocation ?
+                        'Error: The Geolocation service failed.' :
+                        'Error: Your browser doesn\'t support geolocation.');
+}
+
+//
+// var directionsDisplay;
+// var directionsService;
+// var map;
+//
+// // 45.5001806,-73.5674628 PLace Bonaventure
+// // 45.8830136,-73.2761306 Lavaltrie
+// var posFenplast = {lat: 45.5001806, lng: -73.5674628};
+// var posLavaltrie = {lat: 45.8830136, lng: -73.2761306};
+//
 // function initMap() {
-//   var posFenplast = {lat: 45.884986, lng: -73.276939};
-//   var map = new google.maps.Map(document.getElementById('map'), {
-//     zoom: 13,
-//     center: posFenplast
-//   });
-//   var markerFenplast = new google.maps.Marker({
-//     position: posFenplast,
-//     map: map
-//   });
-//   var markerUser = new google.maps.Marker({
-//     map: map
-//   });
 //
-//
-//   var infoWindowFenplast = new google.maps.InfoWindow({
-//     content: '<span>Fenplast</span>'
-//   });
-//   var infoWindowUser = new google.maps.InfoWindow({
-//     content: '<span>Direction</span>'
-//   });
-//
-//   var infoWindow = new google.maps.InfoWindow({
-//     map: map
-//   });
-//
+//   console.log("preGeo");
 //
 //   // Try HTML5 geolocation.
 //   if (navigator.geolocation) {
+//
 //     navigator.geolocation.getCurrentPosition(function(position) {
-//       var pos = {
+//       var posGeo = {
 //         lat: position.coords.latitude,
 //         lng: position.coords.longitude
 //       };
 //
 //       // infoWindow.setPosition(pos);
 //       // infoWindow.setContent('<span>Vous êtes ici</span>');
+//       // markerUser.setPosition(pos);
+//       // map.setCenter(pos);
 //
-//       markerUser.setPosition(pos);
+//       console.log("ifGeo");
+//       console.log(posGeo);
 //
-//       map.setCenter(pos);
+//       directionsDisplay = new google.maps.DirectionsRenderer();
+//       directionsService = new google.maps.DirectionsService();
+//       map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 13,
+//         center: posFenplast
+//       });
+//       directionsDisplay.setMap(map);
+//       calcRoute(posGeo);
+//
+//
 //     }, function() {
-//       handleLocationError(true, infoWindow, map.getCenter());
+//       // Browser support Geolocation
+//       // handleLocationError(true, infoWindow, map.getCenter());
+//
 //     });
 //   } else {
 //     // Browser doesn't support Geolocation
-//     handleLocationError(false, infoWindow, map.getCenter());
+//     // handleLocationError(false, infoWindow, map.getCenter());
+//
+//     console.log("elseGeo");
+//
+//     map = new google.maps.Map(document.getElementById('map'), {
+//       zoom: 13,
+//       center: posFenplast
+//     });
+//     var markerFenplast = new google.maps.Marker({
+//       position: posFenplast,
+//       map: map
+//     });
+//     var infoWindowFenplast = new google.maps.InfoWindow({
+//       content: '<span>Fenplast</span>'
+//     });
+//     infoWindowFenplast.open(map, markerFenplast);
 //   }
 //
-//
-//   markerFenplast.addListener('click', function() {
-//     infoWindowFenplast.open(map, markerFenplast);
-//   });
-//   markerUser.addListener('click', function() {
-//     infoWindowUser.open(map, markerUser);
-//   });
 // }
 //
 //
-// function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-//   infoWindow.setPosition(pos);
-//   infoWindow.setContent(browserHasGeolocation ?
-//                         'Error: The Geolocation service failed.' :
-//                         'Error: Your browser doesn\'t support geolocation.');
+// function calcRoute(pos) {
+//
+//   // Example:
+//   // var start = {lat: 45.869620, lng: -73.292352};
+//   // var end = {lat: 45.869620, lng: -73.276939};
+//   // OR
+//   // var start = 'montreal, qc';
+//   // var end = 'quebec, qc';
+//
+//   var start = pos;
+//   var end = posLavaltrie;
+//   var request = {
+//     origin: start,
+//     destination: end,
+//     travelMode: 'DRIVING'
+//   };
+//   directionsService.route(request, function(result, status) {
+//     if (status == 'OK') {
+//       directionsDisplay.setDirections(result);
+//     }
+//   });
 // }
-
-
-var directionsDisplay;
-var directionsService;
-var map;
-
-// 45.5001806,-73.5674628 PLace Bonaventure
-// 45.8830136,-73.2761306 Lavaltrie
-var posFenplast = {lat: 45.5001806, lng: -73.5674628};
-var posLavaltrie = {lat: 45.8830136, lng: -73.2761306};
-
-function initMap() {
-
-  console.log("preGeo");
-
-  // Try HTML5 geolocation.
-  if (navigator.geolocation) {
-
-    navigator.geolocation.getCurrentPosition(function(position) {
-      var posGeo = {
-        lat: position.coords.latitude,
-        lng: position.coords.longitude
-      };
-
-      // infoWindow.setPosition(pos);
-      // infoWindow.setContent('<span>Vous êtes ici</span>');
-      // markerUser.setPosition(pos);
-      // map.setCenter(pos);
-
-      console.log("ifGeo");
-      console.log(posGeo);
-
-      directionsDisplay = new google.maps.DirectionsRenderer();
-      directionsService = new google.maps.DirectionsService();
-      map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 13,
-        center: posFenplast
-      });
-      directionsDisplay.setMap(map);
-      calcRoute(posGeo);
-
-
-    }, function() {
-      // Browser support Geolocation
-      // handleLocationError(true, infoWindow, map.getCenter());
-
-    });
-  } else {
-    // Browser doesn't support Geolocation
-    // handleLocationError(false, infoWindow, map.getCenter());
-
-    console.log("elseGeo");
-
-    map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 13,
-      center: posFenplast
-    });
-    var markerFenplast = new google.maps.Marker({
-      position: posFenplast,
-      map: map
-    });
-    var infoWindowFenplast = new google.maps.InfoWindow({
-      content: '<span>Fenplast</span>'
-    });
-    infoWindowFenplast.open(map, markerFenplast);
-  }
-
-  // directionsDisplay = new google.maps.DirectionsRenderer();
-  // directionsService = new google.maps.DirectionsService();
-  // var posFenplast = {lat: 45.884986, lng: -73.276939};
-  // map = new google.maps.Map(document.getElementById('map'), {
-  //   zoom: 13,
-  //   center: posFenplast
-  // });
-  // directionsDisplay.setMap(map);
-  // calcRoute();
-}
-
-
-function calcRoute(pos) {
-
-  // Example:
-  // var start = {lat: 45.869620, lng: -73.292352};
-  // var end = {lat: 45.869620, lng: -73.276939};
-  // OR
-  // var start = 'montreal, qc';
-  // var end = 'quebec, qc';
-
-  var start = pos;
-  var end = posLavaltrie;
-  var request = {
-    origin: start,
-    destination: end,
-    travelMode: 'DRIVING'
-  };
-  directionsService.route(request, function(result, status) {
-    if (status == 'OK') {
-      directionsDisplay.setDirections(result);
-    }
-  });
-}
 
 function detectBrowser() {
   var useragent = navigator.userAgent;
