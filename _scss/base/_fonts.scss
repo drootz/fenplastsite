@@ -45,7 +45,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
-  margin-bottom: 1em;
+  margin-bottom: 1.1em;
   font-weight: 400;
 }
 
@@ -57,19 +57,19 @@ h1 {
   }
 }
 
-h2 { font-size: 2.5em; line-height: 1.25; letter-spacing: -.07em; }
-h3 { font-size: 2.5em; line-height: 1.3;  letter-spacing: -.07em; }
-h4 { font-size: 1.6em; line-height: 1.35; letter-spacing: -.07em; }
-h5 { font-size: 1.4em; line-height: 1.5;  letter-spacing: -.07em; }
+h2 { font-size: 3em; line-height: 1.25; letter-spacing: -.07em; }
+h3 { font-size: 3em; line-height: 1.3;  letter-spacing: -.07em; }
+h4 { font-size: 1.6em; line-height: 1.35; letter-spacing: -.01em; }
+h5 { font-size: 1.4em; line-height: 1.5;  letter-spacing: -.01em; }
 h6 { font-size: 1.2em; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
 @include breakpoint (phablet) {
 	h1 { font-size: 3em; }
-	h2 { font-size: 2.5em; }
-	h3 { font-size: 2em; }
-	h4 { font-size: 1.8em; }
-	h5 { font-size: 1.6em; }
+	h2 { font-size: 3em; }
+	h3 { font-size: 2.5em; }
+	h4 { font-size: 1.4em; }
+	h5 { font-size: 1.2em; }
 	h6 { font-size: 1.2em; }
 }
 
