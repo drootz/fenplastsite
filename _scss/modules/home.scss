@@ -46,6 +46,7 @@
   padding-top: 107px;
 
   .m-carousel-container {
+    position: relative;
     padding: 25px 0;
     // border: 11px solid red;
 
@@ -87,7 +88,7 @@ $carouselHeightPhablet: 600px;
   @include breakpoint (laptop) {
     width: 100%;
     height: 100%;
-    padding: 0px 100px 50px;
+    padding: 5px 120px;
     background: rgba(255,255,255,0);
   }
 }
@@ -171,6 +172,13 @@ button.flickity-prev-next-button svg {
 
 
 
+.m-slider-container {
+  text-align: left;
+  height: 100%;
+  border: 11px dashed transparentize($accentOrange, 0.9);
+}
+
+
 .m-slider-vimeo {
   max-width: 700px;
   margin: auto;
@@ -186,15 +194,19 @@ button.flickity-prev-next-button svg {
   background-color: white;
 
   .m-feature-container {
-    padding: 50px;
+    padding: 25px;
     text-align: center;
+
+    @include breakpoint (laptop) {
+      padding: 50px;
+    }
 
     h3 {
       margin-bottom: 0.6em;
     }
 
     p {
-      text-align: justify;
+      text-align: center;
     }
 
     &.left {
@@ -290,6 +302,33 @@ button.flickity-prev-next-button svg {
     img {
       width: 100%;
       height: auto;
+    }
+  }
+
+}
+
+
+.m-slider-demo {
+  // outline: 1px solid red;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  top: 50%; margin-top: -150px;
+  left: 50%; margin-left: -150px;
+
+  @include breakpoint (laptop) {
+    width: 600px;
+    margin-left: -300px;
+    transform: scale(1.5) rotate(-25deg) translate(0px, 80px);
+  }
+
+  h1, h3 {
+    text-align: center;
+    margin: 0;
+
+    @include breakpoint (laptop) {
+      font-size: 4em;
     }
   }
 

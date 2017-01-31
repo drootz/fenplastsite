@@ -36,7 +36,7 @@
                  <div class="m-address">
                    <div><span itemprop="telephone">Tel: +1 (438) 123-5678</span></div>
                    <div><span itemprop="faxNumber">Fax: +1 (438) 123-5679</span></div>
-                   <div><span>Par courriel</span></div>
+                   <div><span><a href="contact.php">Par courriel</a></span></div>
                  </div>
                  <div class="m-address">
                    <div><span>Suivez nous sur Facebook</span></div>
@@ -61,9 +61,19 @@
             </div>
           </div>
 
-
         </div>
       </div>
+
+
+      <div class="row m-copyright">
+        <div class="col-12">
+          <div>
+            <p><small><?= date("Y")?> &copy; Distributeur Officiel Fenplast, <?= _('Tous droits réservé'); ?><br /><?= _( 'developpement web par ' ); ?><a href='mailto:&#109;ail&#116;o&#58;p&#114;oje&#99;%&#54;B&#108;i&#37;73t&#64;gm%61&#37;69l&#46;com'>Daniel Racine</a></small></p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
 
@@ -88,37 +98,37 @@
 
     <script type="text/javascript">
 
-        // var htmltag = document.getElementsByTagName('html');
-        // var langAttr = htmltag[0].getAttribute('lang');
-        // if (langAttr === "fr_CA")
-        // {
-        //     document.write('<script src="js/vendor/jqueryValidate/localization/messages_fr.min.js" async defer><\/script>')
-        // }
-        // // Default jQuery Validate labels to english
-        //
-        //
-        // // reCAPTCHA api
-        // if($('#captcha').length)
-        // {
-        //     var widgetId1;
-        //     var c_theme = $("body").hasClass("th-light") ? "light" : "dark";
-        //     var onloadCallback = function() {
-        //         widgetId1 = grecaptcha.render('captcha', {
-        //             'sitekey' : '6LfS5ggTAAAAAERF8SrqqTaWKt4nYpvh0nCwiEmT',
-        //             'theme' : c_theme
-        //         });
-        //     };
-        //
-        //     if (langAttr === "fr_CA")
-        //     {
-        //         document.write('<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=fr-CA" async defer><\/script>')
-        //     }
-        //     // Default ot english
-        //     else
-        //     {
-        //         document.write('<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer><\/script>')
-        //     }
-        // }
+        var htmltag = document.getElementsByTagName('html');
+        var langAttr = htmltag[0].getAttribute('lang');
+        if (langAttr === "fr_CA")
+        {
+            document.write('<script src="js/vendor/jqueryValidate/localization/messages_fr.min.js" async defer><\/script>')
+        }
+        // Default jQuery Validate labels to english
+
+
+        // reCAPTCHA api
+        if($('#captcha').length)
+        {
+            var widgetId1;
+            // var c_theme = $("body").hasClass("th-light") ? "light" : "dark";
+            var onloadCallback = function() {
+                widgetId1 = grecaptcha.render('captcha', {
+                    'sitekey' : '6LfhxRMUAAAAALJUuY8uMIpu4GR7uS6ueSkepSfX',
+                    'theme' : "light"
+                });
+            };
+
+            if (langAttr === "fr_CA")
+            {
+                document.write('<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit&hl=fr-CA" async defer><\/script>')
+            }
+            // Default ot english
+            else
+            {
+                document.write('<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer><\/script>')
+            }
+        }
 
     </script>
 

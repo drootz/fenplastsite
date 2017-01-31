@@ -2,6 +2,10 @@
 .m-footer {
   background-color: $accentBlue;
   color: white;
+  padding-bottom: 50px;
+  @include breakpoint (laptop) {
+    padding-bottom: 10px;
+  }
 }
 
 .m-googlemap-container {
@@ -55,4 +59,23 @@
 
 .m-open-hours {
   width: 150px;
+}
+
+
+.m-copyright {
+	text-align: left;
+  color: lighten($accentBlue,30%);
+  margin: 50px 0 0 0;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

@@ -11,7 +11,11 @@
 
               <div class="js-main-carousel carousel"  data-flickity='{ "setGallerySize": false }'>
                <div class="carousel-cell">
-                 <h1>Contenu 1</h1>
+                 <div class="m-slider-container">
+                   <div class="m-slider-demo">
+                     <h1>Slide 1</h1>
+                   </div>
+                 </div>
                </div>
                <div class="carousel-cell">
                  <div class="m-slider-vimeo">
@@ -21,10 +25,22 @@
                  </div>
                </div>
                <div class="carousel-cell">
-                 <h3>Contenu 3</h3>
+                 <div class="m-slider-container">
+
+                  <div class="m-slider-demo">
+                    <h1>Slide 3</h1>
+                  </div>
+
+                </div>
                </div>
                <div class="carousel-cell bg-white">
-                 <h4>Contenu 4</h4>
+                 <div class="m-slider-container">
+
+                    <div class="m-slider-demo">
+                     <h3>Silde 4</h3>
+                    </div>
+
+                </div>
                </div>
               </div>
 
