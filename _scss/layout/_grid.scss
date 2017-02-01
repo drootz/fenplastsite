@@ -17,9 +17,9 @@ html *:before {
 
 .row {
   @include clearfix();
-  margin: 15px auto;
   overflow: auto; // firefox clearfix fix
   padding: 0;
+  margin: 0 auto;
 }
 
 .row-fix {

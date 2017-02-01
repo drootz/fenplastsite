@@ -18,10 +18,12 @@
                  </div>
                </div>
                <div class="carousel-cell">
-                 <div class="m-slider-vimeo">
+                 <div class="m-slider-container m-video">
                    <h3>Une image renouvelée pour Fenplast</h3>
-                   <iframe src="https://player.vimeo.com/video/192534635" class="vimeo" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                   <p><a href="https://vimeo.com/192534635">Ligne du temps</a> from <a href="https://vimeo.com/fenplast">Fenplast</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                   <div class="m-slider-vimeo">
+                     <iframe src="https://player.vimeo.com/video/192534635" class="vimeo" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                     <p><a href="https://vimeo.com/192534635">Ligne du temps</a> from <a href="https://vimeo.com/fenplast">Fenplast</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                   </div>
                  </div>
                </div>
                <div class="carousel-cell">
@@ -129,7 +131,7 @@
   <div id ="media-sociaux-fenplast" class="l-section m-home-third">
     <div class="l-wrapper">
       <h3>Dernières Nouvelles</h3>
-
+<!--
       <div class="row">
         <div class="col-pad-04">
           <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F20531316728%2Fposts%2F10154009990506729%2F&width=500&show_text=true&appId=1838945293048164&height=290" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
@@ -142,7 +144,33 @@
         <div class="col-pad-04">
           <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F20531316728%2Fposts%2F10154009990506729%2F&width=500&show_text=true&appId=1838945293048164&height=290" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
         </div>
+      </div> -->
+
+      <div class="row">
+        <div class="col-06">
+          <div class="m-fb-page">
+            <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="timeline" data-width="500" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/facebook">Facebook</a></blockquote></div>
+          </div>
+        </div>
+
+        <div class="col-06">
+
+          <div class="row">
+            <div class="col-12">
+              <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="750" data-show-text="true"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">Thursday, August 27, 2015</a></blockquote></div>
+            </div>
+            <div class="col-12">
+              <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="750" data-show-text="true"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">Thursday, August 27, 2015</a></blockquote></div>
+            </div>
+          </div>
+
+          <div class="row">
+          </div>
+
+        </div>
+
       </div>
+
 
     </div>
   </div>

@@ -3,6 +3,7 @@
   background-color: $accentBlue;
   color: white;
   padding-bottom: 50px;
+  border-top: 11px solid $accentOrange;
   @include breakpoint (laptop) {
     padding-bottom: 10px;
   }
@@ -63,9 +64,14 @@
 
 
 .m-copyright {
-	text-align: left;
+	text-align: center;
   color: lighten($accentBlue,30%);
   margin: 50px 0 0 0;
+  line-height: 18px;
+
+  @include breakpoint (laptop) {
+  	text-align: left;
+  }
 
   p {
     margin: 0;

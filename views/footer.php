@@ -68,7 +68,7 @@
       <div class="row m-copyright">
         <div class="col-12">
           <div>
-            <p><small><?= date("Y")?> &copy; Distributeur Officiel Fenplast, <?= _('Tous droits réservé'); ?><br /><?= _( 'developpement web par ' ); ?><a href='mailto:&#109;ail&#116;o&#58;p&#114;oje&#99;%&#54;B&#108;i&#37;73t&#64;gm%61&#37;69l&#46;com'>Daniel Racine</a></small></p>
+            <p><small><?= date("Y")?> &copy; Distributeur Fenplast, <?= _('Tous droits réservé'); ?><br /><?= _( 'Developpement web par ' ); ?><a href='mailto:&#109;ail&#116;o&#58;p&#114;oje&#99;%&#54;B&#108;i&#37;73t&#64;gm%61&#37;69l&#46;com'>Daniel Racine</a></small></p>
           </div>
         </div>
       </div>

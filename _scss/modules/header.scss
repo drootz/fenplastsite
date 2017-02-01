@@ -39,6 +39,10 @@
   a {
     padding: 0 5px;
     text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
 }
@@ -212,7 +216,7 @@
       margin-top: 31px;
       border: none;
       height: 40px;
-      
+
       &:first-child {
         margin-left: 15px;
       }
