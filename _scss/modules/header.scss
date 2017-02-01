@@ -70,7 +70,11 @@
     padding: 0;
     width: 100%;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.1em;
+    font-size: 1.2em;
+
+    i {
+      font-size: 1.1em;
+    }
 
     @include breakpoint (laptop) {
       height: 40px;
@@ -113,6 +117,7 @@
     }
 
   }
+
 }
 
 

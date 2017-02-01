@@ -140,7 +140,7 @@
 
             <div class="m-fixed-phone">
               <div>
-                <a href="tel:+14389999999"><i class="fa fa-phone fa-lg l-mobile-inline"></i></span>&nbsp;&nbsp;<span class="phone-number">+1 (438) 999-9999</span></a>
+                <a href="tel:+14389999999"><i class="fa fa-phone fa-lg fa-fw l-mobile-inline"></i></span>&nbsp;&nbsp;<span class="phone-number">+1 (438) 999-9999</span></a>
               </div>
               <div class="l-laptop">
                 <span><?= _( '67 rue des Croquettes, Montréal' ); ?></span>
