@@ -8,7 +8,7 @@
 
         <div class="col-06">
 
-         <h3 class="l-mobile">Nous Joindre</h3>
+         <h3 class="l-mobile"><?= _( 'Nous Joindre' ); ?></h3>
 
           <div class="m-googlemap-container">
             <!-- Google Maps API Key - mailto.danielracine@gmail.com: AIzaSyAsNjXlBV6NkmDOSCXHXVdhGEtmXVeW6K8 -->
@@ -18,28 +18,28 @@
 
         <div class="col-06">
 
-          <h3 class="l-laptop">Nous Joindre</h3>
+          <h3 class="l-laptop"><?= _( 'Nous Joindre' ); ?></h3>
 
           <div class="row">
             <div class="col-pad-06">
               <div class="m-footer-module">
               <div class="m-micro-address" itemscope itemtype="http://schema.org/Organization">
-                 <h4 itemprop="brand">Distributeur Officiel Fenplast</h4>
+                 <h4 itemprop="brand"><?= _( 'Distributeur Officiel Fenplast' ); ?></h4>
                  <div class="m-address" itemscope itemtype="schema.org/PostalAddress">
-                    <div><span itemprop="streetAddress">1370, rue Notre-Dame</span></div>
+                    <div><span itemprop="streetAddress"><?= _( '1370, rue Notre-Dame' ); ?></span></div>
                     <div>
-                      <span itemprop="addressLocality">Lavaltrie</span><span>&nbsp;</span>
+                      <span itemprop="addressLocality"><?= _( 'Lavaltrie' ); ?></span><span>&nbsp;</span>
                       <span itemprop="addressRegion">QC</span><span>&nbsp;&nbsp;</span>
-                      <span itemprop="postalCode">IOI-OIO</span>
+                      <span itemprop="postalCode">IOI OIO</span>
                     </div>
                 </div>
                  <div class="m-address">
-                   <div><span itemprop="telephone">Tel: +1 (438) 123-5678</span></div>
-                   <div><span itemprop="faxNumber">Fax: +1 (438) 123-5679</span></div>
-                   <div><span><a href="contact.php">Par courriel</a></span></div>
+                   <div><span itemprop="telephone">Tel: &#43;&#49; &#40;&#52;&#51;&#56;&#41; &#57;&#57;&#57;&#45;&#57;&#57;&#57;&#57;</span></div>
+                   <div><span itemprop="faxNumber">Fax: &#43;&#49; &#40;&#52;&#51;&#56;&#41; &#57;&#57;&#57;&#45;&#57;&#57;&#57;&#57;</span></div>
+                   <div><span><a href="contact.php"><?= _( 'Par courriel' ); ?></a></span></div>
                  </div>
                  <div class="m-address">
-                   <div><span>Suivez nous sur Facebook</span></div>
+                   <div><span><?= _( 'Suivez nous sur Facebook' ); ?></span></div>
                  </div>
               </div>
               </div>
@@ -47,15 +47,15 @@
 
             <div class="col-pad-06">
               <div class="m-footer-module">
-                <h4>Heures d'ouvertures</h4>
+                <h4><?= _( 'Heures d\'ouvertures' ); ?></h4>
                 <div class="m-hours clearfix">
-                  <div class="m-open-day"><span>Dimanche :</span></div>  <div class="m-open-hours"><span>Fermé</span></div>
-                  <div class="m-open-day"><span>Lundi :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
-                  <div class="m-open-day"><span>Mardi :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
-                  <div class="m-open-day"><span>Mercredi :</span></div>  <div class="m-open-hours"><span>9h00 à 17h00</span></div>
-                  <div class="m-open-day"><span>Jeudi :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
-                  <div class="m-open-day"><span>Vendredi :</span></div>  <div class="m-open-hours"><span>9h00 à 17h00</span></div>
-                  <div class="m-open-day"><span>Samedi :</span></div>    <div class="m-open-hours"><span>Fermé</span></div>
+                  <div class="m-open-day"><span><?= _( 'Dimanche' ); ?> :</span></div>  <div class="m-open-hours"><span>Fermé</span></div>
+                  <div class="m-open-day"><span><?= _( 'Lundi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-day"><span><?= _( 'Mardi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-day"><span><?= _( 'Mercredi' ); ?> :</span></div>  <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-day"><span><?= _( 'Jeudi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-day"><span><?= _( 'Vendredi' ); ?> :</span></div>  <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-day"><span><?= _( 'Samedi' ); ?> :</span></div>    <div class="m-open-hours"><span>Fermé</span></div>
                 </div>
               </div>
             </div>
@@ -68,7 +68,7 @@
       <div class="row m-copyright">
         <div class="col-12">
           <div>
-            <p><small><?= date("Y")?> &copy; Distributeur Fenplast, <?= _('Tous droits réservé'); ?><br /><?= _( 'Developpement web par ' ); ?><a href='mailto:&#109;ail&#116;o&#58;p&#114;oje&#99;%&#54;B&#108;i&#37;73t&#64;gm%61&#37;69l&#46;com'>Daniel Racine</a></small></p>
+            <p><small><?= date("Y")?> &copy; <?= _( 'Distributeur Fenplast' ); ?>, <?= _('Tous droits réservé'); ?><br /><?= _( 'Developpement web par ' ); ?><a href='mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#46;&#100;&#97;&#110;&#105;&#101;&#108;&#114;&#97;&#99;&#105;&#110;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;'>Daniel Racine</a></small></p>
           </div>
         </div>
       </div>
@@ -86,8 +86,8 @@
 <!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <!-- All libraries concatenated and minified in main-min.js -->
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
+    <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
     <!-- <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.js"></script> -->
     <!-- <script src="js/plugins-min.js" async></script> -->
     <!-- <script src="js/vendor/flickity.pkgd2-0-5.js"></script> -->

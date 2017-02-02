@@ -131,21 +131,7 @@
   <div id ="media-sociaux-fenplast" class="l-section m-home-third">
     <div class="l-wrapper">
       <h3>Dernières Nouvelles</h3>
-<!--
-      <div class="row">
-        <div class="col-pad-04">
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F20531316728%2Fposts%2F10154009990506729%2F&width=500&show_text=true&appId=1838945293048164&height=290" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-        </div>
-
-        <div class="col-pad-04">
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F20531316728%2Fposts%2F10154009990506729%2F&width=500&show_text=true&appId=1838945293048164&height=290" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-        </div>
-
-        <div class="col-pad-04">
-          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2F20531316728%2Fposts%2F10154009990506729%2F&width=500&show_text=true&appId=1838945293048164&height=290" width="100%" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-        </div>
-      </div> -->
-
+      
       <div class="row">
         <div class="col-06">
           <div class="m-fb-page">

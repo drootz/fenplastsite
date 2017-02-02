@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Fenplast Distributor Site\n"
-"POT-Creation-Date: 2017-01-29 23:32-0500\n"
-"PO-Revision-Date: 2017-01-29 23:32-0500\n"
+"POT-Creation-Date: 2017-02-01 22:10-0500\n"
+"PO-Revision-Date: 2017-02-01 22:13-0500\n"
 "Last-Translator: Daniel Racine <idaniel.racine@gmail.com>\n"
 "Language-Team: Daniel Racine <mailto.danielracine@gmail.com>\n"
 "Language: en_CA\n"
@@ -20,7 +20,53 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-2: public/img\n"
 "X-Poedit-SearchPathExcluded-3: public/js\n"
 
-#: public/index.php:6 views/header.php:122
+#: public/contact.php:10
+msgid "Envoyez nous un courriel"
+msgstr "Send us an email"
+
+#: public/contact.php:24
+msgid "Le reCAPTCHA est obligatoire."
+msgstr "The reCAPTCHA is required."
+
+#: public/contact.php:40
+msgid "Impossible de traiter votre demande pour le moment."
+msgstr "Unable to proceed with your request at this time."
+
+#: public/contact.php:68
+msgid ""
+"\n"
+"\n"
+"Votre message a bien été reçu!\n"
+"\n"
+"Prenez note de votre numéro de référence:\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"We have succesfully received your message!\n"
+"\n"
+"Please take note of your reference number:\n"
+"\n"
+
+#: public/contact.php:74
+msgid ""
+"\n"
+"\n"
+"Nous garantissons un retour d'appel au plus tard dans la prochaine journée "
+"ouvrable.\n"
+"\n"
+"Merci!\n"
+"\n"
+msgstr ""
+"\n"
+"\n"
+"We garanty a call back on the next business day following the receipt of the "
+"message.\n"
+"\n"
+"Thank you!\n"
+"\n"
+
+#: public/index.php:6 views/header.php:132
 msgid "Acceuil"
 msgstr "Home"
 
@@ -40,32 +86,127 @@ msgstr "Fenplast Doors"
 msgid "Désolé"
 msgstr "Sorry"
 
-#: views/contact_form.php:7
-msgid "Contactez-Nous"
+#: views/contact_form.php:5
+msgid "Contactez Nous"
 msgstr "Contact Us"
 
-#: views/contact_form.php:16
+#: views/contact_form.php:9
+msgid ""
+"Nous garantissons un retour d'appel au plus tard dans la prochaine journée "
+"ouvrable suivant la réception de votre courriel. Assurez-vous de remplir "
+"tous les champs sur le formulaire ci-joint et prenez note du numéro de "
+"références une fois le message soumis."
+msgstr ""
+"We garanty a call back on the next business day following the receipt of the "
+"message. All the fields on the following form are required. Please take note "
+"of the reference number once your message is submitted."
+
+#: views/contact_form.php:28
 msgid " -- choisir une option -- "
 msgstr " -- select an option -- "
 
-#: views/contact_form.php:17
-msgid "value=\"Demande de renseignements\""
-msgstr "value=\"Information Request\""
+#: views/contact_form.php:29
+msgid "value=\"Renseignements\""
+msgstr "value=\"Information\""
 
-#: views/contact_form.php:17
+#: views/contact_form.php:29
 msgid "Demande de renseignements"
 msgstr "Information Request"
 
-#: views/contact_form.php:27
+#: views/contact_form.php:30
+msgid "value=\"Rendez-vous\""
+msgstr "value=\"Appointment\""
+
+#: views/contact_form.php:30
+msgid "Demande de rendez-vous"
+msgstr "Appointment Request"
+
+#: views/contact_form.php:33
+msgid "Votre Nom"
+msgstr "Your Name"
+
+#: views/contact_form.php:35
+msgid "Votre Téléphone"
+msgstr "Your Phone"
+
+#: views/contact_form.php:37
+msgid "Votre Message..."
+msgstr "Your Message..."
+
+#: views/contact_form.php:51
 msgid "Soumettre"
 msgstr "Submit"
 
-#: views/header.php:15 views/header.php:17
+#: views/footer.php:11 views/footer.php:21 views/header.php:136
+msgid "Nous Joindre"
+msgstr "Contact Us"
+
+#: views/footer.php:27 views/header.php:15 views/header.php:17
 msgid "Distributeur Officiel Fenplast"
 msgstr "Fenplast Dealer"
 
+#: views/footer.php:29
+msgid "1370, rue Notre-Dame"
+msgstr ""
+
+#: views/footer.php:31
+msgid "Lavaltrie"
+msgstr ""
+
+#: views/footer.php:39
+msgid "Par courriel"
+msgstr "By email"
+
+#: views/footer.php:42
+msgid "Suivez nous sur Facebook"
+msgstr "Follow us on Facebook"
+
+#: views/footer.php:50
+msgid "Heures d'ouvertures"
+msgstr "Open Hours"
+
+#: views/footer.php:52
+msgid "Dimanche"
+msgstr "Sunday"
+
+#: views/footer.php:53
+msgid "Lundi"
+msgstr "Monday"
+
+#: views/footer.php:54
+msgid "Mardi"
+msgstr "Tuesday"
+
+#: views/footer.php:55
+msgid "Mercredi"
+msgstr "Wednesday"
+
+#: views/footer.php:56
+msgid "Jeudi"
+msgstr "Thursday"
+
+#: views/footer.php:57
+msgid "Vendredi"
+msgstr "Friday"
+
+#: views/footer.php:58
+msgid "Samedi"
+msgstr "Saturday"
+
+#: views/footer.php:71
+msgid "Distributeur Fenplast"
+msgstr ""
+
+#: views/footer.php:71
+msgid "Tous droits réservé"
+msgstr "All rights reserved"
+
+#: views/footer.php:71
+msgid "Developpement web par "
+msgstr "Web Development by "
+
 #: views/header.php:20
-msgid "htmlmeta-description"
+msgid "Description du site: Distributeur Officiel Fenplast"
 msgstr ""
 
 #: views/header.php:28
@@ -92,25 +233,27 @@ msgstr ""
 msgid "Patientez s'il vous plaît..."
 msgstr "Please wait…"
 
-#: views/header.php:123
+#: views/header.php:133
 msgid "Portes"
 msgstr "Doors\t"
 
-#: views/header.php:124
+#: views/header.php:134
 msgid "Fenêtres"
 msgstr "Windows"
 
-#: views/header.php:125
+#: views/header.php:135
 msgid "Rampes et Balcons"
 msgstr "Ramps and Balcony"
 
-#: views/header.php:126
-msgid "Nous Joindre"
-msgstr "Contact Us"
-
-#: views/header.php:136
+#: views/header.php:146
 msgid "67 rue des Croquettes, Montréal"
 msgstr "67 rue des Croquettes, Montreal"
+
+#~ msgid "Contactez-Nous"
+#~ msgstr "Contact Us"
+
+#~ msgid "value=\"Demande de renseignements\""
+#~ msgstr "value=\"Information Request\""
 
 #~ msgid "Porte"
 #~ msgstr "Door"

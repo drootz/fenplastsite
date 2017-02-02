@@ -15,6 +15,7 @@ Thanks!
 
 {CORR}
 
+{PHONE}
 
 ----
 Copyright {YEAR} Fenplast Site, All Rights Reversed.

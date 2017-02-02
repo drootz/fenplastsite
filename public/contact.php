@@ -7,79 +7,91 @@
     if ($_SERVER["REQUEST_METHOD"] == "GET")
     {
         // Render Form
-        render("contact_form.php", _("Envoyez un courriel"));
+        render("contact_form.php", _("Envoyez nous un courriel"));
     }
 
     // else if user reached page via POST (as by submitting a form via POST)
     else if ($_SERVER["REQUEST_METHOD"] == "POST")
     {
-        // // Sanitize $_POST and check for submit key
-        // $post = sanitizeForm($_POST);
-        // if(isset($post['submit']))
-        // {
-        //     // query database for user
-        //     $users = DB::query("SELECT * FROM users WHERE id = ?", $_SESSION["id"]);
-        //     if (count($users) != 0)
-        //     {
-        //         $user = $users[0];
-        //         $contacts = DB::query(
-        //             "INSERT INTO contact_us (user_id, reason, text_body, contact_datetime) VALUES(?, ?, ?, ?)",
-        //             $_SESSION["id"], $post["opt_reason"], $post["txt_contact"], date('Y-m-d H:i:s') );
-        //         // DB update error check
-        //         if (count($contacts) == 0)
-        //         {
-        //             userErrorHandler(0, "contact_us", "unable to add correspondence to contact_us table");
-        //             redirect("/logout.php");
-        //         }
-        //
-        //         // Send activation email to user
-        //         $added = DB::query("SELECT LAST_INSERT_ID() AS id");
-        //         if (count($added) == 0)
-        //         {
-        //             userErrorHandler(0, "contact_us", "unable to select last inserted id");
-        //             redirect("/logout.php");
-        //         }
-        //
-        //         $contextRef = '000';
-        //         $uniqueRef = $added[0]["id"];
-        //         $subject = _('Contact Us Ref# ') . $contextRef . $uniqueRef . " | " . $post["opt_reason"];
-        //
-        //         //put info into an array to send to the function
-        //         $info = array(
-        //             'locale'            => $_SESSION['lang'],
-        //             'template'          => 'contact_template',
-        //             'subject'           => $subject,
-        //             'username'          => $user["firstname"],
-        //             'email'             => $user["user_email"],
-        //             'reason'            => $post["opt_reason"],
-        //             'correspondence'    => $post["txt_contact"],
-        //             'bcc_projecklist'   => true
-        //         );
-        //
-        //         $output = [
-        //             'data'           => _('Thank you for contacting us. Check your mailbox for the acknowledgement email and reference number.'),
-        //             'modal'          => true,
-        //             'redirect'       => true,
-        //             'location'       => 'index.php',
-        //             'notification'   => notificationMail($info)
-        //         ];
-        //         echo(json_encode($output));
-        //         exit;
-        //     }
-        //
-        // }
-        //
-        // // ERROR Unable to query user
-        // else
-        // {
-        //     userErrorHandler(0, "contact_us", "unable to query user");
-        //     redirect("/logout.php");
-        // }
+        // Sanitize $_POST and check for submit key
+        $post = sanitizeForm($_POST);
+        if(isset($post['submit']))
+        {
+            // Check for reCaptcha checkbox
+            if (!$post['g-recaptcha-response'])
+            {
+                $output = [
+                    'data' => _('Le reCAPTCHA est obligatoire.')
+                ];
+                echo(json_encode($output));
+                exit;
+            }
+
+            // Check for reCaptcha response
+            $captcha = $post['g-recaptcha-response'];
+            $secretKey = "6LfhxRMUAAAAAFYqudceZepEew8Jz01mlCgJE_29";
+            $ip = $_SERVER['REMOTE_ADDR'];
+            $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
+            $responseKeys = json_decode($response,true);
+            if(intval($responseKeys["success"]) !== 1)
+            {
+                // ERROR
+                $output = [
+                    'data'      => _('Impossible de traiter votre demande pour le moment.'),
+                    'reset'     => true,
+                    'modal'     => true,
+                    'redirect'  => true,
+                    'location'  => 'index.php'
+                    // 'error'     => userErrorHandler(0, "register", "reCaptcha error, potential bot")
+                ];
+                echo(json_encode($output));
+                exit;
+            }
+
+            $contextRef = '0';
+            $uniqueRef = date("U");
+            $subject = 'WEB - ' . $post["opt_reason"] . ' - ref: ' . $contextRef . $uniqueRef . '  |  ' . $post["txt_username"];
+
+            //put info into an array to send to the function
+            $info = array(
+                'locale'            => $_SESSION['lang'],
+                'template'          => 'contact_template',
+                'subject'           => $subject,
+                'username'          => $post["txt_username"],
+                'phone'             => $post["txt_phone"],
+                'reason'            => $post["opt_reason"],
+                'correspondence'    => $post["txt_contact"],
+                'bcc_fenplast'   => true
+            );
+
+            $output = [
+                'data'           => _('
+
+Votre message a bien été reçu!
+
+Prenez note de votre numéro de référence:
+
+') . $contextRef . $uniqueRef . _('
+
+Nous garantissons un retour d\'appel au plus tard dans la prochaine journée ouvrable.
+
+Merci!
+
+'),
+                'modal'          => true,
+                'redirect'       => true,
+                'location'       => 'index.php',
+                'notification'   => notificationMail($info)
+            ];
+
+            echo(json_encode($output));
+            exit;
+
+        }
     }
 
     // ERROR
     else
     {
-        userErrorHandler(0, "contact_us", "Server request is not GET or POST");
-        redirect("/logout.php");
+        redirect("/index.php");
     }

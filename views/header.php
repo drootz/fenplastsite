@@ -12,12 +12,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <?php if (isset($title)): ?>
-        <title><?= htmlspecialchars($title) ?> - <?= _( 'Distributeur Officiel Fenplast' ); ?> - </title>
+        <title><?= htmlspecialchars($title) ?> - <?= _( 'Distributeur Officiel Fenplast' ); ?></title>
     <?php else: ?>
         <title><?= _( 'Distributeur Officiel Fenplast' ); ?></title>
     <?php endif ?>
 
-    <meta name="description" <?= "content=\""._( 'htmlmeta-description' )."\""; ?> >
+    <meta name="description" <?= "content=\""._( 'Description du site: Distributeur Officiel Fenplast' )."\""; ?> >
     <link rel="author" href="humans.txt" />
 
     <!-- Mobile Specific Metas
@@ -61,7 +61,7 @@
     <link rel="stylesheet" href="css/style-ie.css"/>
     <![endif]-->
 
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
 
 </head>
 
@@ -91,9 +91,9 @@
     </ul> -->
 
     <!-- Loading Spinner -->
-    <!-- <div class="m-loading is-hidden">
+    <div class="m-loading">
         <div><i class="fa fa-circle-o-notch fa-lg fa-spin" aria-hidden="true"></i>&nbsp;&nbsp;<?= _( 'Patientez s\'il vous plaît...' ) ?></div>
-    </div> -->
+    </div>
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -118,7 +118,7 @@
           <div class="l-wrapper">
 
             <div class="m-logo">
-              <img src="img/logos/logo_fenplast_small_600.png" alt="Logo Distributeur Officiel Fenplast" />
+              <a href="index.php"><img src="img/logos/logo_fenplast_small_600.png" alt="Logo Distributeur Officiel Fenplast" /></a>
             </div>
 
             <div class="m-menu-toggle">
@@ -140,7 +140,7 @@
 
             <div class="m-fixed-phone">
               <div>
-                <a href="tel:+14389999999"><i class="fa fa-phone fa-lg fa-fw l-mobile-inline"></i></span>&nbsp;&nbsp;<span class="phone-number">+1 (438) 999-9999</span></a>
+                <a href="tel:&#43;&#49;&#52;&#51;&#56;&#57;&#57;&#57;&#57;&#57;&#57;&#57;"><i class="fa fa-phone fa-lg fa-fw l-mobile-inline"></i></span>&nbsp;&nbsp;<span class="phone-number">&#43;&#49;&#40;&#52;&#51;&#56;&#41;&#57;&#57;&#57;&#45;&#57;&#57;&#57;&#57;</span></a>
               </div>
               <div class="l-laptop">
                 <span><?= _( '67 rue des Croquettes, Montréal' ); ?></span>
@@ -149,12 +149,8 @@
 
             <div class="m-langage">
               <ul>
-                <!-- <li><a href="?lang=fr_CA">FRANÇAIS</a></li>
-                <li><a href="?lang=en_CA">ENGLISH</a></li> -->
-
                 <li><a href="?lang=fr_CA"><span class="l-laptop-inline">FRANÇAIS</span><span class="l-mobile-inline">FR&nbsp;</span></a></li>
                 <li><a href="?lang=en_CA"><span class="l-laptop-inline">ENGLISH</span><span class="l-mobile-inline">&nbsp;EN</span></a></li>
-
               </ul>
             </div>
 

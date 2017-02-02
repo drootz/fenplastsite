@@ -118,7 +118,7 @@
           // top-bar - hero padding values
           var carouselHeight = vh - 107 - 25 - 50;
           $('#js-nav-menu').show();
-          fromToClass($('#js-nav'), 'fa-times', 'fa-bars')
+          fromToClass($('#js-nav'), 'fa-times', 'fa-bars');
           $('#js-header-hero').css('height', vh);
           $('#js-carousel-container').css('height', carouselHeight);
           $('.js-main-carousel').flickity({
@@ -131,7 +131,7 @@
         }
         else {
           $('#js-nav-menu').hide();
-          fromToClass($('#js-nav'), 'fa-times', 'fa-bars')
+          fromToClass($('#js-nav'), 'fa-times', 'fa-bars');
           $('.js-main-carousel').flickity({
             // options
             autoPlay: true,
@@ -210,7 +210,7 @@ function jsMediaQ(){
     }
     else if (vw >= vwPhablet)
     {
-  		setQuery("js-phablet")
+  		setQuery("js-phablet");
     }
     else
     {
@@ -538,24 +538,24 @@ $( document ).ready(function() {
 
 
 
-	// // Manage state of input fields if contains value.
-	// $("[type='text'], [type='password'], [type='email'], [type='url'], [type='tel'], textarea").focusout( function() {
-	// 	var thisInput = $(this);
-	// 	if (thisInput.val() != "")
-	// 	{
-	// 		if(!thisInput.hasClass('has-value'))
-	// 		{
-	// 			thisInput.addClass('has-value');
-	// 		}
-	// 	}
-	// 	else
-	// 	{
-	// 		if(thisInput.hasClass('has-value'))
-	// 		{
-	// 			thisInput.removeClass('has-value');
-	// 		}
-	// 	}
-	// });
+	// Manage state of input fields if contains value.
+	$("[type='text'], [type='password'], [type='email'], [type='url'], [type='tel'], textarea").focusout( function() {
+		var thisInput = $(this);
+		if (thisInput.val() !== "")
+		{
+			if(!thisInput.hasClass('has-value'))
+			{
+				thisInput.addClass('has-value');
+			}
+		}
+		else
+		{
+			if(thisInput.hasClass('has-value'))
+			{
+				thisInput.removeClass('has-value');
+			}
+		}
+	});
 
 
     // Smooth link transition
@@ -586,113 +586,159 @@ $( document ).ready(function() {
 
 
 
-    // Set tabindex on all input/textarea fields to enable tabs through checkbox
-    // var tabCount = 1;
-    // $("input, textarea, select").each( function() {
-    // 	$(this).attr("tabindex", tabCount);
-    // 	tabCount++;
-    // });
-    // $("#f-submit").attr("tabindex", tabCount);
-    // tabCount++;
-    // $("#f-reset").attr("tabindex", tabCount);
-    // tabCount++;
-
-
-
-
 	/*
 	 * FORM VALIDATION SCRIPTS
 	 *
 	 */
 
-	// // function to get cookie by key
-	// function getCookie(key) {
-	// 	var regexp = new RegExp("(?:^" + key + "|;\s*"+ key + ")=(.*?)(?:;|$)", "g");
-	// 	var result = regexp.exec(document.cookie);
-	// 	return (result === null) ? null : result[1];
-	// }
+	// function to get cookie by key
+	function getCookie(key) {
+		var regexp = new RegExp("(?:^" + key + "|;\s*"+ key + ")=(.*?)(?:;|$)", "g");
+		var result = regexp.exec(document.cookie);
+		return (result === null) ? null : result[1];
+	}
+
+	var spinner = $(".m-loading");
+	$(document).ready(function () {
+	    $(document).ajaxStart(function () {
+	    	if (!spinner.hasClass('isLoading'))
+	    	{
+	    		spinner.addClass('isLoading');
+	    	}
+	    }).ajaxStop(function () {
+	    	if (spinner.hasClass('isLoading'))
+	    	{
+	    		spinner.removeClass('isLoading');
+	    	}
+	    });
+	});
+
+	// input type="tel" formatting on keyup behavior
+	$("[type='tel']").keyup( function() {
+
+		var thisField = $(this);
+		var thisValue = thisField.val();
+
+		if (/^\((\b\d{3}\b)\) (\b\d{4}\b)$/g.test(thisValue))
+		{
+			thisField.val(thisValue.substring(0,thisValue.length - 1) + "-" + thisValue.charAt(thisValue.length - 1));
+		}
+		else if (/^\((\b\d{3}\b)\)\d$/g.test(thisValue))
+		{
+			thisField.val(thisValue.substring(0,thisValue.length - 1) + " " + thisValue.charAt(thisValue.length - 1));
+		}
+		else if (/^(\b\d{3}\b)$/g.test(thisValue))
+		{
+			thisField.val("(" + thisValue +")");
+		}
+	});
 
 
-  //
-	// var spinner = $(".m-loading");
-	// $(document).ready(function () {
-	//     $(document).ajaxStart(function () {
-	//     	if (!spinner.hasClass('isLoading'))
-	//     	{
-	//     		spinner.addClass('isLoading');
-	//     	}
-	//     }).ajaxStop(function () {
-	//     	if (spinner.hasClass('isLoading'))
-	//     	{
-	//     		spinner.removeClass('isLoading');
-	//     	}
-	//     });
-	// });
-
+  var ajxFailContact;
+  var v_phoneCheck;
+  var v_nameCheck;
 
 	// Localize the form validation error labels
-	// if (getCookie("lang") == 'fr_CA')
-	// {
-	// 	var ajxFailSignin   =   'Échec de connection';
-	// }
-	// // Default to english (en_CA)
-	// else
-	// {
-	// 	var ajxFailSignin =   'Sign in Failed';
-	// }
+	if (getCookie("lang") == 'en_CA')
+	{
+		ajxFailContact = 'Unable to submit the email at this time. Please contact us by phone.';
+    v_phoneCheck = 'Invalid phone number.';
+    v_nameCheck = 'Invalid name format.';
+	}
+	// Default to english (fr_CA)
+	else
+	{
+		ajxFailContact    = 'Échec de l\'envois du courriel. S\'il vous plaît nous contacter par téléphone.';
+    v_phoneCheck      = 'Numéro de téléphone invalide.';
+    v_nameCheck       = 'Format du nom invalide.';
+	}
 
-	// Declare jQuery Validation custom method
-	// $.validator.addMethod("pwdCheck", function(value) {
-	// 	return /^[A-Za-z0-9\d=!\-@._*]*$/.test(value) // consists of only these
-	// 		&& /[a-z]/.test(value) // has a lowercase letter
-	// 		&& /[A-Z]/.test(value) // has a uppercase letter
-	// 		&& /\d/.test(value) // has a digit
-	// }, v_pwdCheck);
+	// Clear form input fields and re-instate their default placeholders (bug fix)
+	function clearForm(el) {
+		var inputs = el.find('input');
+		el.trigger('reset');
+		inputs.each(function() {
+			$(this).val("");
+			$(this).focus();
+		});
+	    inputs.last().blur();
+	}
 
-	// $.validator.addMethod("nameCheck", function(value) {
-	// 	return /^[a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ\s\-]+$/.test(value);
-	// }, v_nameCheck);
+	// Reset form (single form on a page)
+	function formFailReset(el) {
+		if ($('#captcha').length)
+		{
+			grecaptcha.reset();
+		}
+	}
 
+	// Successful AJAX form validation handling
+	function formDone(el, data) {
+		var form = el;
+		var obj = $.parseJSON( data );
 
+		// Display Modal Box Message
+		if (obj.modal)
+		{
+			alert(obj.data);
+		}
 
+		// Reset Form
+		// if (obj.reset)
+		// {
+		// 	if($('#captcha').length)
+		// 	{
+		// 		grecaptcha.reset();
+		// 	}
+		// 	clearForm(form);
+		// }
 
+		// Redirect to another page
+		if (obj.redirect)
+		{
+			window.location.href = obj.location;
+		}
+		// Output an error message
+		else
+		{
+      // Output an error message
+      if ($('#js-form-output').length)
+      {
+      $('#js-form-output').html('<span>' + obj.data + '</span>');
+      }
+      // $(document).scrollTop( form.offset().top );
+		}
+	}
 
-	// // Clear form input fields and re-instate their default placeholders (bug fix)
-	// function clearForm(el) {
-	// 	var inputs = el.find('input');
-	// 	el.trigger('reset');
-	// 	inputs.each(function() {
-	// 		$(this).val("");
-	// 		$(this).focus();
-	// 	});
-	//     inputs.last().blur();
-	// }
-  //
-	// // Reset form (single form on a page)
-	// function formFailReset(el) {
-	// 	if ($('#captcha').length)
-	// 	{
-	// 		grecaptcha.reset();
-	// 	}
-	// 	clearForm(el);
-	// 	$(document).scrollTop(el.offset().top);
-	// }
-  //
-  //
-	// var formContact = $('#contact');
-	// formContact.validate({
-	// 	submitHandler: function(form) {
-	// 		$.post('contact.php', formContact.serialize())
-	// 		.done(function( data ) {
-	// 			formDone(formContact, data);
-	// 		})
-	// 		.fail(function() {
-	// 			$('#js-form-output').html("<span>" + ajxFailContact + "</span>");
-	// 			formFailReset(formContact);
-	// 		});
-	// 	}
-	// });
+	$.validator.addMethod("nameCheck", function(value) {
+		return /^[a-zA-ZàèìòùÀÈÌÒÙáéíóúýÁÉÍÓÚÝâêîôûÂÊÎÔÛãñõÃÑÕäëïöüÿÄËÏÖÜŸçÇßØøÅåÆæœ\s\- ]+$/.test(value);
+	}, v_nameCheck);
 
+	$.validator.addMethod("phoneCheck", function(value) {
+		return /^[0-9\-\(\) ]+$/.test(value);
+	}, v_phoneCheck);
+
+	var formContact = $('#contact');
+	formContact.validate({
+    rules: {
+    	txt_username: {
+    	   nameCheck: true
+    	},
+    	txt_phone: {
+    	   phoneCheck: true
+    	}
+    },
+		submitHandler: function(form) {
+			$.post('contact.php', formContact.serialize())
+			.done(function( data ) {
+				formDone(formContact, data);
+			})
+			.fail(function() {
+				$('#js-form-output').html("<span>" + ajxFailContact + "</span>");
+				formFailReset(formContact);
+			});
+		}
+	});
 
 
 
