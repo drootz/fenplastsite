@@ -129,6 +129,19 @@
             prevNextButtons: true
           });
 
+          // Navigation behavior
+          $('.js-sub-nav-btn').mouseenter(function() {
+            var subNavEl = $(this).children('.m-sub-nav');
+            subNavEl.slideToggle();
+            switchClass(subNavEl, 'is-collapsed', 'is-expanded');
+          });
+
+          $('.js-sub-nav-btn').mouseleave(function() {
+            var subNavEl = $(this).children('.m-sub-nav');
+            subNavEl.hide();
+            switchClass(subNavEl, 'is-collapsed', 'is-expanded');
+          });
+
           $('.main-gallery').flickity({
             // options
             autoPlay: 2500,
@@ -147,6 +160,21 @@
             prevNextButtons: false,
             // selectedAttraction: 0.01,
             friction: 0.4
+          });
+
+          var subNavBtn = $('.js-sub-nav-btn');
+
+          subNavBtn.click(function() {
+
+            subNavBtn.each(function() {
+              if ($(this).children('.m-sub-nav').is(':visible')) {
+                $(this).children('.m-sub-nav').hide();
+              }
+            });
+
+            var subNavEl = $(this).children('.m-sub-nav');
+            subNavEl.slideToggle();
+            switchClass(subNavEl, 'is-collapsed', 'is-expanded');
           });
 
           $('.main-gallery').flickity({
@@ -495,7 +523,7 @@ $( document ).ready(function() {
           if ($('#js-nav').hasClass('fa-times')) {
             fromToClass($('.m-nav-primary'),'is-opened','is-closed');
           }
-      },
+        },
         complete: function () {
           if ($('#js-nav').hasClass('fa-times')) {
             fromToClass($('.m-nav-primary'),'is-closed','is-opened');
@@ -504,20 +532,6 @@ $( document ).ready(function() {
     });
     switchClass($('#js-nav'), 'fa-bars', 'fa-times');
   });
-
-  // $('#js-nav').click(function(){
-  //   $('#js-nav-menu').slideToggle(300, function(){
-  //     if ($('#js-nav').hasClass('fa-bars')) {
-  //       // $('m-nav-primary').css('width', 200 + 'px');
-  //       fromToClass($('.m-nav-primary'),'is-opened','is-closed');
-  //     } else {
-  //       // $('m-nav-primary').css('width', '100%');
-  //       fromToClass($('.m-nav-primary'),'is-closed','is-opened');
-  //     }
-  //   });
-  //   switchClass($('#js-nav'), 'fa-bars', 'fa-times');
-  // });
-
 
 
 

@@ -130,9 +130,24 @@
               <!-- Mobile/Device Menu -->
               <ul id="js-nav-menu" class="clearfix">
                 <li><a href="index.php"><?= gettext( 'Acceuil' ); ?></a></li>
-                <li><a href="produit-portes.php"><?= _( 'Portes' ); ?></a></li>
-                <li><a href="produit-fenetres.php"><?= _( 'Fenêtres' ); ?></a></li>
-                <li><a href="produit-balcons.php"><?= _( 'Rampes et Balcons' ); ?></a></li>
+                <li class="js-sub-nav-btn"><span><?= _( 'Produits' ); ?></span>
+                    <ul class="m-sub-nav clearfix is-collapsed">
+                      <li><a href="produit-portes.php"><?= _( 'Portes' ); ?></a></li>
+                      <li><a href="produit-fenetres.php"><?= _( 'Fenêtres' ); ?></a></li>
+                      <li><a href="produit-balcons.php"><?= _( 'Rampes et Balcons' ); ?></a></li>
+                      <li><a href="produit-.php"><?= _( 'Revêtement Extérieur' ); ?></a></li>
+                    </ul>
+                </li>
+                <li class="js-sub-nav-btn"><span><?= _( 'Services' ); ?></span>
+                    <ul class="m-sub-nav clearfix is-collapsed">
+                      <li><a href="produit-.php"><?= _( 'Installation Professionel' ); ?></a></li>
+                      <li><a href="produit-.php"><?= _( 'Perçage de béton' ); ?></a></li>
+                      <li><a href="produit-.php"><?= _( 'Modification de dimension' ); ?></a></li>
+                      <li><a href="produit-.php"><?= _( 'Service clef en main' ); ?></a></li>
+                    </ul>
+                </li>
+                <li><a href="produit-.php"><?= _( 'Réalisations' ); ?></a></li>
+                <li><a href="produit-.php"><?= _( 'FAQ' ); ?></a></li>
                 <li><a href="#nous-joindre-fenplast"><?= _( 'Nous Joindre' ); ?></a></li>
               </ul>
 

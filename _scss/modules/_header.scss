@@ -138,6 +138,7 @@
   @include breakpoint (laptop) {
     background-color: transparentize(#fff, 0.1);
     position: fixed;
+    padding: 15px 15px 0px;
   }
 }
 
@@ -172,9 +173,10 @@
 
 .m-nav-primary {
   position: absolute;
-  width: 200px;
+  width: 199.75px;
   top: 59px; right: 0px;
   z-index: 20;
+  font-size: 1.2em;
 
   &.is-opened {
     width: 100%;
@@ -182,7 +184,7 @@
   }
 
   &.is-closed {
-    width: 200px;
+    width: 199.75px;
     transition: width 300ms ease-in;
   }
 
@@ -195,16 +197,18 @@
 
   ul {
     margin: 0;
+    font-size: inherit;
   }
 
   li {
     float: left;
-    height: 60px;
+    // height: 60px;
     margin: 0;
     width: 100%;
     background-color: $accentOrange;
     border-top: 1px solid transparentize(#fff,0.80);
     border-bottom: 1px solid darken($accentOrange,10%);
+    position: relative;
 
     &:first-child {
       border-top: none;
@@ -222,38 +226,132 @@
       margin-top: 33px;
       border: none;
       height: 40px;
+      font-size: 0.8em;
 
       &:first-child {
         margin-left: 15px;
       }
+
+      &.js-sub-nav-btn:hover {
+        background: $accentOrange;
+
+        span {
+          color: #fff;
+        }
+      }
     }
   }
 
-  a {
+  a,
+  span {
     display: block;
     height: 60px;
     line-height: 60px;
-    text-align: center;
     width: 100%;
     color: #fff;
     padding: 0 10px;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
 
     @include breakpoint (laptop) {
       color: $accentBlue;
       padding: 0 15px;
-      font-size: 0.8em;
       height: 40px;
       line-height: 40px;
 
       &:hover {
         color: $accentOrange;
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+  ul.m-sub-nav {
+
+    &.is-collapsed {
+      display: none;
+    }
+
+    &.is-expanded {
+      display: block;
+    }
+
+    @include breakpoint (laptop) {
+      position: absolute;
+      width: 250px;
+      left: 0; top: 40px;
+    }
+
+
+    li {
+      background-color: darken($accentOrange, 10%);
+      // border-top: 1px solid transparentize(#fff,0.80);
+      border-bottom: 1px solid darken($accentOrange,20%);
+      font-size: 0.9em;
+
+      &:first-child {
+        border-top: none;
+        box-shadow: inset 0px 3px 5px 0px transparentize(#000, 0.5);
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      @include breakpoint (laptop) {
+        float: left;
+        // height: 60px;
+        margin: 0;
+        width: 100%;
+        background-color: $accentOrange;
+        border-top: 1px solid transparentize(#fff,0.80);
+        border-bottom: 1px solid darken($accentOrange,10%);
+        position: relative;
+
+        &:first-child {
+          border-top: 1px solid darken($accentOrange,10%);
+          box-shadow: none;
+        }
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+
+    a,
+    span {
+      display: block;
+      height: 60px;
+      line-height: 60px;
+      width: 100%;
+      color: #fff;
+      padding: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 400;
+      text-align: center;
+
+      @include breakpoint (laptop) {
+        // color: $accentBlue;
+        padding: 0 15px;
+        height: 40px;
+        line-height: 40px;
+
+        &:hover {
+          // color: $accentOrange;
+          background-color: darken($accentOrange, 10%);
+        }
       }
     }
   }
+
 }
+
 
 #js-nav-menu {
   display: none;
