@@ -54,8 +54,8 @@
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="https://use.fontawesome.com/57fd7ffc48.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/vendor/flickity2-0-5.css">
-
     <link rel="stylesheet" href="css/page.css">
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="css/style-ie.css"/>

@@ -12,22 +12,24 @@
               <div class="js-main-carousel carousel"  data-flickity='{ "setGallerySize": false }'>
                <div class="carousel-cell">
                  <div class="m-slider-container">
-                   <div class="m-slider-demo">
-                     <h1>Le Marchant de Fenêtres</h1>
-                     <p>Votre détaillant autorisé Fenplast</p>
-                     <p>
-                       Bienvenue sur notre vitrine web!
-                     </p>
+
+                   <div class="m-slider-slide slide-greetings">
+                     <h1 class="clearfix">
+                       <div class="clearfix"><span>Le</span></div>
+                       <div class="clearfix"><span>Marchand</span></div>
+                       <div class="clearfix"><span>De Fenêtres</span></div>
+                     </h1>
                    </div>
+
                  </div>
                </div>
                <div class="carousel-cell">
-                 <div class="m-slider-container m-video">
-                   <h3>Une image renouvelée pour Fenplast</h3>
-                   <div class="m-slider-vimeo">
-                     <iframe src="https://player.vimeo.com/video/192534635" class="vimeo" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                     <p><a href="https://vimeo.com/192534635">Ligne du temps</a> from <a href="https://vimeo.com/fenplast">Fenplast</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-                   </div>
+                 <div class="m-slider-container">
+
+                  <div class="m-slider-demo">
+                    <h1>Slide 2</h1>
+                  </div>
+
                  </div>
                </div>
                <div class="carousel-cell">
@@ -42,9 +44,9 @@
                <div class="carousel-cell bg-white">
                  <div class="m-slider-container">
 
-                    <div class="m-slider-demo">
-                     <h3>Silde 4</h3>
-                    </div>
+                  <div class="m-slider-demo">
+                   <h3>Silde 4</h3>
+                  </div>
 
                 </div>
                </div>
@@ -144,7 +146,8 @@
         </div>
 
         <div class="col-06">
-<!--
+
+          <!--
           <div class="row">
             <div class="col-12">
               <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="750" data-show-text="true"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">Thursday, August 27, 2015</a></blockquote></div>
@@ -152,7 +155,8 @@
             <div class="col-12">
               <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="750" data-show-text="true"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">Thursday, August 27, 2015</a></blockquote></div>
             </div>
-          </div> -->
+          </div>
+          -->
 
           <div class="row">
             <div class="col-12">

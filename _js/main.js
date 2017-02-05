@@ -144,7 +144,7 @@
             autoPlay: 4000,
             wrapAround: true,
             setGallerySize: true,
-            prevNextButtons: true,
+            prevNextButtons: false,
             // selectedAttraction: 0.01,
             friction: 0.4
           });
