@@ -123,8 +123,15 @@
           $('#js-carousel-container').css('height', carouselHeight);
           $('.js-main-carousel').flickity({
             // options
-            autoPlay: true,
+            autoPlay: 4000,
             setGallerySize: false,
+            wrapAround: true,
+            prevNextButtons: true
+          });
+
+          $('.main-gallery').flickity({
+            // options
+            autoPlay: 2500,
             wrapAround: true,
             prevNextButtons: true
           });
@@ -134,21 +141,34 @@
           fromToClass($('#js-nav'), 'fa-times', 'fa-bars');
           $('.js-main-carousel').flickity({
             // options
-            autoPlay: true,
+            autoPlay: 4000,
             wrapAround: true,
             setGallerySize: true,
-            prevNextButtons: false
+            prevNextButtons: true,
+            // selectedAttraction: 0.01,
+            friction: 0.4
+          });
+
+          $('.main-gallery').flickity({
+            // options
+            autoPlay: 4000,
+            wrapAround: true,
+            prevNextButtons: false,
+            friction: 0.4
           });
         }
 
-        // var carouselButton = document.getElementsByClassName('flickity-prev-next-button');
-        // carouselButton.clientWidth = 44;
+        var allVideos = $("iframe.vimeo");
+        // Resize all videos according to their own aspect ratio
+        allVideos.each(function() {
+          var newWidth = $(this).parent('div').width();
+          var $el = $(this);
+          $el
+            // .width(newWidth)
+            // .height(newWidth * $el.data('aspectRatio'));
+            .width(newWidth)
+            .height(newWidth * $el.data('aspectRatio'));
 
-        $('.main-gallery').flickity({
-          // options
-          autoPlay: true,
-          wrapAround: true,
-          prevNextButtons: false
         });
 
   	} // resizeInit() END
@@ -275,21 +295,27 @@ function viewportIni() {
 function initMap() {
   var posFenplast = {lat: 45.8830136, lng: -73.2761306};
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 13,
-    center: posFenplast
+    zoom: 15,
+    center: {lat: 45.8847, lng: -73.2761306}
   });
   var markerFenplast = new google.maps.Marker({
     position: posFenplast,
     map: map
   });
-  // var markerUser = new google.maps.Marker({
-  //   map: map
-  // });
+
+
+
+  var directionurl = "https://www.google.ca/maps/dir//1370+Rue+Notre+Dame,+Lavaltrie,+QC";
 
 
   var infoWindowFenplast = new google.maps.InfoWindow({
-    content: '<span>Fenplast</span>'
+    content: '<div class="l-gmap-row row clearfix"><div class="col-02 m-gmap-logo"><img src="favicon-32x32.png" alt="logo" width="16px" height="auto"></div><div class="col-10 m-gmap-name">Le Marchand de Fenêtres</div><div class="col-10 m-gmap-address">1370, rue Notre-Dame<br />Lavaltrie QC &nbsp;IOI OIO</div><div class="col-10 m-gmap-direction"><a href="'+ directionurl +'" target="_BLANK">Direction</a></div></div>'
   });
+
+  markerFenplast.addListener('click', function() {
+      infoWindowFenplast.open(map, markerFenplast);
+  });
+
   // var infoWindowUser = new google.maps.InfoWindow({
   //   content: '<span>Direction</span>'
   // });
@@ -321,7 +347,11 @@ function initMap() {
   //   handleLocationError(false, infoWindow, map.getCenter());
   // }
 
+  var transitLayer = new google.maps.TransitLayer();
+  transitLayer.setMap(map);
+
   infoWindowFenplast.open(map, markerFenplast);
+
 
   // markerFenplast.addListener('click', function() {
   //   infoWindowFenplast.open(map, markerFenplast);
@@ -488,11 +518,7 @@ $( document ).ready(function() {
   //   switchClass($('#js-nav'), 'fa-bars', 'fa-times');
   // });
 
-  resizeInit();
 
-  $( window ).resize(function() {
-    resizeInit();
-  });
 
 
 
@@ -500,10 +526,9 @@ $( document ).ready(function() {
   // https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
   // Find all YouTube videos
   // var allVideos = $("iframe[src^='//www.youtube.com']"),
-  var allVideos = $("iframe.vimeo"),
-
+  var allVideos = $("iframe.vimeo");
       // The element that is fluid width
-      $fluidEl = $(".m-slider-vimeo");
+      // $fluidEl = $(".m-slider-vimeo");
 
   // Figure out and save aspect ratio for each video
   allVideos.each(function() {
@@ -517,23 +542,21 @@ $( document ).ready(function() {
 
   });
 
-  // When the window is resized
-  $(window).resize(function() {
 
-    var newWidth = $fluidEl.width();
+  // Resize all videos according to their own aspect ratio
+  allVideos.each(function() {
+    var newWidth = $(this).parent('div').width();
+    var $el = $(this);
+    $el
+      // .width(newWidth)
+      // .height(newWidth * $el.data('aspectRatio'));
+      .width(newWidth)
+      .height(newWidth * $el.data('aspectRatio'));
 
-    // Resize all videos according to their own aspect ratio
-    allVideos.each(function() {
+  });
 
-      var $el = $(this);
-      $el
-        .width(newWidth)
-        .height(newWidth * $el.data('aspectRatio'));
+  resizeInit();
 
-    });
-
-  // Kick off one resize to fix all videos on page load
-  }).resize();
 
 
 
@@ -741,6 +764,9 @@ $( document ).ready(function() {
 	});
 
 
+  $( window ).resize(function() {
+    resizeInit();
+  });
 
 
 

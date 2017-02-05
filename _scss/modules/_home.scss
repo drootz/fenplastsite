@@ -194,7 +194,7 @@ button.flickity-prev-next-button svg {
 .m-slider-container {
   text-align: left;
   height: 100%;
-  border: 11px dashed transparentize($accentOrange, 0.9);
+  // border: 11px dashed transparentize($accentOrange, 0.9);
 
   &.m-video {
     padding-top: 15px;
@@ -217,6 +217,12 @@ button.flickity-prev-next-button svg {
   padding-top: 15px;
   @include breakpoint (laptop) {
   }
+}
+
+.m-vimeo {
+  width: 100%;
+  margin: auto;
+  padding-top: 15px;
 }
 
 
@@ -348,10 +354,23 @@ button.flickity-prev-next-button svg {
 
 .m-home-third {
   background-color: white;
+
+  h4 {
+    text-align: center;
+    margin-bottom: 0.2em;
+
+    @include breakpoint (laptop) {
+      margin-bottom: 1.2em;
+    }
+  }
 }
 
 .m-fb-page {
-  margin: auto;
+  margin: 0 auto 50px;
+
+  @include breakpoint (laptop) {
+    margin: 0 auto;
+  }
 }
 
 .m-home-fourth {

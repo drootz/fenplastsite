@@ -48,6 +48,7 @@
 }
 
 .m-fixed-phone {
+  // display: none;
   position: fixed;
   bottom: 0; left: 0; right: 0;
   width: 100%;
@@ -172,7 +173,7 @@
 .m-nav-primary {
   position: absolute;
   width: 200px;
-  top: 61px; right: 0px;
+  top: 59px; right: 0px;
   z-index: 20;
 
   &.is-opened {

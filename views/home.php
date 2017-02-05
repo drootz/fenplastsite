@@ -13,7 +13,11 @@
                <div class="carousel-cell">
                  <div class="m-slider-container">
                    <div class="m-slider-demo">
-                     <h1>Slide 1</h1>
+                     <h1>Le Marchant de Fenêtres</h1>
+                     <p>Votre détaillant autorisé Fenplast</p>
+                     <p>
+                       Bienvenue sur notre vitrine web!
+                     </p>
                    </div>
                  </div>
                </div>
@@ -100,21 +104,21 @@
         <div class="main-gallery">
           <div class="gallery-cell">
             <div class="testimonial">
-                <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
+                <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar image">
               <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
               <span class="testimonial-author">Aline Poitras, Propriétaire</span>
             </div>
           </div>
           <div class="gallery-cell">
              <div class="testimonial">
-                <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg">
+                <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg" alt="avatar image">
               <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
               <span class="testimonial-author">Sylvie Tremblay, Propriétaire</span>
             </div>
           </div>
           <div class="gallery-cell">
                 <div class="testimonial">
-                <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/andretacuyan/128.jpg">
+                <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/andretacuyan/128.jpg" alt="avatar image">
               <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
               <span class="testimonial-author">Amit Khadir, Propriétaire</span>
             </div>
@@ -131,7 +135,7 @@
   <div id ="media-sociaux-fenplast" class="l-section m-home-third">
     <div class="l-wrapper">
       <h3>Dernières Nouvelles</h3>
-      
+
       <div class="row">
         <div class="col-06">
           <div class="m-fb-page">
@@ -140,13 +144,25 @@
         </div>
 
         <div class="col-06">
-
+<!--
           <div class="row">
             <div class="col-12">
               <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="750" data-show-text="true"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">Thursday, August 27, 2015</a></blockquote></div>
             </div>
             <div class="col-12">
               <div class="fb-post" data-href="https://www.facebook.com/20531316728/posts/10154009990506729/" data-width="750" data-show-text="true"><blockquote cite="https://www.facebook.com/20531316728/posts/10154009990506729/" class="fb-xfbml-parse-ignore">Posted by <a href="https://www.facebook.com/facebook/">Facebook</a> on&nbsp;<a href="https://www.facebook.com/20531316728/posts/10154009990506729/">Thursday, August 27, 2015</a></blockquote></div>
+            </div>
+          </div> -->
+
+          <div class="row">
+            <div class="col-12">
+
+              <h4>Une image renouvelée pour Fenplast</h4>
+              <div class="m-vimeo">
+                <iframe src="https://player.vimeo.com/video/192534635" class="vimeo" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                <p><a href="https://vimeo.com/192534635">Ligne du temps</a> from <a href="https://vimeo.com/fenplast">Fenplast</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+              </div>
+
             </div>
           </div>
 

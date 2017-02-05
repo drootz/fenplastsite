@@ -29,9 +29,34 @@
   color: $accentBlue !important;
 }
 
-.m-micro-address {
-  // font-family: Helvetica, Arial, sans-serif;
+.l-gmap-row {
+  width: 180px;
 }
+
+[class*='m-gmap-'] {
+  float: left;
+  margin: 0;
+}
+
+.m-gmap-logo {
+  height: 70px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.m-gmap-name {
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.m-gmap-address {
+  margin: 5px 0;
+}
+
+.m-gmap-direction {
+  // margin: 5px 0;
+}
+
 
 .m-footer-module {
   max-width: 300px;
@@ -43,8 +68,39 @@
   }
 }
 
+.m-subtitle {
+  margin-top: -1.8em;
+  margin-bottom: 1.8em;
+  opacity: 0.6;
+}
+
+
+.m-micro-address {
+  // font-family: Helvetica, Arial, sans-serif;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+  }
+
+  i {
+    color: $accentOrange;
+
+    &.fa-facebook-square {
+      color: #fff;
+    }
+  }
+
+
+}
+
 .m-address {
-  margin: 15px 0;
 }
 
 [class*='m-open-'] {

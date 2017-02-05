@@ -17,7 +17,7 @@
         <title><?= _( 'Distributeur Officiel Fenplast' ); ?></title>
     <?php endif ?>
 
-    <meta name="description" <?= "content=\""._( 'Description du site: Distributeur Officiel Fenplast' )."\""; ?> >
+    <meta name="description" <?= "content=\""._( 'Description du site: Le Marchant de Fenêtres, votre Détaillant Officiel Fenplast' )."\""; ?> >
     <link rel="author" href="humans.txt" />
 
     <!-- Mobile Specific Metas
@@ -38,11 +38,11 @@
 
     <!-- Place favicon.ico in the root directory
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="/manifest.json">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="theme-color" content="#ffffff">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
@@ -118,7 +118,7 @@
           <div class="l-wrapper">
 
             <div class="m-logo">
-              <a href="index.php"><img src="img/logos/logo_fenplast_small_600.png" alt="Logo Distributeur Officiel Fenplast" /></a>
+              <a href="index.php"><img src="img/logos/logo_lemarchanddefenetres_small_600.png" <?= "alt=\"" . _( 'Le Marchant de Fenêtres - Détaillant Autorisé Fenplast' ) . "\""; ?> <?= "title=\"" . _( 'Le Marchant de Fenêtres - Détaillant Autorisé Fenplast' ) . "\""; ?> width="200px" height="auto"/></a>
             </div>
 
             <div class="m-menu-toggle">
@@ -140,7 +140,7 @@
 
             <div class="m-fixed-phone">
               <div>
-                <a href="tel:&#43;&#49;&#52;&#51;&#56;&#57;&#57;&#57;&#57;&#57;&#57;&#57;"><i class="fa fa-phone fa-lg fa-fw l-mobile-inline"></i></span>&nbsp;&nbsp;<span class="phone-number">&#43;&#49;&#40;&#52;&#51;&#56;&#41;&#57;&#57;&#57;&#45;&#57;&#57;&#57;&#57;</span></a>
+                <a href="tel:&#43;&#49;&#52;&#51;&#56;&#57;&#57;&#57;&#57;&#57;&#57;&#57;"><i class="fa fa-phone fa-lg fa-fw l-mobile-inline"></i>&nbsp;&nbsp;<span class="phone-number"> &#43;&#49; &#40;&#52;&#51;&#56;&#41; &#57;&#57;&#57;&#45;&#57;&#57;&#57;&#57;</span></a>
               </div>
               <div class="l-laptop">
                 <span><?= _( '67 rue des Croquettes, Montréal' ); ?></span>
