@@ -15,9 +15,9 @@
 
                    <div class="m-slider-slide slide-greetings">
                      <h1 class="clearfix">
-                       <div class="clearfix"><span>Le</span></div>
-                       <div class="clearfix"><span>Marchand</span></div>
-                       <div class="clearfix"><span>De Fenêtres</span></div>
+                       <div class="m-title clearfix"><span>Le</span></div>
+                       <div class="m-title clearfix"><span>Marchand</span></div>
+                       <div class="m-title clearfix"><span>De Fenêtres</span></div>
                      </h1>
                    </div>
 

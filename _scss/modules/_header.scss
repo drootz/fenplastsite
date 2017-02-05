@@ -57,7 +57,7 @@
 
   @include breakpoint (laptop) {
     position: absolute;
-    bottom: inherit; left: inherit; right: 0px; top: 6px;
+    bottom: inherit; left: inherit; right: 0px; top: 7px;
     width: 250px;
     // outline: 1px solid green;
   }
@@ -219,7 +219,7 @@
       width: auto;
       background-color: transparent;
       margin-left: 5px;
-      margin-top: 31px;
+      margin-top: 33px;
       border: none;
       height: 40px;
 

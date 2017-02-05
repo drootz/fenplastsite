@@ -265,17 +265,17 @@ button.flickity-prev-next-button svg {
       // outline: 1px solid red;
     }
 
-    div {
+    .m-title {
       width: 100%;
       float: left;
 
       span {
         display: block;
-        width: 250px;
-        background-color: transparentize(#fff, 0.2);
+        width: 253px;
+        background: transparentize(#fff, 0.2);
         padding: 0 0 0 15px;
         margin-bottom: 10px;
-        transition: all 1500ms ease-out;
+        transition: width 1500ms ease-out, color 300ms ease;
         overflow: hidden;
 
         @include breakpoint (phablet) {
@@ -298,7 +298,7 @@ button.flickity-prev-next-button svg {
         }
 
         @include breakpoint (tablet) {
-          width: 195px;
+          width: 198px;
         }
       }
 
@@ -310,7 +310,7 @@ button.flickity-prev-next-button svg {
         }
 
         @include breakpoint (tablet) {
-          width: 690px;
+          width: 693px;
         }
       }
 
@@ -318,7 +318,17 @@ button.flickity-prev-next-button svg {
         &:hover {
           span {
             width: 100%;
-            transition: all 300ms ease-in;
+            transition: width 500ms ease-in, color 300ms ease;
+            background-image: url(../img/hero/placeholder_land_large_@2x_3k.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 70% 30%;
+            background-attachment: fixed;
+
+            @include breakpoint (desktop) {
+              background-image: url(../img/hero/placeholder_land_xlarge_@2x_5k.jpg);
+            }
+            color: transparentize(#fff, 0.2);
           }
         }
       }
