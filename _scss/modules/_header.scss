@@ -57,7 +57,7 @@
 
   @include breakpoint (laptop) {
     position: absolute;
-    bottom: inherit; left: inherit; right: 0px; top: 7px;
+    bottom: inherit; left: inherit; right: 0px; top: 6px;
     width: 250px;
     // outline: 1px solid green;
   }
@@ -70,7 +70,7 @@
     text-align: center;
     padding: 0;
     width: 100%;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1.2em;
 
     i {
@@ -112,7 +112,7 @@
       line-height: 15px;
       text-align: right;
       width: 100%;
-      font-family: Helvetica, Arial, sans-serif;
+      font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-size: 0.8em;
       // outline: 1px solid red;
     }

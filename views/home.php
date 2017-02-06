@@ -26,8 +26,8 @@
                <div class="carousel-cell">
                  <div class="m-slider-container">
 
-                  <div class="m-slider-demo">
-                    <h1>Slide 2</h1>
+                  <div class="m-slider-slide slide-promo-fenplast">
+                    <h2>Fenplast - 12% de rabais</h2>
                   </div>
 
                  </div>
@@ -35,17 +35,26 @@
                <div class="carousel-cell">
                  <div class="m-slider-container">
 
-                  <div class="m-slider-demo">
-                    <h1>Slide 3</h1>
+                  <div class="m-slider-slide slide-promo-renovert">
+                    <div class="js-promo-carousel txt-wrapper">
+                      <img src="img/promo/promo-renovert-logo-lemarchanddefenetres.png" alt="logo revenue quebec" width="200px" height="auto"/>
+                      <h2><span>20%</span>en crédit d'impôt provincial</h2>
+                      <img src="img/promo/promo-revenueqc-logo-lemarchanddefenetres.png" alt="logo revenue quebec" width="100px" height="auto"/>
+                      <div class="alt-txt">Jusqu'au 31 Mars 2017, appelez nous!</div>
+                    </div>
                   </div>
 
                 </div>
                </div>
-               <div class="carousel-cell bg-white">
+               <div class="carousel-cell">
                  <div class="m-slider-container">
 
-                  <div class="m-slider-demo">
-                   <h3>Silde 4</h3>
+                  <div class="m-slider-slide slide-promo-accordd">
+                    <div class="js-promo-carousel txt-wrapper">
+                      <h2>FINANCEMENT <span>Accord D Disponible</span></h2>
+                      <img src="img/promo/promo-accordd-logo-lemarchanddefenetres.png" alt="logo accord d" />
+                      <div class="alt-txt">Parlez-en à nos conseiller</div>
+                    </div>
                   </div>
 
                 </div>
@@ -63,6 +72,40 @@
 
 
 
+  <div id="produits-fenplast" class="l-section m-home-banner">
+    <div>
+      <!-- <h3>Section "Produits et Services"</h3> -->
+
+        <div class="row">
+          <div class="col-12">
+
+            <ul class="m-logo-banner">
+              <li class="first"><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
+            </ul>
+
+          </div>
+        </div>
+    </div>
+  </div>
+
+
   <div id="produits-fenplast" class="l-section m-home-first">
     <div class="l-wrapper">
       <!-- <h3>Section "Produits et Services"</h3> -->
@@ -70,22 +113,22 @@
         <div class="row">
           <div class="col-pad-04">
             <div class="m-feature-container left">
-              <div class="m-icon"></div>
-              <h3>Produit</h3>
+              <div class="m-icon ico-install"></div>
+              <h2><a href="#">Installation Professionelle</a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>
           <div class="col-pad-04">
             <div class="m-feature-container">
-              <div class="m-icon main"></div>
-              <h3>Service</h3>
+              <div class="m-icon ico-satisfaction main"></div>
+              <h2><a href="#">Qualité Supérieur</a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>
           <div class="col-pad-04">
             <div class="m-feature-container right">
-              <div class="m-icon"></div>
-              <h3>Produit</h3>
+              <div class="m-icon ico-key"></div>
+              <h2><a href="#">Service Clefs<br />en Main</a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>

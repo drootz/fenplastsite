@@ -2,7 +2,7 @@
 .m-footer {
   background-color: $accentBlue;
   color: white;
-  padding-bottom: 50px;
+  padding-bottom: 60px;
   border-top: 11px solid $accentOrange;
   @include breakpoint (laptop) {
     padding-bottom: 10px;
@@ -103,6 +103,13 @@
 .m-address {
 }
 
+.m-hours {
+
+  @include breakpoint (laptop) {
+    margin-top: 50px;
+  }
+}
+
 [class*='m-open-'] {
   float: left;
   width: 50%;
@@ -120,13 +127,17 @@
 
 
 .m-copyright {
-	text-align: center;
-  color: lighten($accentBlue,30%);
+	text-align: left;
+  color: rgba(255,255,255,.6);
+  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 50px 0 0 0;
   line-height: 18px;
+  font-weight: lighter;
+  overflow: visible;
+  font-size: 0.9em;
 
   @include breakpoint (laptop) {
-  	text-align: left;
+  	font-size: 1em;
   }
 
   p {
@@ -134,10 +145,37 @@
   }
 
   a {
-    text-decoration: none;
+    // text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      // text-decoration: underline;
+      // cursor: pointer;
+    }
+  }
+}
+
+.m-float-left {
+  float: left;
+}
+
+.m-copy-container {
+  position: relative;
+
+  .m-copy-contact {
+    display: none;
+    position: absolute;
+    width: 265px;
+    height: 60px;
+    // outline: 1px solid red;
+    bottom: 22px; left: 0px;
+    z-index: 115;
+    background: $accentBlue;
+    text-align: left;
+  }
+
+  &:hover {
+    .m-copy-contact {
+      display: block;
     }
   }
 }

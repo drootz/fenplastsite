@@ -121,13 +121,20 @@
           fromToClass($('#js-nav'), 'fa-times', 'fa-bars');
           $('#js-header-hero').css('height', vh);
           $('#js-carousel-container').css('height', carouselHeight);
-          $('.js-main-carousel').flickity({
-            // options
-            autoPlay: 4000,
-            setGallerySize: false,
-            wrapAround: true,
-            prevNextButtons: true
-          });
+
+          // Margon for absolute el in carousel
+          var marginCarousel = $('.js-promo-carousel').parent().height();
+          $('.js-promo-carousel').css('margin-top', (marginCarousel/2));
+
+          if ($('.js-main-carousel').length) {
+            $('.js-main-carousel').flickity({
+              // options
+              autoPlay: 4000,
+              setGallerySize: false,
+              wrapAround: true,
+              prevNextButtons: true
+            });
+          }
 
           // Navigation behavior
           $('.js-sub-nav-btn').mouseenter(function() {
@@ -142,25 +149,49 @@
             switchClass(subNavEl, 'is-collapsed', 'is-expanded');
           });
 
-          $('.main-gallery').flickity({
-            // options
-            autoPlay: 2500,
-            wrapAround: true,
-            prevNextButtons: true
-          });
+          if ($('.main-gallery').length) {
+            $('.main-gallery').flickity({
+              // options
+              autoPlay: 2500,
+              wrapAround: true,
+              prevNextButtons: true
+            });
+          }
+
+          if ($('.js-slider-realisation').length) {
+            $('.js-slider-realisation').flickity({
+              // options
+              autoPlay: 2500,
+              wrapAround: true,
+              prevNextButtons: true,
+              pageDots: false,
+              lazyLoad: 1
+            });
+            $('.js-slider-realisation-nav').flickity({
+              asNavFor: '.js-slider-realisation',
+              // contain: true,
+              pageDots: false,
+              prevNextButtons: true,
+              wrapAround: true,
+              lazyLoad: 3
+            });
+          }
         }
         else {
           $('#js-nav-menu').hide();
           fromToClass($('#js-nav'), 'fa-times', 'fa-bars');
-          $('.js-main-carousel').flickity({
-            // options
-            autoPlay: 4000,
-            wrapAround: true,
-            setGallerySize: true,
-            prevNextButtons: false,
-            // selectedAttraction: 0.01,
-            friction: 0.4
-          });
+
+          if ($('.js-main-carousel').length) {
+            $('.js-main-carousel').flickity({
+              // options
+              autoPlay: 4000,
+              wrapAround: true,
+              setGallerySize: true,
+              prevNextButtons: false,
+              // selectedAttraction: 0.01,
+              friction: 0.4
+            });
+          }
 
           var subNavBtn = $('.js-sub-nav-btn');
 
@@ -177,13 +208,38 @@
             switchClass(subNavEl, 'is-collapsed', 'is-expanded');
           });
 
-          $('.main-gallery').flickity({
-            // options
-            autoPlay: 4000,
-            wrapAround: true,
-            prevNextButtons: false,
-            friction: 0.4
-          });
+          if ($('.main-gallery').length) {
+            $('.main-gallery').flickity({
+              // options
+              autoPlay: 4000,
+              wrapAround: true,
+              prevNextButtons: false,
+              friction: 0.4
+            });
+          }
+
+          if ($('.js-slider-realisation').length) {
+            $('.js-slider-realisation').flickity({
+              // options
+              autoPlay: 2500,
+              wrapAround: true,
+              prevNextButtons: false,
+              pageDots: false,
+              lazyLoad: 1,
+              friction: 0.4
+            });
+            $('.js-slider-realisation-nav').flickity({
+              asNavFor: '.js-slider-realisation',
+              // contain: true,
+              pageDots: false,
+              prevNextButtons: false,
+              wrapAround: true,
+              freeScroll: true,
+              freeScrollFriction: 0.03,
+              lazyLoad: 3,
+              friction: 0.4
+            });
+          }
         }
 
         var allVideos = $("iframe.vimeo");

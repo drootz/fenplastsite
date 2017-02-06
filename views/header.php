@@ -135,7 +135,7 @@
                       <li><a href="produit-portes.php"><?= _( 'Portes' ); ?></a></li>
                       <li><a href="produit-fenetres.php"><?= _( 'Fenêtres' ); ?></a></li>
                       <li><a href="produit-balcons.php"><?= _( 'Rampes et Balcons' ); ?></a></li>
-                      <li><a href="produit-.php"><?= _( 'Revêtement Extérieur' ); ?></a></li>
+                      <li><a href="produit-revetement-exterieur.php"><?= _( 'Revêtement Extérieur' ); ?></a></li>
                     </ul>
                 </li>
                 <li class="js-sub-nav-btn"><span><?= _( 'Services' ); ?></span>
@@ -146,7 +146,7 @@
                       <li><a href="produit-.php"><?= _( 'Service clef en main' ); ?></a></li>
                     </ul>
                 </li>
-                <li><a href="produit-.php"><?= _( 'Réalisations' ); ?></a></li>
+                <li><a href="realisations.php"><?= _( 'Réalisations' ); ?></a></li>
                 <li><a href="produit-.php"><?= _( 'FAQ' ); ?></a></li>
                 <li><a href="#nous-joindre-fenplast"><?= _( 'Nous Joindre' ); ?></a></li>
               </ul>

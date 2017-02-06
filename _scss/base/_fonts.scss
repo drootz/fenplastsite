@@ -10,7 +10,7 @@ body {
   font-size: 1.2em;
   line-height: 1.5;
   font-weight: 400;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222;
 }
 
@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1.2em;
   font-weight: 700;
-  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  // font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -29,10 +29,10 @@ h1 {
   }
 }
 
-h2 { font-size: 3em; line-height: 1.25; letter-spacing: -.0175em; }
-h3 { font-size: 3em; line-height: 1.3;  letter-spacing: -.0175em; }
-h4 { font-size: 1.6em; line-height: 1.35; letter-spacing: -.0175em; }
-h5 { font-size: 1.4em; line-height: 1.5;  letter-spacing: -.0175em; }
+h2 { font-size: 3em; line-height: 1.3; letter-spacing: -.03em; }
+h3 { font-size: 3em; line-height: 1.3;  letter-spacing: -.03em; }
+h4 { font-size: 1.6em; line-height: 1.35; letter-spacing: -.03em; }
+h5 { font-size: 1.4em; line-height: 1.5;  letter-spacing: -.03em; }
 h6 { font-size: 1.2em; line-height: 1.6;  letter-spacing: 0; }
 
 /* Larger than phablet */
@@ -63,4 +63,8 @@ legend {
     font-family: 'Courier New', courier, monospace;
     letter-spacing: -0.04em;
     font-size: 1.1em;
+  }
+
+  a {
+    cursor: pointer;
   }

@@ -57,7 +57,7 @@
   }
 }
 
-$carouselHeightMobile: 525px;
+$carouselHeightMobile: 600px;
 $carouselHeightPhablet: 600px;
 .carousel {
   background: none;
@@ -220,6 +220,7 @@ button.flickity-prev-next-button svg {
   // outline: 1px solid red;
   width: 100%;
   height: 100%;
+  position: relative;
 
   @include breakpoint (laptop) {
     // margin-left: -300px;
@@ -343,10 +344,141 @@ button.flickity-prev-next-button svg {
 }
 
 
+.slide-promo-fenplast {
+  background-image: url(../img/promo/promo-fenplast-lemarchanddefenetres.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  h2 {
+    color: transparent;
+  }
+
+  @include breakpoint (laptop) {
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.3);
+  }
+}
+
+.slide-promo-renovert {
+  background-color: rgba(255,255,255,0.90);
+  text-align: center;
+
+  @include breakpoint (laptop) {
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.3);
+  }
+
+  .txt-wrapper {
+    width: 100%;
+    padding: 25px 0px 0;
+
+    @include breakpoint (laptop) {
+      position: absolute;
+      padding: 0;
+      width: 600px;
+      height: 446px;
+      margin-left: 50%; left: -300px;
+      margin-top: 50%; top: -223px;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 2em;
+
+    span {
+      display: block;
+      font-size: 2.8em;
+      line-height: 1em;
+    }
+  }
+
+  .alt-txt {
+    margin-top: 20px;
+  }
+}
+
+
+.slide-promo-accordd {
+  background-color: rgba(255,255,255,0.90);
+  text-align: center;
+
+  @include breakpoint (laptop) {
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.3);
+  }
+
+  .txt-wrapper {
+    width: 100%;
+    padding: 25px 0px 0;
+
+    @include breakpoint (laptop) {
+      // outline: 1px solid red;
+      position: absolute;
+      padding: 0;
+      width: 600px;
+      height: 330px;
+      margin-left: 50%; left: -300px;
+      margin-top: 50%; top: -165px;
+    }
+  }
+
+  h2 {
+    margin: 0;
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    font-size: 2em;
+
+    @include breakpoint (laptop) {
+      font-size: 3em;
+    }
+
+    span {
+      display: block;
+      font-size: 0.78em;
+      line-height: 1em;
+      font-weight: normal;
+
+      @include breakpoint (laptop) {
+        font-size: 0.78em;
+      }
+    }
+  }
+
+  img {
+    width: 230px;
+  }
+
+  .alt-txt {
+    margin-top: 20px;
+  }
+}
 
 
 .m-home-first {
   background-color: white;
+
+  h2 {
+    font-size: 2em;
+
+    a {
+      // text-decoration: none;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+
+      a {
+        text-decoration: underline;
+        color: $accentOrange;
+      }
+    }
+
+  }
 
   .m-feature-container {
     padding: 25px;
@@ -358,7 +490,7 @@ button.flickity-prev-next-button svg {
       padding: 100px 50px 25px;
     }
 
-    h3 {
+    h2 {
       margin-bottom: 0.6em;
     }
 
@@ -380,34 +512,114 @@ button.flickity-prev-next-button svg {
       }
     }
 
-
   }
 
   .m-icon {
-    width: 150px;
-    height: 150px;
-    background: $accentOrange;
-    margin: 0 auto 30px;
+    width: 225px;
+    height: 225px;
+    // background: $accentOrange;
+    margin: 0 auto 15px;
     transition: transform 150ms ease;
 
-    &:hover {
-      transform: scale(1.05);
-    }
 
     &.main {
       margin-top: 25px;
-      transform: scale(1.3) translateY(-17px);
+      transform: scale(1.5) translateY(-17px);
 
       @include breakpoint (laptop) {
         margin-top: 0px;
       }
 
       &:hover {
-        transform: scale(1.35) translateY(-15px);
+        // transform: scale(1.35) translateY(-15px);
       }
+    }
+
+    &.ico-install {
+      background-image: url(../img/ico/ico-lemarchanddefenetres-installation.png);
+      transform: scale(0.85) translateY(30px);
+    }
+
+    &.ico-satisfaction {
+      background-image: url(../img/ico/ico-lemarchanddefenetres-satisfaction.png);
+    }
+
+    &.ico-key {
+      background-image: url(../img/ico/ico-lemarchanddefenetres-clefenmain.png);
+      transform: scale(0.80) translateY(15px);
+    }
+
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.m-home-banner {
+  background: $accentBlue;
+  padding-left: 0;
+  padding-right: 0;
+
+  .col-12 {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .m-logo-banner {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 2500px;
+
+    li {
+      // outline: 1px solid white;
+      display: inline;
+      // float: left;
+      margin: 0;
+      padding: 0 20px;
+      height: 50px;
+
+      &.first {
+        padding-left: 0;
+        animation: bannermovemobile 20s linear alternate infinite;
+
+        @include breakpoint (laptop) {
+          // animation: none;
+          animation: bannermovedesktop 60s linear alternate infinite;
+        }
+      }
+    }
+
+
+    img {
+      opacity: 0.3;
     }
   }
 }
+
+
+
+
+@keyframes "bannermovemobile" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+@keyframes "bannermovedesktop" {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+
+
 
 .m-home-second {
 
