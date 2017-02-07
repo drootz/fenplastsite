@@ -1,0 +1,46 @@
+
+
+.m-services-header {
+  padding: 150px 15px 50px;
+
+  .m-txt-coll-02 {
+
+    p {
+      margin: 0;
+      margin-bottom: 15px;
+    }
+
+    .col-06 {
+      padding: 15px 0;
+    }
+
+    .col-06:first-child {
+      @include breakpoint (laptop) {
+        padding-right: 50px;
+      }
+    }
+
+    .col-06:last-child {
+      @include breakpoint (laptop) {
+        // border-left: 1px solid black;
+        padding-left: 50px;
+      }
+    }
+
+  }
+
+}
+
+.m-service-list {
+  list-style-type: none;
+  margin: 0;
+  margin-left: 15px;
+
+  @include breakpoint (laptop) {
+    margin-left: 0px;
+  }
+
+  a {
+    font-size: 1.2em;
+  }
+}

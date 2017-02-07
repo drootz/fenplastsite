@@ -140,10 +140,10 @@
                 </li>
                 <li class="js-sub-nav-btn"><span><?= _( 'Services' ); ?></span>
                     <ul class="m-sub-nav clearfix is-collapsed">
-                      <li><a href="produit-.php"><?= _( 'Installation Professionel' ); ?></a></li>
-                      <li><a href="produit-.php"><?= _( 'Perçage de béton' ); ?></a></li>
-                      <li><a href="produit-.php"><?= _( 'Modification de dimension' ); ?></a></li>
-                      <li><a href="produit-.php"><?= _( 'Service clef en main' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'Installation Professionel' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'Clef en Main' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'Perçage de Béton' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'Modification de Dimension' ); ?></a></li>
                     </ul>
                 </li>
                 <li><a href="realisations.php"><?= _( 'Réalisations' ); ?></a></li>
