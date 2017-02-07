@@ -8,9 +8,12 @@
   top: 84px; left: -3px;
   z-index: 15;
   line-height: 15px;
+  height: 15px;
 
   @include breakpoint (laptop) {
-    top: -11px; right: 0; left: inherit;
+    top: -6px; right: 0; left: inherit;
+    line-height: 12px;
+    height: 12px;
   }
 
   ul {
@@ -30,9 +33,9 @@
     }
 
     &:first-child {
-      a {
+      // a {
         border-right: 1px solid $accentOrange;
-      }
+      // }
     }
   }
 
@@ -138,7 +141,7 @@
   @include breakpoint (laptop) {
     background-color: transparentize(#fff, 0.1);
     position: fixed;
-    padding: 15px 15px 0px;
+    padding: 10px 15px;
   }
 }
 

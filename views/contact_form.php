@@ -27,7 +27,7 @@
                                   <select class="m-field" name="opt_reason" id="f-contact-reason" required>
                                       <option disabled selected><?= _(" -- choisir une option -- "); ?></option>
                                       <option <?= _("value=\"Renseignements\""); ?>><?= _('Demande de renseignements'); ?></option>
-                                      <option <?= _("value=\"Rendez-vous\""); ?>><?= _('Demande de rendez-vous'); ?></option>
+                                      <!-- <option <?= _("value=\"Rendez-vous\""); ?>><?= _('Demande de rendez-vous'); ?></option> -->
                                   </select>
 
                                   <input class="m-field" name="txt_username" id="f-contact-name" type="text" <?= "placeholder=\"" . _( 'Votre Nom' ) . "\""; ?> required/>

@@ -356,8 +356,8 @@ button.flickity-prev-next-button svg {
 
   @include breakpoint (laptop) {
     background-position: center center;
-    background-size: cover;
-    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.3);
+    background-size: contain;
+    // box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.3);
   }
 }
 
@@ -569,7 +569,7 @@ button.flickity-prev-next-button svg {
     margin: 0;
     padding: 0;
     position: relative;
-    width: 2500px;
+    width: 3500px;
 
     li {
       // outline: 1px solid white;

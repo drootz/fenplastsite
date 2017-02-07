@@ -18,11 +18,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1.2em;
   font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   // font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1 {
   font-size: 3em; line-height: 1.1;  letter-spacing: -.025em;
+  margin-bottom: 1em;
 
   @include breakpoint (laptop) {
     font-size: 3.5em;

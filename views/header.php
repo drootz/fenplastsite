@@ -61,7 +61,7 @@
     <link rel="stylesheet" href="css/style-ie.css"/>
     <![endif]-->
 
-    <!-- <script src="js/vendor/modernizr-2.6.2.min.js"></script> -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 </head>
 
@@ -147,7 +147,7 @@
                     </ul>
                 </li>
                 <li><a href="realisations.php"><?= _( 'Réalisations' ); ?></a></li>
-                <li><a href="produit-.php"><?= _( 'FAQ' ); ?></a></li>
+                <li><a href="faq.php"><?= _( 'F.A.Q.' ); ?></a></li>
                 <li><a href="#nous-joindre-fenplast"><?= _( 'Nous Joindre' ); ?></a></li>
               </ul>
 
