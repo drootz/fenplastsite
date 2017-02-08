@@ -2,37 +2,45 @@
 
 
 .m-hero {
-  background-image: url(../img/hero/placeholder_portrait_small_@2x_1k.jpg);
-
-  @include breakpoint (phablet) {
-    background-image: url(../img/hero/placeholder_portrait_medium_@2x_2k.jpg);
-  }
-
-  @include breakpoint (tablet) {
-    background-image: url(../img/hero/placeholder_land_medium_@2x_2k.jpg);
-  }
-
-  @include breakpoint (laptop) {
-    background-image: url(../img/hero/placeholder_land_large_@2x_3k.jpg);
-  }
-
-  @include breakpoint (desktop) {
-    background-image: url(../img/hero/placeholder_land_xlarge_@2x_5k.jpg);
-  }
-
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 70% 30%;
+  background-position: center center;
   position: relative;
   width: 100%;
-  // height: 632px;
 
   @include breakpoint (laptop) {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 70% 30%;
     background-attachment: fixed;
   }
+}
+
+
+.hero-01 {
+  background-image: url(../img/hero/hero_01_portrait_small_@2x_1k.jpg);
+  @include breakpoint (phablet) { background-image: url(../img/hero/hero_01_portrait_medium_@2x_2k.jpg); }
+  @include breakpoint (tablet) { background-image: url(../img/hero/hero_01_land_medium_@2x_2k.jpg); }
+  @include breakpoint (laptop) { background-image: url(../img/hero/hero_01_land_large_@2x_3k.jpg); }
+  @include breakpoint (desktop) { background-image: url(../img/hero/hero_01_land_xlarge_@2x_5k.jpg); }
+}
+.hero-02 {
+  background-image: url(../img/hero/hero_02_portrait_small_@2x_1k.jpg);
+  @include breakpoint (phablet) { background-image: url(../img/hero/hero_02_portrait_medium_@2x_2k.jpg); }
+  @include breakpoint (tablet) { background-image: url(../img/hero/hero_02_land_medium_@2x_2k.jpg); }
+  @include breakpoint (laptop) { background-image: url(../img/hero/hero_02_land_large_@2x_3k.jpg); }
+  @include breakpoint (desktop) { background-image: url(../img/hero/hero_02_land_xlarge_@2x_5k.jpg); }
+}
+.hero-03 {
+  background-image: url(../img/hero/hero_03_portrait_small_@2x_1k.jpg);
+  @include breakpoint (phablet) { background-image: url(../img/hero/hero_03_portrait_medium_@2x_2k.jpg); }
+  @include breakpoint (tablet) { background-image: url(../img/hero/hero_03_land_medium_@2x_2k.jpg); }
+  @include breakpoint (laptop) { background-image: url(../img/hero/hero_03_land_large_@2x_3k.jpg); }
+  @include breakpoint (desktop) { background-image: url(../img/hero/hero_03_land_xlarge_@2x_5k.jpg); }
+}
+.hero-04 {
+  background-image: url(../img/hero/hero_04_portrait_small_@2x_1k.jpg);
+  @include breakpoint (phablet) { background-image: url(../img/hero/hero_04_portrait_medium_@2x_2k.jpg); }
+  @include breakpoint (tablet) { background-image: url(../img/hero/hero_04_land_medium_@2x_2k.jpg); }
+  @include breakpoint (laptop) { background-image: url(../img/hero/hero_04_land_large_@2x_3k.jpg); }
+  @include breakpoint (desktop) { background-image: url(../img/hero/hero_04_land_xlarge_@2x_5k.jpg); }
 }
 
 .white-overlay {
@@ -317,19 +325,43 @@ button.flickity-prev-next-button svg {
 
       @include breakpoint (laptop) {
         &:hover {
-          span {
+          .js-hero-bg {
             width: 100%;
             transition: width 500ms ease-in, color 300ms ease;
-            background-image: url(../img/hero/placeholder_land_large_@2x_3k.jpg);
             background-repeat: no-repeat;
             background-size: cover;
-            background-position: 70% 30%;
+            background-position: center center;
             background-attachment: fixed;
-
-            @include breakpoint (desktop) {
-              background-image: url(../img/hero/placeholder_land_xlarge_@2x_5k.jpg);
-            }
             color: transparentize(#fff, 0.2);
+
+            &.hero-01 {
+              background-image: url(../img/hero/hero_01_portrait_small_@2x_1k.jpg);
+              @include breakpoint (phablet) { background-image: url(../img/hero/hero_01_portrait_medium_@2x_2k.jpg); }
+              @include breakpoint (tablet) { background-image: url(../img/hero/hero_01_land_medium_@2x_2k.jpg); }
+              @include breakpoint (laptop) { background-image: url(../img/hero/hero_01_land_large_@2x_3k.jpg); }
+              @include breakpoint (desktop) { background-image: url(../img/hero/hero_01_land_xlarge_@2x_5k.jpg); }
+            }
+            &.hero-02 {
+              background-image: url(../img/hero/hero_02_portrait_small_@2x_1k.jpg);
+              @include breakpoint (phablet) { background-image: url(../img/hero/hero_02_portrait_medium_@2x_2k.jpg); }
+              @include breakpoint (tablet) { background-image: url(../img/hero/hero_02_land_medium_@2x_2k.jpg); }
+              @include breakpoint (laptop) { background-image: url(../img/hero/hero_02_land_large_@2x_3k.jpg); }
+              @include breakpoint (desktop) { background-image: url(../img/hero/hero_02_land_xlarge_@2x_5k.jpg); }
+            }
+            &.hero-03 {
+              background-image: url(../img/hero/hero_03_portrait_small_@2x_1k.jpg);
+              @include breakpoint (phablet) { background-image: url(../img/hero/hero_03_portrait_medium_@2x_2k.jpg); }
+              @include breakpoint (tablet) { background-image: url(../img/hero/hero_03_land_medium_@2x_2k.jpg); }
+              @include breakpoint (laptop) { background-image: url(../img/hero/hero_03_land_large_@2x_3k.jpg); }
+              @include breakpoint (desktop) { background-image: url(../img/hero/hero_03_land_xlarge_@2x_5k.jpg); }
+            }
+            &.hero-04 {
+              background-image: url(../img/hero/hero_04_portrait_small_@2x_1k.jpg);
+              @include breakpoint (phablet) { background-image: url(../img/hero/hero_04_portrait_medium_@2x_2k.jpg); }
+              @include breakpoint (tablet) { background-image: url(../img/hero/hero_04_land_medium_@2x_2k.jpg); }
+              @include breakpoint (laptop) { background-image: url(../img/hero/hero_04_land_large_@2x_3k.jpg); }
+              @include breakpoint (desktop) { background-image: url(../img/hero/hero_04_land_xlarge_@2x_5k.jpg); }
+            }
           }
         }
       }

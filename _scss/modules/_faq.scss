@@ -14,12 +14,9 @@ Primary style
 
 -------------------------------- */
 
-*::after, *::before {
-  content: '';
-}
-
 body::after {
   /* overlay layer visible on small devices when the right panel slides in */
+  content: '';
   position: fixed;
   top: 0;
   left: 0;
@@ -33,6 +30,7 @@ body::after {
   transition: opacity .3s 0s, visibility 0s .3s;
 }
 body.cd-overlay::after {
+  content: '';
   visibility: visible;
   opacity: 1;
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
@@ -73,7 +71,7 @@ Main components
   margin: 0 auto;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
-.faq:after {
+.faq::after {
   content: "";
   display: table;
   clear: both;
@@ -107,6 +105,7 @@ Main components
 
 .categories a::before, .categories a::after {
   /* plus icon on the right */
+  content: '';
   position: absolute;
   top: 50%;
   right: 16px;
@@ -116,6 +115,7 @@ Main components
   background-color: lighten($accentBlue, 20%);
 }
 .categories a::after {
+  content: '';
   transform: rotate(90deg);
 }
 .categories li:last-child a {
@@ -140,6 +140,7 @@ Main components
     transition: background 0.2s, padding 0.2s;
   }
   .categories a::before, .categories a::after {
+    content: '';
     display: none;
   }
   .no-touch .categories a:hover {
@@ -160,6 +161,7 @@ Main components
   }
   .categories a::before {
     /* decorative rectangle on the left visible for the selected item */
+    content: '';
     display: block;
     top: 0;
     right: auto;
@@ -176,6 +178,7 @@ Main components
     background: darken($accentBlue, 5%) !important;
   }
   .categories .selected::before {
+    content: '';
     opacity: 1;
   }
   .categories.is-fixed {
@@ -259,6 +262,7 @@ Main components
 }
 .cd-close-panel::before, .cd-close-panel::after {
   /* close icon in CSS */
+  content: '';
   position: absolute;
   top: 16px;
   left: 12px;
@@ -268,9 +272,11 @@ Main components
   background: $accentOrange;
 }
 .cd-close-panel::before {
+  content: '';
   transform: rotate(45deg);
 }
 .cd-close-panel::after {
+  content: '';
   transform: rotate(-45deg);
 }
 .cd-close-panel.move-left {
@@ -337,11 +343,11 @@ Main components
   margin: 1.6em 0 .4em;
   line-height: 1.2;
 
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-  }
+  // text-decoration: none;
+  //
+  // &:hover {
+  //   text-decoration: underline;
+  // }
 }
 @media only screen and (min-width: 768px) {
   .trigger {
@@ -353,6 +359,7 @@ Main components
   }
   .trigger::before, .trigger::after {
     /* arrow icon on the right */
+    content: '';
     position: absolute;
     right: 24px;
     top: 50%;
@@ -369,16 +376,20 @@ Main components
     transition-duration: 0.2s;
   }
   .trigger::before {
+    content: '';
     transform: rotate(45deg);
     right: 32px;
   }
   .trigger::after {
+    content: '';
     transform: rotate(-45deg);
   }
   .content-visible .trigger::before {
+    content: '';
     transform: rotate(-45deg);
   }
   .content-visible .trigger::after {
+    content: '';
     transform: rotate(45deg);
   }
 }
@@ -389,6 +400,7 @@ Main components
   .faq-img-container {
     width: 100%;
     max-width: 300px;
+    margin: 0 auto;
   }
 
   [class*='col-'] {

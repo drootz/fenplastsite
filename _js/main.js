@@ -64,8 +64,8 @@
 
 		if (selector.hasClass(prev))
 		{
+      selector.removeClass(prev);
 			selector.addClass(next);
-			selector.removeClass(prev);
 		}
 
 	} // fromToClass() END
@@ -103,6 +103,38 @@
 
 
 
+
+  /*
+   * FUNCTION
+   * pageLoadInit()
+   *
+   * reload size attributes on page resize.
+   *
+   */
+  	function pageLoadInit() {
+
+      var bgHeroClass = ['hero-01','hero-02','hero-03','hero-04'];
+      var activeHero = bgHeroClass[Math.floor(Math.random()*bgHeroClass.length)];
+
+      if ($('.m-hero').length) {
+        fromToClass($('.m-hero'), "hero-02", activeHero);
+      }
+
+      if ($('.js-hero-bg').length) {
+
+        fromToClass($('.js-hero-bg'),"hero-02", activeHero);
+      }
+
+      // if ($('body').hasClass('js-laptop') || $('body').hasClass('js-desktop')) {
+      //
+      // } else {
+      //
+      // }
+
+    }
+
+
+
   /*
    * FUNCTION
    * resizeInit()
@@ -111,6 +143,9 @@
    *
    */
   	function resizeInit() {
+
+        // TODO separate what is resize vs what is init
+
 
         var heroHeaderSection = $('#js-header-hero');
         if ($('body').hasClass('js-laptop') || $('body').hasClass('js-desktop')) {
@@ -625,6 +660,7 @@ $( document ).ready(function() {
 
   });
 
+  pageLoadInit();
   resizeInit();
 
 
@@ -661,10 +697,10 @@ $( document ).ready(function() {
             target = target.length ? target : $('[id=' + this.hash.slice(1) +']');
             var targetId = target.attr("id");
             var targetSelector = $("#"+targetId);
-            console.log(targetId);
+            // console.log(targetId);
             if (target.length) {
               $('html,body').animate({
-                scrollTop: target.offset().top - 93
+                scrollTop: target.offset().top - 83
               }, 500 , function() {
               	targetSelector.addClass("js-anim-bg");
   				setTimeout( function() {
@@ -709,7 +745,7 @@ $( document ).ready(function() {
     			closeFaqsContainer.addClass('move-left');
     			$('body').addClass('cd-overlay');
     		} else {
-    	        $('body,html').animate({ 'scrollTop': target.offset().top - 138}, 200);
+    	        $('body,html').animate({ 'scrollTop': target.offset().top - 132}, 200);
     		}
     	});
 
@@ -768,7 +804,7 @@ $( document ).ready(function() {
   	function updateCategoryPosition() {
   		var top = $('.faq').offset().top,
   			height = jQuery('.faq').height() - jQuery('.categories').height(),
-  			margin = 138;
+  			margin = 132;
   		if( top - margin <= $(window).scrollTop() && top - margin + height > $(window).scrollTop() ) {
   			var leftValue = faqsCategoriesContainer.offset().left,
   				widthValue = faqsCategoriesContainer.width();
@@ -805,7 +841,7 @@ $( document ).ready(function() {
   				activeCategory = $('.categories a[href="#'+actual.attr('id')+'"]'),
   				topSection = (activeCategory.parent('li').is(':first-child')) ? 0 : Math.round(actual.offset().top);
 
-  			if ( ( topSection - 138 <= $(window).scrollTop() ) && ( Math.round(actual.offset().top) + actual.height() + margin - 138 > $(window).scrollTop() ) ) {
+  			if ( ( topSection - 132 <= $(window).scrollTop() ) && ( Math.round(actual.offset().top) + actual.height() + margin - 138 > $(window).scrollTop() ) ) {
   				activeCategory.addClass('selected');
   			}else {
   				activeCategory.removeClass('selected');

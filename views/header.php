@@ -129,26 +129,26 @@
 
               <!-- Mobile/Device Menu -->
               <ul id="js-nav-menu" class="clearfix">
-                <li><a href="index.php"><?= gettext( 'Acceuil' ); ?></a></li>
-                <li class="js-sub-nav-btn"><span><?= _( 'Produits' ); ?></span>
+                <li><a href="index.php"><?= gettext( 'acceuil' ); ?></a></li>
+                <li class="js-sub-nav-btn"><span><?= _( 'produits' ); ?></span>
                     <ul class="m-sub-nav clearfix is-collapsed">
-                      <li><a href="produit-portes.php"><?= _( 'Portes' ); ?></a></li>
-                      <li><a href="produit-fenetres.php"><?= _( 'Fenêtres' ); ?></a></li>
-                      <li><a href="produit-balcons.php"><?= _( 'Rampes et Balcons' ); ?></a></li>
-                      <li><a href="produit-revetement-exterieur.php"><?= _( 'Revêtement Extérieur' ); ?></a></li>
+                      <li><a href="produit-portes.php"><?= _( 'portes d\'acier' ); ?></a></li>
+                      <li><a href="produit-fenetres.php"><?= _( 'fenêtres' ); ?></a></li>
+                      <li><a href="produit-balcons.php"><?= _( 'rampes et balcons' ); ?></a></li>
+                      <li><a href="produit-revetement-exterieur.php"><?= _( 'revêtement extérieur' ); ?></a></li>
                     </ul>
                 </li>
-                <li class="js-sub-nav-btn"><span><?= _( 'Services' ); ?></span>
+                <li class="js-sub-nav-btn"><span><?= _( 'services' ); ?></span>
                     <ul class="m-sub-nav clearfix is-collapsed">
-                      <li><a href="services.php"><?= _( 'Installation Professionel' ); ?></a></li>
-                      <li><a href="services.php"><?= _( 'Clef en Main' ); ?></a></li>
-                      <li><a href="services.php"><?= _( 'Perçage de Béton' ); ?></a></li>
-                      <li><a href="services.php"><?= _( 'Modification de Dimension' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'installation professionel' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'clef en main' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'perçage de béton' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'modification de dimension' ); ?></a></li>
                     </ul>
                 </li>
-                <li><a href="realisations.php"><?= _( 'Réalisations' ); ?></a></li>
-                <li><a href="faq.php"><?= _( 'F.A.Q.' ); ?></a></li>
-                <li><a href="#nous-joindre-fenplast"><?= _( 'Nous Joindre' ); ?></a></li>
+                <li><a href="realisations.php"><?= _( 'réalisations' ); ?></a></li>
+                <li><a href="faq.php"><?= _( 'f.a.q.' ); ?></a></li>
+                <li><a href="#nous-joindre-fenplast"><?= _( 'nous joindre' ); ?></a></li>
               </ul>
 
             </nav>

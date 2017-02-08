@@ -2,7 +2,7 @@
 
 
 
-  <div id="js-header-hero" class="m-hero">
+  <div id="js-header-hero" class="m-hero hero-02">
     <div class="white-overlay">
 
       <div class="l-wrapper">
@@ -15,9 +15,9 @@
 
                    <div class="m-slider-slide slide-greetings">
                      <h1 class="clearfix">
-                       <div class="m-title clearfix"><span>Le</span></div>
-                       <div class="m-title clearfix"><span>Marchand</span></div>
-                       <div class="m-title clearfix"><span>De Fenêtres</span></div>
+                       <div class="m-title clearfix"><span class="js-hero-bg hero-02">Le</span></div>
+                       <div class="m-title clearfix"><span class="js-hero-bg hero-02">Marchand</span></div>
+                       <div class="m-title clearfix"><span class="js-hero-bg hero-02">De Fenêtres</span></div>
                      </h1>
                    </div>
 
@@ -98,6 +98,12 @@
               <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
               <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
               <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
             </ul>
 
           </div>
@@ -141,7 +147,7 @@
 
 
 
-  <div class="m-hero">
+  <div class="m-hero hero-02">
     <div id="clientele-fenplast" class="l-section m-home-second white-overlay">
       <div class="l-wrapper">
         <!-- <h3>Section "Témoignage"</h3> -->
@@ -227,7 +233,7 @@
 
 
 
-  <div class="m-hero">
+  <div class="m-hero hero-02">
     <div id="information-compagnie" class="white-overlay l-section m-home-fourth">
       <div class="l-wrapper">
         <h3>Notre Entreprise</h3>

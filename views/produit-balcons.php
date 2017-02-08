@@ -2,7 +2,7 @@
 
 
 
-  <div class="m-hero">
+  <div class="m-hero hero-02">
     <div id="produit-balcons" class="l-section m-produit-balcons white-overlay">
       <div class="l-wrapper">
 

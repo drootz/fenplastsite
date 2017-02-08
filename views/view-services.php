@@ -1,5 +1,5 @@
 
-  <div class="m-hero">
+  <div class="m-hero hero-02">
     <div class="l-section white-overlay m-services-header">
       <div class="l-wrapper">
 
@@ -57,7 +57,7 @@
 
 
 
-  <div class="m-hero">
+  <div class="m-hero hero-02">
     <div id="clefs-en-main" class="l-section m-services-second white-overlay">
       <div class="l-wrapper">
 
@@ -104,8 +104,8 @@
 
 
 
-  <div class="m-hero">
-    <div id="dimension" class="l-section m-services-fouth white-overlay">
+  <div class="m-hero hero-02">
+    <div id="dimension" class="l-section m-services-fourth white-overlay">
       <div class="l-wrapper">
 
           <h2><?= _( 'Modification de Dimension' ); ?></h2>

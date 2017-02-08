@@ -141,7 +141,7 @@
   @include breakpoint (laptop) {
     background-color: transparentize(#fff, 0.1);
     position: fixed;
-    padding: 10px 15px;
+    padding: 10px 15px 0;
   }
 }
 
@@ -180,6 +180,7 @@
   top: 59px; right: 0px;
   z-index: 20;
   font-size: 1.2em;
+  font-variant: small-caps;
 
   &.is-opened {
     width: 100%;
@@ -235,7 +236,7 @@
         margin-left: 15px;
       }
 
-      &.js-sub-nav-btn:hover {
+      &.js-sub-nav-btn:hover{
         background: $accentOrange;
 
         span {
@@ -266,8 +267,9 @@
       line-height: 40px;
 
       &:hover {
-        color: $accentOrange;
+        color: #fff;
         text-decoration: underline;
+        background: $accentOrange;
       }
     }
 

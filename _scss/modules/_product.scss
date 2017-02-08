@@ -59,3 +59,32 @@
     text-align: right;
   }
 }
+
+
+
+
+
+
+
+.m-product-list {
+  display: block;
+  max-width: 400px;
+  list-style-type: none;
+  margin: auto;
+  padding: 25px 25px;
+  text-align: center;
+  margin-bottom: 25px;
+
+  @include breakpoint (laptop) {
+    padding: 25px 25px;
+    margin-bottom: 0;
+  }
+
+  li:last-child {
+    margin-bottom: 0;
+  }
+
+  a {
+    font-size: 1.2em;
+  }
+}

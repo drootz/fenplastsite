@@ -1,7 +1,7 @@
 
 
 
-  <div class="m-hero">
+  <div class="m-hero hero-02">
     <div class="l-section m-faq white-overlay">
       <div class="l-wrapper">
 
@@ -20,7 +20,7 @@
 
             <section class="faq">
             	<ul class="categories">
-            		<li><a class="selected" href="#portes-et-fenetres"><?= _( 'Je rénove' ); ?></a></li>
+            		<li><a class="selected" href="#je-renove"><?= _( 'Je rénove' ); ?></a></li>
             		<li><a href="#rampes-et-balcons"><?= _( 'Rampes et Balcons' ); ?></a></li>
             		<li><a href="#revetement-exterieur"><?= _( 'Revêtements' ); ?></a></li>
             		<li><a href="#garantie"><?= _( 'Garantie' ); ?></a></li>
@@ -44,7 +44,7 @@
                       <div class="row">
                         <div class="col-pad-04">
                           <div class="faq-img-container">
-                            <img src="img/faq/window-frame-white.jpg" alt="Dimension de Fenêtre" width="100%" height="auto" />
+                            <img src="img/faq/window-frame-white.png" alt="Dimension de Fenêtre" width="100%" height="auto" />
                           </div>
                         </div>
                         <div class="col-pad-08">
@@ -327,7 +327,7 @@
     </div>
   </div>
 
-  <div class="m-hero">
+  <div class="m-hero hero-02">
     <div class="l-section white-overlay">
       <div class="l-wrapper">
 
