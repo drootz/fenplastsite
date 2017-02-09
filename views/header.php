@@ -55,13 +55,12 @@
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src="https://use.fontawesome.com/57fd7ffc48.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="css/vendor/flickity2-0-5.css">
     <link rel="stylesheet" href="css/page.css">
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="css/style-ie.css"/>
     <![endif]-->
 
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script async src="js/vendor/modernizr-2.6.2.min.js"></script>
 
 </head>
 
@@ -91,9 +90,9 @@
     </ul> -->
 
     <!-- Loading Spinner -->
-    <div class="m-loading">
+    <!-- <div class="m-loading">
         <div><i class="fa fa-circle-o-notch fa-lg fa-spin" aria-hidden="true"></i>&nbsp;&nbsp;<?= _( 'Patientez s\'il vous plaît...' ) ?></div>
-    </div>
+    </div> -->
 
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -129,26 +128,26 @@
 
               <!-- Mobile/Device Menu -->
               <ul id="js-nav-menu" class="clearfix">
-                <li><a href="index.php"><?= gettext( 'acceuil' ); ?></a></li>
-                <li class="js-sub-nav-btn"><span><?= _( 'produits' ); ?></span>
+                <li><a href="index.php"><?= gettext( 'ACCEUIL' ); ?></a></li>
+                <li class="js-sub-nav-btn"><span><?= _( 'PRODUITS' ); ?></span>
                     <ul class="m-sub-nav clearfix is-collapsed">
-                      <li><a href="produit-portes.php"><?= _( 'portes d\'acier' ); ?></a></li>
-                      <li><a href="produit-fenetres.php"><?= _( 'fenêtres' ); ?></a></li>
-                      <li><a href="produit-balcons.php"><?= _( 'rampes et balcons' ); ?></a></li>
-                      <li><a href="produit-revetement-exterieur.php"><?= _( 'revêtement extérieur' ); ?></a></li>
+                      <li><a href="produit-portes.php"><?= _( 'PORTES D\'ACIER' ); ?></a></li>
+                      <li><a href="produit-fenetres.php"><?= _( 'FENÊTRES' ); ?></a></li>
+                      <li><a href="produit-balcons.php"><?= _( 'RAMPES ET BALCONS' ); ?></a></li>
+                      <li><a href="produit-revetement-exterieur.php"><?= _( 'REVÊTEMENT EXTÉRIEUR' ); ?></a></li>
                     </ul>
                 </li>
-                <li class="js-sub-nav-btn"><span><?= _( 'services' ); ?></span>
+                <li class="js-sub-nav-btn"><span><?= _( 'SERVICES' ); ?></span>
                     <ul class="m-sub-nav clearfix is-collapsed">
-                      <li><a href="services.php"><?= _( 'installation professionel' ); ?></a></li>
-                      <li><a href="services.php"><?= _( 'clef en main' ); ?></a></li>
-                      <li><a href="services.php"><?= _( 'perçage de béton' ); ?></a></li>
-                      <li><a href="services.php"><?= _( 'modification de dimension' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'INSTALLATION PROFESSIONEL' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'CLEF EN MAIN' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'PERÇAGE DE BÉTON' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'MODIFICATION DE DIMENSION' ); ?></a></li>
                     </ul>
                 </li>
-                <li><a href="realisations.php"><?= _( 'réalisations' ); ?></a></li>
-                <li><a href="faq.php"><?= _( 'f.a.q.' ); ?></a></li>
-                <li><a href="#nous-joindre-fenplast"><?= _( 'nous joindre' ); ?></a></li>
+                <li><a href="realisations.php"><?= _( 'RÉALISATIONS' ); ?></a></li>
+                <li><a href="faq.php"><?= _( 'F.A.Q.' ); ?></a></li>
+                <li><a href="#nous-joindre-fenplast"><?= _( 'NOUS JOINDRE' ); ?></a></li>
               </ul>
 
             </nav>

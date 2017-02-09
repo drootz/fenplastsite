@@ -157,9 +157,6 @@
           $('#js-header-hero').css('height', vh);
           $('#js-carousel-container').css('height', carouselHeight);
 
-          // Margon for absolute el in carousel
-          var marginCarousel = $('.js-promo-carousel').parent().height();
-          $('.js-promo-carousel').css('margin-top', (marginCarousel/2));
 
           if ($('.js-main-carousel').length) {
             $('.js-main-carousel').flickity({
@@ -276,6 +273,14 @@
             });
           }
         }
+
+        // Margon for absolute el in carousel
+        $('.js-promo-carousel').each(function(index, el) {
+          var marginCarousel = $(this).parent().height();
+          $(this).css('margin-top', (marginCarousel/2));
+        });
+        // var marginCarousel = $('.js-promo-carousel').parent().height();
+        // $('.js-promo-carousel').css('margin-top', (marginCarousel/2));
 
         var allVideos = $("iframe.vimeo");
         // Resize all videos according to their own aspect ratio
@@ -871,20 +876,23 @@ $( document ).ready(function() {
 		return (result === null) ? null : result[1];
 	}
 
-	var spinner = $(".m-loading");
-	$(document).ready(function () {
-	    $(document).ajaxStart(function () {
-	    	if (!spinner.hasClass('isLoading'))
-	    	{
-	    		spinner.addClass('isLoading');
-	    	}
-	    }).ajaxStop(function () {
-	    	if (spinner.hasClass('isLoading'))
-	    	{
-	    		spinner.removeClass('isLoading');
-	    	}
-	    });
-	});
+
+  if ($('.m-loading').length) {
+  	var spinner = $(".m-loading");
+  	// $(document).ready(function () {
+  	    $(document).ajaxStart(function () {
+  	    	if (!spinner.hasClass('isLoading'))
+  	    	{
+  	    		spinner.addClass('isLoading');
+  	    	}
+  	    }).ajaxStop(function () {
+  	    	if (spinner.hasClass('isLoading'))
+  	    	{
+  	    		spinner.removeClass('isLoading');
+  	    	}
+  	    });
+  	// });
+  }
 
 	// input type="tel" formatting on keyup behavior
 	$("[type='tel']").keyup( function() {

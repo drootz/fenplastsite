@@ -172,8 +172,8 @@
     <!-- <script src="js/vendor/flickity.pkgd2-0-5.js"></script> -->
 
     <script src="js/main-min.js"></script>
-
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsNjXlBV6NkmDOSCXHXVdhGEtmXVeW6K8&language=fr&region=CA&callback=initMap"></script>
+
 
     <script type="text/javascript">
 

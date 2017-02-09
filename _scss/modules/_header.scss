@@ -60,7 +60,7 @@
 
   @include breakpoint (laptop) {
     position: absolute;
-    bottom: inherit; left: inherit; right: 0px; top: 6px;
+    bottom: inherit; left: inherit; right: 0px; top: 5px;
     width: 250px;
     // outline: 1px solid green;
   }
@@ -179,8 +179,7 @@
   width: 199.75px;
   top: 59px; right: 0px;
   z-index: 20;
-  font-size: 1.2em;
-  font-variant: small-caps;
+  font-size: 0.9em;
 
   &.is-opened {
     width: 100%;

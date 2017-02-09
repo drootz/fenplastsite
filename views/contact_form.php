@@ -65,3 +65,9 @@
 
     </div>
   </div>
+
+
+  <!-- Loading Spinner -->
+  <div class="m-loading">
+      <div><i class="fa fa-circle-o-notch fa-lg fa-spin" aria-hidden="true"></i>&nbsp;&nbsp;<?= _( 'Patientez s\'il vous plaît...' ) ?></div>
+  </div>

@@ -377,7 +377,7 @@ button.flickity-prev-next-button svg {
 
 
 .slide-promo-fenplast {
-  background-image: url(../img/promo/promo-fenplast-lemarchanddefenetres.jpg);
+  background-image: url(../img/promo/promo-fenplast-lemarchanddefenetres_small.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -385,7 +385,9 @@ button.flickity-prev-next-button svg {
   h2 {
     color: transparent;
   }
-
+  @include breakpoint (tablet) {
+    background-image: url(../img/promo/promo-fenplast-lemarchanddefenetres.jpg);
+  }
   @include breakpoint (laptop) {
     background-position: center center;
     background-size: contain;
@@ -396,14 +398,22 @@ button.flickity-prev-next-button svg {
 .slide-promo-renovert {
   background-color: rgba(255,255,255,0.90);
   text-align: center;
+  position: relative;
 
   @include breakpoint (laptop) {
     box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.3);
   }
 
   .txt-wrapper {
-    width: 100%;
-    padding: 25px 0px 0;
+    // width: 100%;
+    // padding: 25px 0px 0;
+    // outline: 1px solid red;
+    position: absolute;
+    padding: 0;
+    width: 300px;
+    height: 520px;
+    margin-left: 50%; left: -150px;
+    margin-top: 50%; top: -260px;
 
     @include breakpoint (laptop) {
       position: absolute;
@@ -438,17 +448,24 @@ button.flickity-prev-next-button svg {
 .slide-promo-accordd {
   background-color: rgba(255,255,255,0.90);
   text-align: center;
+  position: relative;
 
   @include breakpoint (laptop) {
     box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.3);
   }
 
   .txt-wrapper {
-    width: 100%;
-    padding: 25px 0px 0;
+    // outline: 1px solid red;
+    // width: 100%;
+    // padding: 25px 0px 0;
+    position: absolute;
+    padding: 0;
+    width: 300px;
+    height: 320px;
+    margin-left: 50%; left: -150px;
+    margin-top: 50%; top: -150px;
 
     @include breakpoint (laptop) {
-      // outline: 1px solid red;
       position: absolute;
       padding: 0;
       width: 600px;
