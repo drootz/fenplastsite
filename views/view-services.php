@@ -20,6 +20,7 @@
               <li><a href="#clefs-en-main"><?= _( 'Clefs en Main' ); ?></a></li>
               <li><a href="#percage"><?= _( 'Perçage de Béton' ); ?></a></li>
               <li><a href="#dimension"><?= _( 'Modification de Dimension' ); ?></a></li>
+              <li><a href="#garantie"><?= _( 'Garantie' ); ?></a></li>
             </ul>
           </div>
         </div>
@@ -122,5 +123,26 @@
           </div>
 
       </div>
+    </div>
+  </div>
+
+
+
+  <div id="garantie" class="l-section m-services-fifth">
+    <div class="l-wrapper">
+
+        <h2><?= _( 'Garantie' ); ?></h2>
+
+        <div class="row">
+          <div class="col-04">
+            <div>
+              image
+            </div>
+          </div>
+          <div class="col-08">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
+          </div>
+        </div>
+
     </div>
   </div>

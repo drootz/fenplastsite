@@ -120,21 +120,21 @@
           <div class="col-pad-04">
             <div class="m-feature-container left">
               <div class="m-icon ico-install"></div>
-              <h2><a href="#">Installation Professionelle</a></h2>
+              <h2><a href="services.php">Installation Professionelle</a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>
           <div class="col-pad-04">
             <div class="m-feature-container">
               <div class="m-icon ico-satisfaction main"></div>
-              <h2><a href="#">Qualité Supérieur</a></h2>
+              <h2><a href="services.php">Qualité Supérieur</a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>
           <div class="col-pad-04">
             <div class="m-feature-container right">
               <div class="m-icon ico-key"></div>
-              <h2><a href="#">Service Clefs<br />en Main</a></h2>
+              <h2><a href="services.php">Service Clefs<br />en Main</a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>

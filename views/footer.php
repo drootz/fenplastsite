@@ -137,7 +137,7 @@
 
       <div class="row m-copyright">
         <div class="col-12">
-            <div class="m-float-left"><small><?= date("Y")?> &copy; <?= _( 'Le Marchand de Fenêtre' ); ?>, <?= _('Tous droits réservé'); ?></small></div>
+            <div class="m-float-left"><small><?= date("Y")?> &copy; <?= _( 'Le Marchand de Fenêtres' ); ?>, <?= _('Tous droits réservé'); ?></small></div>
             <div class="m-float-left l-laptop">&nbsp;-&nbsp;</div>
             <div class="m-float-left m-copy-container">
               <small><?= _( 'Developpement web par ' ); ?><a href='mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#46;&#100;&#97;&#110;&#105;&#101;&#108;&#114;&#97;&#99;&#105;&#110;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;' title="&#109;&#97;&#105;&#108;&#116;&#111;&#46;&#100;&#97;&#110;&#105;&#101;&#108;&#114;&#97;&#99;&#105;&#110;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">Daniel Racine</a></small>
