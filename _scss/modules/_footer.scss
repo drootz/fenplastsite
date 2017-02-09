@@ -7,6 +7,10 @@
   @include breakpoint (laptop) {
     padding-bottom: 10px;
   }
+  a {
+    color: #1EAEDB; }
+  a:hover {
+    color: #0FA0CE; }
 }
 
 .m-googlemap-container {

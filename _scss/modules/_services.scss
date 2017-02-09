@@ -1,7 +1,22 @@
+[class*='m-services-'] {
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.8em;
+  }
 
+  /* Larger than phablet */
+  @include breakpoint (tablet) {
+  	h2 {
+      // font-size: 3em;
+      // margin-bottom: 1.2em;
+    }
+  }
+}
 
 .m-services-header {
   padding: 150px 15px 50px;
+
+
 
   .m-txt-coll-02 {
 
@@ -31,6 +46,8 @@
 
 }
 
+
+
 .m-service-list {
   list-style-type: none;
   margin: 0;
@@ -43,4 +60,81 @@
   a {
     font-size: 1.2em;
   }
+}
+
+
+
+.m-img {
+  width: 225px;
+  height: 225px;
+  margin: 0px auto 25px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @include breakpoint (laptop) {
+    margin: 0 0 15px;
+  }
+
+  // SERVICE ICO
+  &.img-install {
+    background-image: url(../img/ico/ico-lemarchanddefenetres-installation.png);
+  }
+
+  &.img-satisfaction {
+    background-image: url(../img/ico/ico-lemarchanddefenetres-satisfaction.png);
+  }
+
+  &.img-key {
+    background-image: url(../img/ico/ico-lemarchanddefenetres-clefenmain_transparent.png);
+  }
+
+  &.img-dimension {
+    background-image: url(../img/ico/ico-lemarchanddefenetres-dimension.png);
+  }
+
+  &.img-beton {
+    background-image: url(../img/ico/ico-lemarchanddefenetres-beton.png);
+  }
+
+  // PRODUCT ICO
+  &.img-eco {
+    background-image: url(../img/product/eco_thumb.jpg);
+  }
+
+  &.img-ecoPlus {
+    background-image: url(../img/product/ecoPlus_thumb.jpg);
+  }
+
+  &.img-iso { background-image: url(../img/product/iso_thumb.jpg); }
+
+  &.img-isoPlus { background-image: url(../img/product/isoPlus_thumb.jpg); }
+  &.img-isoPlusAuvent {
+    background-image: url(../img/product/isoPlusAuvent_thumb.jpg);
+    background-position: top center;
+  }
+
+  &.img-isoVisionDouble { background-image: url(../img/product/isoVisionDouble_thumb.jpg); }
+  &.img-isoVisionSimple { background-image: url(../img/product/isoVisionSimple_thumb.jpg); }
+
+  &.img-isoSaillie { background-image: url(../img/product/isoSaillie_thumb.jpg); }
+
+  &.img-ecoPano { background-image: url(../img/product/ecoPano_thumb.jpg); }
+  &.img-isoPano { background-image: url(../img/product/isoPano_thumb.jpg); }
+
+  &.img-ecoGeo { background-image: url(../img/product/ecoGeo_thumb.jpg); }
+  &.img-isoGeo { background-image: url(../img/product/isoGeo_thumb.jpg); }
+
+  &.img-isoVentDouble { background-image: url(../img/product/isoVentDouble_thumb.jpg); }
+  &.img-isoVentSimple { background-image: url(../img/product/isoVentSimple_thumb.jpg); }
+
+  // PORTES
+  &.img-caloPatio { background-image: url(../img/product/caloPatio_thumb.jpg); }
+  &.img-caloFixe { background-image: url(../img/product/caloFixe_thumb.jpg); }
+  &.img-porteAcier-01 {
+    background-image: url(../img/product/porteAcier_01_thumb.jpg);
+    margin-bottom: 0px;
+  }
+  &.img-porteAcier-02 { background-image: url(../img/product/porteAcier_02_thumb.jpg);
+  margin-top: -20px; }
 }

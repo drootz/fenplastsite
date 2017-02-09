@@ -1,4 +1,21 @@
+[class*='m-product-'] {
+  h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.8em;
+  }
 
+  h3 {
+    font-size: 2em;
+  }
+
+  /* Larger than phablet */
+  @include breakpoint (tablet) {
+  	h2 {
+      // font-size: 3em;
+      // margin-bottom: 1.2em;
+    }
+  }
+}
 
 .m-product-wrapper {
   background: transparentize(#fff,0.1);
@@ -87,4 +104,9 @@
   a {
     font-size: 1.2em;
   }
+}
+
+
+.m-list-bullet {
+  list-style-type: disc;
 }

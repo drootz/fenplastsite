@@ -40,12 +40,10 @@
         <h2><?= _( 'Installation Professionelle' ); ?></h2>
 
         <div class="row">
-          <div class="col-04">
-            <div>
-              image
-            </div>
+          <div class="col-03">
+            <div class="m-img img-install"></div>
           </div>
-          <div class="col-08">
+          <div class="col-09">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
           </div>
         </div>
@@ -65,12 +63,10 @@
           <h2><?= _( 'Clefs en Main' ); ?></h2>
 
           <div class="row">
-            <div class="col-04">
-              <div>
-                image
-              </div>
+            <div class="col-03">
+              <div class="m-img img-key"></div>
             </div>
-            <div class="col-08">
+            <div class="col-09">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>
@@ -90,12 +86,10 @@
         <h2><?= _( 'Perçage de Béton' ); ?></h2>
 
         <div class="row">
-          <div class="col-04">
-            <div>
-              image
-            </div>
+          <div class="col-03">
+            <div class="m-img img-beton"></div>
           </div>
-          <div class="col-08">
+          <div class="col-09">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
           </div>
         </div>
@@ -112,12 +106,10 @@
           <h2><?= _( 'Modification de Dimension' ); ?></h2>
 
           <div class="row">
-            <div class="col-04">
-              <div>
-                image
-              </div>
+            <div class="col-03">
+              <div class="m-img img-dimension"></div>
             </div>
-            <div class="col-08">
+            <div class="col-09">
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>
@@ -134,12 +126,10 @@
         <h2><?= _( 'Garantie' ); ?></h2>
 
         <div class="row">
-          <div class="col-04">
-            <div>
-              image
-            </div>
+          <div class="col-03">
+            <div class="m-img img-satisfaction main"></div>
           </div>
-          <div class="col-08">
+          <div class="col-09">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
           </div>
         </div>
