@@ -9,11 +9,13 @@
   z-index: 15;
   line-height: 15px;
   height: 15px;
+  font-weight: bold;
 
   @include breakpoint (laptop) {
     top: -6px; right: 0; left: inherit;
     line-height: 12px;
     height: 12px;
+    font-weight: normal;
   }
 
   ul {
@@ -38,7 +40,7 @@
       // }
     }
   }
-  
+
   a {
     color: #1EAEDB; }
   a:hover {
@@ -60,7 +62,7 @@
   position: fixed;
   bottom: 0; left: 0; right: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 150;
   padding: 0;
 
   @include breakpoint (laptop) {

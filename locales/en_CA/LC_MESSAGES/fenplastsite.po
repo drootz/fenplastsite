@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Fenplast Distributor Site\n"
-"POT-Creation-Date: 2017-02-01 22:10-0500\n"
-"PO-Revision-Date: 2017-02-01 22:13-0500\n"
+"POT-Creation-Date: 2017-02-09 20:02-0500\n"
+"PO-Revision-Date: 2017-02-09 20:05-0500\n"
 "Last-Translator: Daniel Racine <idaniel.racine@gmail.com>\n"
 "Language-Team: Daniel Racine <mailto.danielracine@gmail.com>\n"
 "Language: en_CA\n"
@@ -66,7 +66,11 @@ msgstr ""
 "Thank you!\n"
 "\n"
 
-#: public/index.php:6 views/header.php:132
+#: public/faq.php:6
+msgid "Foire aux Questions"
+msgstr ""
+
+#: public/index.php:6
 msgid "Acceuil"
 msgstr "Home"
 
@@ -81,6 +85,18 @@ msgstr "Fenplast Windows"
 #: public/produit-portes.php:6
 msgid "Portes Fenplast"
 msgstr "Fenplast Doors"
+
+#: public/produit-revetement-exterieur.php:6 views/view-faq.php:140
+msgid "Revêtements Extérieur"
+msgstr ""
+
+#: public/realisations.php:6
+msgid "Réalisations Portes et Fenêtres"
+msgstr ""
+
+#: public/services.php:6
+msgid "Nos Services"
+msgstr ""
 
 #: views/_apology.php:2
 msgid "Désolé"
@@ -137,76 +153,82 @@ msgstr "Your Message..."
 msgid "Soumettre"
 msgstr "Submit"
 
-#: views/footer.php:11 views/footer.php:21 views/header.php:136
+#: views/contact_form.php:72 views/header.php:94
+msgid "Patientez s'il vous plaît..."
+msgstr "Please wait…"
+
+#: views/footer.php:11 views/footer.php:21
 msgid "Nous Joindre"
 msgstr "Contact Us"
 
-#: views/footer.php:27 views/header.php:15 views/header.php:17
-msgid "Distributeur Officiel Fenplast"
-msgstr "Fenplast Dealer"
+#: views/footer.php:27 views/footer.php:140
+msgid "Le Marchand de Fenêtres"
+msgstr ""
 
-#: views/footer.php:29
+#: views/footer.php:41
 msgid "1370, rue Notre-Dame"
 msgstr ""
 
-#: views/footer.php:31
+#: views/footer.php:43
 msgid "Lavaltrie"
 msgstr ""
 
-#: views/footer.php:39
+#: views/footer.php:92
 msgid "Par courriel"
 msgstr "By email"
 
-#: views/footer.php:42
+#: views/footer.php:107
 msgid "Suivez nous sur Facebook"
 msgstr "Follow us on Facebook"
 
-#: views/footer.php:50
+#: views/footer.php:120
 msgid "Heures d'ouvertures"
 msgstr "Open Hours"
 
-#: views/footer.php:52
+#: views/footer.php:122
 msgid "Dimanche"
 msgstr "Sunday"
 
-#: views/footer.php:53
+#: views/footer.php:123
 msgid "Lundi"
 msgstr "Monday"
 
-#: views/footer.php:54
+#: views/footer.php:124
 msgid "Mardi"
 msgstr "Tuesday"
 
-#: views/footer.php:55
+#: views/footer.php:125
 msgid "Mercredi"
 msgstr "Wednesday"
 
-#: views/footer.php:56
+#: views/footer.php:126
 msgid "Jeudi"
 msgstr "Thursday"
 
-#: views/footer.php:57
+#: views/footer.php:127
 msgid "Vendredi"
 msgstr "Friday"
 
-#: views/footer.php:58
+#: views/footer.php:128
 msgid "Samedi"
 msgstr "Saturday"
 
-#: views/footer.php:71
-msgid "Distributeur Fenplast"
-msgstr ""
-
-#: views/footer.php:71
+#: views/footer.php:140
 msgid "Tous droits réservé"
 msgstr "All rights reserved"
 
-#: views/footer.php:71
+#: views/footer.php:143
 msgid "Developpement web par "
 msgstr "Web Development by "
 
+#: views/header.php:15 views/header.php:17
+msgid "Distributeur Officiel Fenplast"
+msgstr "Fenplast Dealer"
+
 #: views/header.php:20
-msgid "Description du site: Distributeur Officiel Fenplast"
+msgid ""
+"Description du site: Le Marchant de Fenêtres, votre Détaillant Officiel "
+"Fenplast"
 msgstr ""
 
 #: views/header.php:28
@@ -229,25 +251,731 @@ msgstr ""
 msgid "head-og-description"
 msgstr ""
 
-#: views/header.php:95
-msgid "Patientez s'il vous plaît..."
-msgstr "Please wait…"
+#: views/header.php:120
+msgid "Le Marchant de Fenêtres - Détaillant Autorisé Fenplast"
+msgstr ""
 
-#: views/header.php:133
-msgid "Portes"
-msgstr "Doors\t"
+#: views/header.php:131
+msgid "ACCEUIL"
+msgstr "HOME"
+
+#: views/header.php:132
+msgid "PRODUITS"
+msgstr "PRODUCTS"
 
 #: views/header.php:134
-msgid "Fenêtres"
-msgstr "Windows"
+msgid "PORTES"
+msgstr "DOORS"
 
 #: views/header.php:135
+msgid "FENÊTRES"
+msgstr "WINDOWS"
+
+#: views/header.php:136
+msgid "RAMPES ET BALCONS"
+msgstr ""
+
+#: views/header.php:137
+msgid "REVÊTEMENT EXTÉRIEUR"
+msgstr ""
+
+#: views/header.php:140
+msgid "SERVICES"
+msgstr "SERVICES"
+
+#: views/header.php:142
+msgid "INSTALLATION PROFESSIONEL"
+msgstr "INSTALLATION"
+
+#: views/header.php:143
+msgid "CLEF EN MAIN"
+msgstr "TURN-KEY"
+
+#: views/header.php:144
+msgid "PERÇAGE DE BÉTON"
+msgstr "CONCRETE HOLES"
+
+#: views/header.php:145
+msgid "MODIFICATION DE DIMENSION"
+msgstr "RESIZING"
+
+#: views/header.php:146
+msgid "GARANTIE"
+msgstr "WARRANTY"
+
+#: views/header.php:149
+msgid "RÉALISATIONS"
+msgstr "REALISATIONS"
+
+#: views/header.php:150
+msgid "F.A.Q."
+msgstr "F.A.Q."
+
+#: views/header.php:151
+msgid "NOUS JOINDRE"
+msgstr "CONTACT US"
+
+#: views/header.php:161
+msgid "67 rue des Croquettes, Montréal"
+msgstr "67 rue des Croquettes, Montreal"
+
+#: views/produit-fenetres.php:15 views/produit-fenetres.php:41
+msgid "Fenêtres à battants"
+msgstr ""
+
+#: views/produit-fenetres.php:16
+msgid "Fenêtres coulissantes"
+msgstr ""
+
+#: views/produit-fenetres.php:17 views/produit-fenetres.php:177
+msgid "Fenêtres en saillie"
+msgstr ""
+
+#: views/produit-fenetres.php:22 views/produit-fenetres.php:201
+msgid "Fenêtres fixes"
+msgstr ""
+
+#: views/produit-fenetres.php:23 views/produit-fenetres.php:240
+msgid "Fenêtres en forme irrégulières"
+msgstr ""
+
+#: views/produit-fenetres.php:24
+msgid "Fenêtres en guillotines"
+msgstr ""
+
+#: views/produit-fenetres.php:44
+msgid "Gamme Eco©"
+msgstr ""
+
+#: views/produit-fenetres.php:50
+msgid ""
+"Présentement, les fenêtres de la série Eco© n'existent que dans les modèles "
+"à battant, à auvent et fixe."
+msgstr ""
+
+#: views/produit-fenetres.php:51
+msgid ""
+"Les différents cadres de la fenêtre EcoPlus© ont tous une épaisseur de 5 ¾” "
+"et sont disponibles en 3 configurations d’extensions d’aluminium selon vos "
+"besoins : plats et avec un épaulement soit de ½ pouce ou de 1 pouce."
+msgstr ""
+
+#: views/produit-fenetres.php:52
+msgid ""
+"Le cadre 5 3/4\" permet un positionnement du volet plus rapproché de la "
+"partie chaude du mur (réduisant ainsi la condensation) en parfaite harmonie "
+"avec la norme Novoclimat."
+msgstr ""
+
+#: views/produit-fenetres.php:53 views/produit-fenetres.php:90
+msgid "mesures"
+msgstr ""
+
+#: views/produit-fenetres.php:59
+msgid "Gamme EcoPlus©"
+msgstr ""
+
+#: views/produit-fenetres.php:66
+msgid ""
+"Fenplast fait incursion dans le domaine des fenêtres hybrides avec un modèle "
+"de type battant nommé EcoPlus©. "
+msgstr ""
+
+#: views/produit-fenetres.php:67
+msgid ""
+"Avec ses profilés droits et épurés cette fenêtre reflète la tendance "
+"actuelle en matière d’habitation."
+msgstr ""
+
+#: views/produit-fenetres.php:68
+msgid ""
+"La fenêtre EcoPlus© est une fenêtre à battant structurale avec triple coupe-"
+"froid. Le cadre et le volet sont en PVC multichambre très robuste et tous "
+"les coins sont soudés à 45° pour une efficacité et une rigidité "
+"incomparable. Des extrusions d’aluminium sont serties à la partie en PVC à "
+"l’extérieur assurant ainsi une force structurale remarquable."
+msgstr ""
+
+#: views/produit-fenetres.php:69
+msgid ""
+"Deux parcloses peuvent s’adapter au système, vous donnant le choix entre une "
+"unité scellée double vitrage ou, pour une efficacité énergétique inégalée, "
+"un triple vitrage d’une épaisseur totale d’un 1¼ pouce."
+msgstr ""
+
+#: views/produit-fenetres.php:70
+msgid ""
+"Cette même fenêtre peut aussi être employée avec un système d’ouverture de "
+"type <strong>auvent</strong>."
+msgstr ""
+
+#: views/produit-fenetres.php:71
+msgid "http://www.fenplast.com/fr/fenetre-battant-eco.aspx"
+msgstr ""
+
+#: views/produit-fenetres.php:71 views/produit-fenetres.php:104
+#: views/produit-fenetres.php:119 views/produit-fenetres.php:148
+#: views/produit-fenetres.php:161 views/produit-fenetres.php:211
+#: views/produit-fenetres.php:224 views/produit-fenetres.php:251
+#: views/produit-fenetres.php:265 views/produit-fenetres.php:292
+#: views/produit-fenetres.php:306 views/produit-fenetres.php:341
+#: views/produit-fenetres.php:352 views/produit-fenetres.php:365
+#: views/produit-fenetres.php:376 views/produit-fenetres.php:389
+#: views/produit-fenetres.php:400 views/produit-portes.php:52
+msgid "En savoir plus..."
+msgstr ""
+
+#: views/produit-fenetres.php:77 views/produit-fenetres.php:181
+msgid "Gamme Iso©"
+msgstr ""
+
+#: views/produit-fenetres.php:83
+msgid ""
+"Tel qu’illustré, la série Iso© est disponible en épaisseur de 4 1/2\", 5 "
+"3/4\" plat (fenêtres à battant, auvent et panoramiques seulement) ou de 5 "
+"3/4\" avec moulure extérieure (ME). "
+msgstr ""
+
+#: views/produit-fenetres.php:84
+msgid ""
+"L’extérieur du cadre 5 3/4\" ME en surplomb permet d’y accoter une brique, "
+"d’y insérer un revêtement dans la cavité prévue à cette fin ou encore de le "
+"commander réduit d’un demi-pouce pour une rénovation spécifique. "
+msgstr ""
+
+#: views/produit-fenetres.php:85
+msgid ""
+"La partie intérieure du cadre de la série Iso© est prévue pour recevoir un "
+"soufflage ou un gypse pour combler l’espace entre le cadre de la fenêtre et "
+"le mur intérieur."
+msgstr ""
+
+#: views/produit-fenetres.php:87
+msgid ""
+"Dans une nouvelle construction, elle permet un positionnement du volet plus "
+"rapproché  de la partie chaude du mur (réduisant ainsi la condensation)."
+msgstr ""
+
+#: views/produit-fenetres.php:88
+msgid ""
+"Lors d’une rénovation impliquant un remplacement de boîte, vous profiterez "
+"des avantages énoncés plus haut en plus d’une variété de moulures et de "
+"soufflages qui permettent de personnaliser le cadre pour une installation "
+"adaptée aux exigences particulières de votre maison."
+msgstr ""
+
+#: views/produit-fenetres.php:97
+msgid "Gamme IsoPlus©"
+msgstr ""
+
+#: views/produit-fenetres.php:103
+msgid ""
+"Cette fenêtre, innovatrice dans le marché de la fenêtre de PVC, se distingue "
+"par un cadre, de type structural, lui donnant un aspect  tout à fait "
+"contemporain, tout en minimisant l’épaisseur du « poteau » du centre. Ce "
+"système de fenêtre a été conçu pour vous en offrir « Plus »; un volet "
+"élégamment profilé, tout en rondeurs, ainsi qu’un cadre de fenêtre qui "
+"intègre des moulures répondant à vos besoins. Son étanchéité est assurée par "
+"trois coupe-froid (deux sur le volet et un sur le cadre), garantissant des "
+"performances irréprochables. Elle peut être munie d’un triple vitrage pour "
+"des performances énergétiques supérieures."
+msgstr ""
+
+#: views/produit-fenetres.php:104 views/produit-fenetres.php:119
+msgid "http://www.fenplast.com/fr/fenetre-battant-iso.aspx"
+msgstr ""
+
+#: views/produit-fenetres.php:111
+msgid "Gamme IsoPlus© à auvent"
+msgstr ""
+
+#: views/produit-fenetres.php:117
+msgid ""
+"L’une des alternatives les plus négligées pour les petites ouvertures est la "
+"fenêtre à auvent. Cette fenêtre possède les mêmes caractéristiques de "
+"sécurité et de performance que la fenêtre à battant. La manivelle de type « "
+"ciseau » au bas de la fenêtre alloue une ventilation indirecte."
+msgstr ""
+
+#: views/produit-fenetres.php:118
+msgid ""
+"Vous pouvez également superposer ce type de fenêtre pour lui donner un "
+"aspect chaleureux de fenêtre guillotine, en conservant les avantages d’une "
+"fenêtre qui se ferme « à compression »."
+msgstr ""
+
+#: views/produit-fenetres.php:137
+msgid "Fenêtres coulissantes IsoVision©"
+msgstr ""
+
+#: views/produit-fenetres.php:141
+msgid "Fenêtre DOUBLE"
+msgstr ""
+
+#: views/produit-fenetres.php:147
+msgid ""
+"Les deux volets sont mobiles pour une ventilation du côté gauche ou du côté "
+"droit. Les deux volets s’inclinent vers l’intérieur permettant de manipuler "
+"les volets aisément pour le nettoyage sans devoir retirer les volets du "
+"cadre. Ce système alloue une ouverture libre maximale pour l’entrée ou la "
+"sortie de matériel. Cette fenêtre peut être commandée avec une moustiquaire "
+"pleine, pour choisir le côté privilégié à ouvrir, ou une demi-moustiquaire "
+"pour une luminosité accrue ."
+msgstr ""
+
+#: views/produit-fenetres.php:148 views/produit-fenetres.php:161
+msgid "http://www.fenplast.com/fr/fenetre-coulissante-iso.aspx"
+msgstr ""
+
+#: views/produit-fenetres.php:154
+msgid "Fenêtre SIMPLE"
+msgstr ""
+
+#: views/produit-fenetres.php:160
+msgid ""
+"Avec un seul volet mobile, cette fenêtre économique est une merveille de "
+"simplicité et de sobriété. L’unité scellée fixe est maintenue non pas dans "
+"un volet, mais par le cadre de la fenêtre lui-même, ainsi que par le meneau. "
+"Vous pouvez spécifier le côté opérant selon vos besoins. Le meneau est "
+"désigné avec raffinement, donnant à l’ensemble une apparence de fenêtre à "
+"battant. La simplicité d’opération ainsi que la robustesse de cette fenêtre "
+"en fait un choix recherché. "
+msgstr ""
+
+#: views/produit-fenetres.php:187
+msgid ""
+"Quoi de mieux qu’une fenêtre en baie (3 sections) ou en arc (4 ou 5 "
+"sections) pour mettre en valeur votre résidence ? Ces fenêtres sont offertes "
+"avec diverses possibilités de finition intérieure, soit en chêne, en pin ou "
+"en stratifié, rehaussant ainsi de façon spectaculaire l’esthétisme de ce "
+"type d’ouverture. "
+msgstr ""
+
+#: views/produit-fenetres.php:188
+msgid ""
+"Ces fenêtres peuvent également être fabriquées avec des angles propres à vos "
+"exigences, procurant ainsi une finition impeccable, particulièrement pour "
+"vos besoins en rénovation. Ces fenêtres en saillie vous procureront une "
+"luminosité remarquable et fourniront un endroit idéal pour la croissance de "
+"vos fleurs et plantes."
+msgstr ""
+
+#: views/produit-fenetres.php:189
+msgid ""
+"À l'extérieur, ces fenêtres peuvent aussi être enjolivées par des panneaux "
+"<a target=\"_BLANK\" href=\"http://www.fenplast.com/fr/evo-i.aspx\">Evoi©</"
+"a>."
+msgstr ""
+
+#: views/produit-fenetres.php:204
+msgid "Gamme EcoPano©"
+msgstr ""
+
+#: views/produit-fenetres.php:210
+msgid ""
+"La fenêtre EcoPano© est un cadre de type panoramique de 5 ¾\" d’épaisseur, "
+"employée pour des applications nécessitant une fenêtre fixe."
+msgstr ""
+
+#: views/produit-fenetres.php:211
+msgid "http://www.fenplast.com/fr/fenetre-fixe-eco.aspx"
+msgstr ""
+
+#: views/produit-fenetres.php:217
+msgid "Gamme IsoPano©"
+msgstr ""
+
+#: views/produit-fenetres.php:223
+msgid ""
+"La fenêtre IsoPano© est un cadre de type panoramique employée pour des "
+"applications nécessitant une fenêtre fixe."
+msgstr ""
+
+#: views/produit-fenetres.php:224
+msgid "http://www.fenplast.com/fr/fenetre-fixe-iso.aspx"
+msgstr ""
+
+#: views/produit-fenetres.php:244
+msgid "Gamme EcoGeo©"
+msgstr ""
+
+#: views/produit-fenetres.php:250
+msgid ""
+"Au fil des ans, Fenplast a acquis une expertise pour vous offrir des "
+"fenêtres ayant des formes géométriques diverses, respectant ainsi vos "
+"besoins en matière d’architecture et permettant de personnaliser votre "
+"résidence selon vos souhaits. Les formes illustrées ci-contre ne sont qu’un "
+"exemple des multiples possibilités offertes. Ces formes EcoGeo© sont "
+"fabriquées à partir du cadre EcoPano©. Seulement le cadre plat peut être "
+"utilisé dans une forme irrégulière arrondie. Il nous est impossible de "
+"cintrer le fini aluminium clair."
+msgstr ""
+
+#: views/produit-fenetres.php:251
+msgid "http://www.fenplast.com/fr/fenetre-f-i-eco.aspx"
+msgstr ""
+
+#: views/produit-fenetres.php:258
+msgid "Gamme IsoGeo©"
+msgstr ""
+
+#: views/produit-fenetres.php:264
+msgid ""
+"Au fil des ans, Fenplast a acquis une expertise pour vous offrir des "
+"fenêtres ayant des formes géométriques diverses, respectant ainsi vos "
+"besoins en matière d’architecture et permettant de personnaliser votre "
+"résidence selon vos souhaits. Les formes illustrées ci-contre ne sont qu’un "
+"exemple des multiples possibilités offertes. Ces formes IsoGeo© sont "
+"fabriquées à partir du cadre IsoPano©."
+msgstr ""
+
+#: views/produit-fenetres.php:265
+msgid "http://www.fenplast.com/fr/fenetre-f-i-iso.aspx"
+msgstr ""
+
+#: views/produit-fenetres.php:281
+msgid "Fenêtres en guillotines IsoVent©"
+msgstr ""
+
+#: views/produit-fenetres.php:285
+msgid "Guillotine DOUBLE"
+msgstr ""
+
+#: views/produit-fenetres.php:291
+msgid ""
+"Cette fenêtre avec ses deux volets mobiles apporte une bonne ventilation. La "
+"performance hors du commun aux différents tests d’étanchéité constitue un "
+"atout indéniable. Vous pouvez, au choix, opter pour une moustiquaire "
+"complète (tel qu’illustré) ou une demi-moustiquaire."
+msgstr ""
+
+#: views/produit-fenetres.php:292 views/produit-fenetres.php:306
+msgid "http://www.fenplast.com/fr/fenetre-guillotine-iso.aspx"
+msgstr ""
+
+#: views/produit-fenetres.php:299
+msgid "Guillotine SIMPLE"
+msgstr ""
+
+#: views/produit-fenetres.php:305
+msgid ""
+"Toujours le même type de fenêtre, mais fabriquée avec uniquement le volet du "
+"bas comme partie mobile. Cette fenêtre, plus économique, sans rien céder aux "
+"performances, surprendra par son aspect intégré. Le meneau horizontal, très "
+"sobre, est assemblé de façon mécanique, garantissant ainsi, une rigidité à "
+"l’ensemble."
+msgstr ""
+
+#: views/produit-portes.php:15 views/produit-portes.php:37
+msgid "Portes coulissantes"
+msgstr ""
+
+#: views/produit-portes.php:20 views/produit-portes.php:82
+msgid "Portes d'acier"
+msgstr ""
+
+#: views/produit-portes.php:42
+msgid "Gamme CaloPatio©"
+msgstr ""
+
+#: views/produit-portes.php:48
+msgid ""
+"Cette porte coulissante, se distingue par un cadre robuste, entièrement de "
+"PVC à multi-cavités isolantes, lui assurant une durabilité exceptionnelle en "
+"plus d'offrir un meilleur rendement énergétique."
+msgstr ""
+
+#: views/produit-portes.php:49
+msgid ""
+"Ce système de porte coulissante a été conçu afin d’offrir la meilleure "
+"option sur le marché."
+msgstr ""
+
+#: views/produit-portes.php:50
+msgid ""
+"Avec des volets de style colonial élégamment profilés, elle s’harmonise à "
+"toute la gamme de produits Fenplast. Son étanchéité est assurée par un "
+"double coupe-froid continu au périmètre et des rencontres robustes également "
+"à doubles coupe-froid, lui permettant d’atteindre des performances "
+"incomparables."
+msgstr ""
+
+#: views/produit-portes.php:51
+msgid ""
+"Elle peut être munie d’un triple vitrage pour des performances énergétiques "
+"inégalées."
+msgstr ""
+
+#: views/produit-portes.php:52
+msgid "http://www.fenplast.com/fr/portes-coulissantes-calopatio.aspx"
+msgstr ""
+
+#: views/produit-portes.php:59
+msgid "Gamme CaloFixe©"
+msgstr ""
+
+#: views/produit-portes.php:66
+msgid ""
+"Si votre application nécessite une imposte ou un panneau latéral "
+"rectangulaire, le cadre CaloFixe©, entièrement de PVC, d’une épaisseur de "
+"7¼”, s’harmonise parfaitement à la largeur et à la hauteur de la porte, "
+"assurant un ensemble esthétiquement équilibré."
+msgstr ""
+
+#: views/produit-portes.php:90
+msgid ""
+"Les portes que nous fabriquons vont des plus conventionnelles aux plus "
+"personnalisées en maintenant toujours le plus haut standard de qualité. "
+"Notre apport au marché de la porte d'acier peut être défini par une "
+"recherche constante d'innovation, tant au niveau de la structure de la porte "
+"que des accessoires et des options offertes."
+msgstr ""
+
+#: views/produit-portes.php:91
+msgid "Nos portes sont certifiées ENERGY STAR®"
+msgstr ""
+
+#: views/produit-portes.php:93
+msgid "http://www.fenplast.com/fr/portes_lateraux_base.aspx"
+msgstr ""
+
+#: views/produit-portes.php:93
+msgid "Portes et latéraux de base"
+msgstr ""
+
+#: views/produit-portes.php:94
+msgid "http://www.fenplast.com/fr/porte-panneaux-evo.aspx"
+msgstr ""
+
+#: views/produit-portes.php:94
+msgid "Panneaux Évolution"
+msgstr ""
+
+#: views/produit-portes.php:95
+msgid "http://www.fenplast.com/fr/verres-decoratifs.aspx"
+msgstr ""
+
+#: views/produit-portes.php:95
+msgid "Verres Décoratif"
+msgstr ""
+
+#: views/produit-portes.php:96
+msgid "http://www.fenplast.com/fr/porte-autres-vitraux.aspx"
+msgstr ""
+
+#: views/produit-portes.php:96
+msgid "Autres Vitraux"
+msgstr ""
+
+#: views/view-faq.php:23 views/view-faq.php:39
+msgid "Je rénove"
+msgstr ""
+
+#: views/view-faq.php:24 views/view-faq.php:112
 msgid "Rampes et Balcons"
 msgstr "Ramps and Balcony"
 
-#: views/header.php:146
-msgid "67 rue des Croquettes, Montréal"
-msgstr "67 rue des Croquettes, Montreal"
+#: views/view-faq.php:25
+msgid "Revêtements"
+msgstr ""
+
+#: views/view-faq.php:26 views/view-faq.php:175 views/view-services.php:23
+#: views/view-services.php:126
+msgid "Garantie"
+msgstr ""
+
+#: views/view-faq.php:27 views/view-faq.php:203
+msgid "Subvention"
+msgstr ""
+
+#: views/view-faq.php:28 views/view-faq.php:238
+msgid "Installation"
+msgstr ""
+
+#: views/view-faq.php:41
+msgid "Comment prendre les mesures approximatives pour une évaluation?"
+msgstr ""
+
+#: views/view-faq.php:51
+msgid ""
+"Nous vous suggérons de mesurer les portes et fenêtres en prenant la mesure à "
+"l'intérieur de vos cadrages intérieurs. Un détail qui peut être utile pour "
+"le détaillant est de savoir si vos portes et fenêtres ont une moulure "
+"(boisure) à l'extérieur qui cintre leur  pourtour."
+msgstr ""
+
+#: views/view-faq.php:58
+msgid ""
+"Pour mes fenêtres, entre l'installation dans la boîte existante ou le "
+"remplacement de la boîte, quoi choisir?"
+msgstr ""
+
+#: views/view-faq.php:60
+msgid ""
+"Chaque distributeur a des préférences et chaque projet a des spécificités à "
+"ce sujet, il est néanmoins  important que vous sachiez que:"
+msgstr ""
+
+#: views/view-faq.php:62
+msgid ""
+"L'installation dans les boîtes existantes est généralement une opération "
+"\"plus propre\" en ce sens qu'elle minimise les mauvaises surprises qui "
+"peuvent survenir dans tout projet de rénovation."
+msgstr ""
+
+#: views/view-faq.php:63
+msgid ""
+"L'installation dans les boîtes existantes laisse généralement intacte les "
+"cadrages intérieurs autour des ouvertures."
+msgstr ""
+
+#: views/view-faq.php:64
+msgid ""
+"Un installateur consciencieux verra à remplacer, au cours des travaux, toute "
+"partie de bois qui lui semble pourrie."
+msgstr ""
+
+#: views/view-faq.php:65
+msgid ""
+"Deux joints de calfeutrant doivent être appliqués à l'extérieur; un entre la "
+"fenêtre et une partie d'aluminium qui recouvre votre cadre et un autre entre "
+"votre parement extérieur et ledit aluminium."
+msgstr ""
+
+#: views/view-faq.php:66
+msgid ""
+"Le remplacement de boîte, implique des travaux de menuiserie plus importants."
+msgstr ""
+
+#: views/view-faq.php:67
+msgid ""
+"Le fait de repartir l'installation directement du bâti de la maison assure "
+"une installation plus homogène et un aspect final davantage intégré."
+msgstr ""
+
+#: views/view-faq.php:68
+msgid ""
+"Un seul joint de calfeutrant sera nécessaire (dans la plupart des cas), "
+"entre la fenêtre et le parement extérieur."
+msgstr ""
+
+#: views/view-faq.php:74
+msgid ""
+"Que veulent dire concrètement les chiffres de performance (A-3, B-7 etc...) "
+"rattachés aux portes et fenêtres?"
+msgstr ""
+
+#: views/view-faq.php:76
+msgid ""
+"Ces chiffres donnent une indication de la valeur des portes et fenêtres aux "
+"tests suivants:<br />A= Étanchéité à l’air, l'échelle est de 1 à 3.<br />B= "
+"Résistance à la pénétration d\\’eau, l'échelle est de 1 à 7.<br />C= "
+"Résistance aux surcharges dues au vent (donc la capacité d'une porte ou "
+"fenêtre de résister à un ouragan ou des vents extrêmement violents), "
+"l'échelle est de 1 à 5. "
+msgstr ""
+
+#: views/view-faq.php:77
+msgid ""
+"Ces tests doivent être passés dans un laboratoire d'essai homologué et sont "
+"essentiels en vue de l'obtention d'un numéro d'acceptation de la CCMC, <a "
+"href=\"http://www.nrc-cnrc.gc.ca/fra/solutions/consultatifs/ccmc/"
+"services_evaluation.html\">Centre canadien de matériaux de construction</a>."
+msgstr ""
+
+#: views/view-faq.php:78
+msgid ""
+"Une chose importante est de vous assurer que ce soit le manufacturier même "
+"(non seulement l'extrudeur de PVC) qui a passé les tests, pour vous assurer "
+"que la porte ou  fenêtre sera en tout point identique à celle qui a été "
+"testée."
+msgstr ""
+
+#: views/view-faq.php:79
+msgid ""
+"Fenplast a l'habitude de faire tester aléatoirement certains produits de sa "
+"ligne de montage pour s'assurer qu'ils seront aussi efficaces que ceux qui "
+"ont passé les tests."
+msgstr ""
+
+#: views/view-faq.php:84
+msgid ""
+"Comment évaluer les qualités du distributeur qui pourrait remplacer les "
+"portes et fenêtres chez moi?"
+msgstr ""
+
+#: views/view-faq.php:86
+msgid ""
+"La rénovation des portes et fenêtres n'est pas différente de tout autre "
+"projet de rénovation. Vous devez prendre des références sur le distributeur "
+"avec lequel vous comptez faire affaire. N'hésitez pas à en demander au "
+"distributeur  même. Le nombre d'années en affaire ainsi que le sérieux qu'il "
+"met dans sa présentation et dans sa soumission sont des indices qui ne "
+"trompent généralement pas."
+msgstr ""
+
+#: views/view-faq.php:91
+msgid ""
+"Comment isoler l'espace entre la porte / fenêtre et le bâti de la maison?"
+msgstr ""
+
+#: views/view-faq.php:93
+msgid ""
+"Laine minérale ou uréthane injecté, les deux présentent des avantages et des "
+"inconvénients et ils constituent à ce jour les seules solutions éprouvées. "
+"Nous devons cependant faire une mise en garde sur le type d'uréthane à être "
+"employé. Celui-ci devra être de type <strong>non-expansif</strong> et devra "
+"garder une souplesse maximale (comme une guimauve) pour de longues années."
+msgstr ""
+
+#: views/view-faq.php:98
+msgid "Qu'est-ce que l'indice RE?"
+msgstr ""
+
+#: views/view-faq.php:100
+msgid ""
+"<strong>L'indice de rendement énergétique</strong> (RE) est fondé sur divers "
+"facteurs, dont <strong>la valeur U*</strong> et l'étanchéité à l'air."
+msgstr ""
+
+#: views/view-faq.php:101
+msgid ""
+"Cette valeur établit le rendement énergétique exigé pour la certification "
+"ENERGY STAR® d'un produit pour une zone climatique donnée. Plus l'indice RE "
+"est élevé, plus le produit est efficace sur le plan énergétique. Ainsi, il "
+"facilite la comparaison de différents produits de fenêtrage entre eux et le "
+"choix de ceux ayant le meilleur rendement énergétique."
+msgstr ""
+
+#: views/view-faq.php:102
+msgid ""
+"<strong>* Valeur U</strong> : Coefficient de perte ou de gain de chaleur non "
+"solaire. La valeur U mesure donc le taux de transfert thermique. Plus la "
+"valeur U est basse, plus la fenêtre est isolante et meilleur sera son "
+"rendement énergétique. Elle est exprimée en W/m2K."
+msgstr ""
+
+#: views/view-services.php:19 views/view-services.php:40
+msgid "Installation Professionelle"
+msgstr ""
+
+#: views/view-services.php:20 views/view-services.php:63
+msgid "Clefs en Main"
+msgstr ""
+
+#: views/view-services.php:21 views/view-services.php:86
+msgid "Perçage de Béton"
+msgstr ""
+
+#: views/view-services.php:22 views/view-services.php:106
+msgid "Modification de Dimension"
+msgstr ""
+
+#~ msgid "Portes"
+#~ msgstr "Doors\t"
+
+#~ msgid "Fenêtres"
+#~ msgstr "Windows"
 
 #~ msgid "Contactez-Nous"
 #~ msgstr "Contact Us"

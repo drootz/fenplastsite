@@ -149,37 +149,22 @@
 
         var heroHeaderSection = $('#js-header-hero');
         if ($('body').hasClass('js-laptop') || $('body').hasClass('js-desktop')) {
-          // console.log("DESKTOP");
+
           // top-bar - hero padding values
           var carouselHeight = vh - 107 - 25 - 50;
           $('#js-nav-menu').show();
-          fromToClass($('#js-nav'), 'fa-times', 'fa-bars');
           $('#js-header-hero').css('height', vh);
           $('#js-carousel-container').css('height', carouselHeight);
-
 
           if ($('.js-main-carousel').length) {
             $('.js-main-carousel').flickity({
               // options
-              autoPlay: 4000,
+              autoPlay: 5000,
               setGallerySize: false,
               wrapAround: true,
               prevNextButtons: true
             });
           }
-
-          // Navigation behavior
-          $('.js-sub-nav-btn').mouseenter(function() {
-            var subNavEl = $(this).children('.m-sub-nav');
-            subNavEl.slideToggle();
-            switchClass(subNavEl, 'is-collapsed', 'is-expanded');
-          });
-
-          $('.js-sub-nav-btn').mouseleave(function() {
-            var subNavEl = $(this).children('.m-sub-nav');
-            subNavEl.hide();
-            switchClass(subNavEl, 'is-collapsed', 'is-expanded');
-          });
 
           if ($('.main-gallery').length) {
             $('.main-gallery').flickity({
@@ -193,7 +178,7 @@
           if ($('.js-slider-realisation').length) {
             $('.js-slider-realisation').flickity({
               // options
-              autoPlay: 2500,
+              autoPlay: false,
               wrapAround: true,
               prevNextButtons: true,
               pageDots: false,
@@ -216,7 +201,7 @@
           if ($('.js-main-carousel').length) {
             $('.js-main-carousel').flickity({
               // options
-              autoPlay: 4000,
+              autoPlay: 5000,
               wrapAround: true,
               setGallerySize: true,
               prevNextButtons: false,
@@ -224,21 +209,6 @@
               friction: 0.4
             });
           }
-
-          var subNavBtn = $('.js-sub-nav-btn');
-
-          subNavBtn.click(function() {
-
-            subNavBtn.each(function() {
-              if ($(this).children('.m-sub-nav').is(':visible')) {
-                $(this).children('.m-sub-nav').hide();
-              }
-            });
-
-            var subNavEl = $(this).children('.m-sub-nav');
-            subNavEl.slideToggle();
-            switchClass(subNavEl, 'is-collapsed', 'is-expanded');
-          });
 
           if ($('.main-gallery').length) {
             $('.main-gallery').flickity({
@@ -253,7 +223,7 @@
           if ($('.js-slider-realisation').length) {
             $('.js-slider-realisation').flickity({
               // options
-              autoPlay: 2500,
+              autoPlay: false,
               wrapAround: true,
               prevNextButtons: false,
               pageDots: false,
@@ -311,6 +281,7 @@ function setWindowDimension() {
 	{
 		vw = window.innerWidth;
 		vh = window.innerHeight;
+    scrollPostion = vw < vwLaptop ? 0 : 83;
 		// console.log(vw + "x" + vh);
 	}
 }
@@ -630,6 +601,18 @@ $( document ).ready(function() {
   });
 
 
+  $('.js-sub-nav-btn').hover(function() {
+    var subNavEl = $(this).children('.m-sub-nav');
+    if (!subNavEl.is(':visible')) {
+      subNavEl.slideDown();
+      fromToClass(subNavEl, 'is-collapsed', 'is-expanded');
+    } else {
+      subNavEl.hide();
+      fromToClass(subNavEl, 'is-expanded', 'is-collapsed');
+    }
+  });
+
+
 
 
   // Fluid iframe videos
@@ -705,7 +688,7 @@ $( document ).ready(function() {
             // console.log(targetId);
             if (target.length) {
               $('html,body').animate({
-                scrollTop: target.offset().top - 83
+                scrollTop: target.offset().top - scrollPostion
               }, 500 , function() {
               	targetSelector.addClass("js-anim-bg");
   				setTimeout( function() {

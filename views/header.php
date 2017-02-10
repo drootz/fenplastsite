@@ -131,7 +131,7 @@
                 <li><a href="index.php"><?= gettext( 'ACCEUIL' ); ?></a></li>
                 <li class="js-sub-nav-btn"><span><?= _( 'PRODUITS' ); ?></span>
                     <ul class="m-sub-nav clearfix is-collapsed">
-                      <li><a href="produit-portes.php"><?= _( 'PORTES D\'ACIER' ); ?></a></li>
+                      <li><a href="produit-portes.php"><?= _( 'PORTES' ); ?></a></li>
                       <li><a href="produit-fenetres.php"><?= _( 'FENÊTRES' ); ?></a></li>
                       <li><a href="produit-balcons.php"><?= _( 'RAMPES ET BALCONS' ); ?></a></li>
                       <li><a href="produit-revetement-exterieur.php"><?= _( 'REVÊTEMENT EXTÉRIEUR' ); ?></a></li>
@@ -143,6 +143,7 @@
                       <li><a href="services.php"><?= _( 'CLEF EN MAIN' ); ?></a></li>
                       <li><a href="services.php"><?= _( 'PERÇAGE DE BÉTON' ); ?></a></li>
                       <li><a href="services.php"><?= _( 'MODIFICATION DE DIMENSION' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'GARANTIE' ); ?></a></li>
                     </ul>
                 </li>
                 <li><a href="realisations.php"><?= _( 'RÉALISATIONS' ); ?></a></li>
