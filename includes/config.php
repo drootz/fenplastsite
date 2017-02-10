@@ -12,8 +12,8 @@
  */
 
     // display errors, warnings, and notices
-    ini_set("display_errors", true);
-    error_reporting(E_ALL);
+    // ini_set("display_errors", true);
+    // error_reporting(E_ALL);
 
     // DEBUG
     // require_once(__DIR__ . "/../_debug/functions.php");

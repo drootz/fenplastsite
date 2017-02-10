@@ -70,23 +70,13 @@
         // if view exists, render it
         if (file_exists("../views/{$view}"))
         {
-            $s_displayname = empty($_SESSION["id"]) ? "<a class=\"login_link\" href=\"login.php\">" . _("Sign in") . "</a><span class=\"register_link\"> " . _("or") . " <a href=\"register.php\">" . _("Register") . "</a></span>" : $_SESSION["user_name"];
-
             $_SESSION["view"] = substr($view, 0, -4);
             $title = $pagename;
 
             // extract variables into local scope
             extract($values);
 
-            // render view (between header and footer)
-            if ($view == "activation.php" || $view == "registered.php")
-            {
-                require("../views/header_registration.php");
-            }
-            else
-            {
-                require("../views/header.php");
-            }
+            require("../views/header.php");
             require("../views/{$view}");
             require("../views/footer.php");
             exit;
@@ -95,7 +85,17 @@
         // else err
         else
         {
-            trigger_error("Invalid view: {$view}", E_USER_ERROR);
+            // trigger_error("Invalid view: {$view}", E_USER_ERROR);
+            $_SESSION["view"] = substr($view, 0, -4);
+            $title = $pagename;
+
+            // extract variables into local scope
+            extract($values);
+
+            require("../views/header.php");
+            require("../views/404.php");
+            require("../views/footer.php");
+            exit;
         }
     }
 
