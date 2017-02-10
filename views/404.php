@@ -3,7 +3,7 @@
     <div class="l-wrapper">
 
       <h1><?= _( 'Oups! Page Inexistante' ); ?></h1>
-      <p><?= _( 'Désolé, vous tentez d\'accéder à une page inexistante.' ); ?></p>
+      <h5><?= _( 'Désolé, vous tentez d\'accéder à une page inexistante.' ); ?></h5>
 
     </div>
   </div>
