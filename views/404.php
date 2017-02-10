@@ -1,3 +1,9 @@
 
-    <h1>Page Not Found</h1>
-    <p>Sorry, but the page you were trying to view does not exist.</p>
+  <div id="404" class="l-section m-404">
+    <div class="l-wrapper">
+
+      <h1><?= _( 'Oups! Page Inexistante' ); ?></h1>
+      <p><?= _( 'Désolé, vous tentez d\'accéder à une page inexistante.' ); ?></p>
+
+    </div>
+  </div>
