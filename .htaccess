@@ -86,6 +86,7 @@
 # https://httpd.apache.org/docs/current/mod/core.html#errordocument
 
 ErrorDocument 404 http://www.lemarchanddefenetres.oneprojct.space/public/404.php
+ErrorDocument 403 http://www.lemarchanddefenetres.oneprojct.space/public/403.php
 
 # ----------------------------------------------------------------------
 # | Error prevention                                                   |

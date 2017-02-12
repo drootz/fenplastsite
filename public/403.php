@@ -3,6 +3,6 @@
 	//**** config
 	require_once(__DIR__ . "/../includes/config.php");
 
-    render("404.php", _("Oups! Erreur 404"));
+    render("403.php", _("Oups! Erreur 403"));
 
 ?>
