@@ -3,6 +3,6 @@
 	//**** config
 	require_once(__DIR__ . "/../includes/config.php");
 
-    render("produit-balcons.php", _("Balcons"));
+    render("produit-balcons.php", _("Rampes et Balcons"));
 
 ?>

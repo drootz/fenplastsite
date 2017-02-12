@@ -7,7 +7,7 @@
     if ($_SERVER["REQUEST_METHOD"] == "GET")
     {
         // Render Form
-        render("contact_form.php", _("Envoyez nous un courriel"));
+        render("contact_form.php", _("Envoyez nous un courriel - Contactez-nous"));
     }
 
     // else if user reached page via POST (as by submitting a form via POST)
