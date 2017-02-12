@@ -340,6 +340,10 @@ AddDefaultCharset utf-8
     RewriteCond %{HTTPS} !=on
     RewriteRule ^ - [env=proto:http]
 
+    RewriteCond %{HTTP_HOST} ^lemarchanddefenetres\.oneprojct\.space$ [OR]
+    RewriteCond %{HTTP_HOST} ^www\.lemarchanddefenetres\.oneprojct\.space$
+    RewriteRule ^/?$ "http\:\/\/www\.lemarchanddefenetres\.oneprojct\.space\/public\/" [R=301,L]
+
 </IfModule>
 
 # ----------------------------------------------------------------------

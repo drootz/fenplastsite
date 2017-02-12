@@ -6,7 +6,7 @@
     <div class="l-wrapper">
       <div class="row">
 
-        <div class="col-06">
+        <div class="col-pad-06">
 
          <h3 class="l-mobile"><?= _( 'Nous Joindre' ); ?></h3>
 
@@ -16,7 +16,7 @@
           </div>
         </div>
 
-        <div class="col-06">
+        <div class="col-pad-06">
 
           <h3 class="l-laptop"><?= _( 'Nous Joindre' ); ?></h3>
 
@@ -89,7 +89,7 @@
                        </div>
                        <div class="col-10">
                          <div class="m-address">
-                            <div><span><a href="contact.php"><?= _( 'Par courriel' ); ?></a></span></div>
+                            <div><span><a href="contactez-nous.php"><?= _( 'Par courriel' ); ?></a></span></div>
                         </div>
                        </div>
                      </div>
@@ -109,6 +109,21 @@
                        </div>
                      </div>
                    </li>
+
+                    <li>
+                      <div class="row">
+                        <div class="col-02">
+                          <div class="m-address">
+                            <i class="fa fa-share fa-lg fa-fw" aria-hidden="true"></i>
+                          </div>
+                        </div>
+                        <div class="col-10">
+                          <div class="m-address">
+                             <div><a href="https://www.facebook.com/sharer/sharer.php?u=www.lemarchanddefenetres.ca/" target="_BLANK"><span><?= _( 'Partagez nous sur Facebook' ); ?></span></a></div>
+                         </div>
+                        </div>
+                      </div>
+                    </li>
                  </ul>
 
               </div>
@@ -120,12 +135,19 @@
                 <h4><?= _( 'Heures d\'ouvertures' ); ?></h4>
                 <div class="m-hours clearfix">
                   <div class="m-open-day"><span><?= _( 'Dimanche' ); ?> :</span></div>  <div class="m-open-hours"><span>Fermé</span></div>
+                  <div class="m-open-newline"></div>
                   <div class="m-open-day"><span><?= _( 'Lundi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-newline"></div>
                   <div class="m-open-day"><span><?= _( 'Mardi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-newline"></div>
                   <div class="m-open-day"><span><?= _( 'Mercredi' ); ?> :</span></div>  <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-newline"></div>
                   <div class="m-open-day"><span><?= _( 'Jeudi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-newline"></div>
                   <div class="m-open-day"><span><?= _( 'Vendredi' ); ?> :</span></div>  <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-newline"></div>
                   <div class="m-open-day"><span><?= _( 'Samedi' ); ?> :</span></div>    <div class="m-open-hours"><span>Fermé</span></div>
+                  <div class="m-open-newline"></div>
                 </div>
               </div>
             </div>

@@ -12,28 +12,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <?php if (isset($title)): ?>
-        <title><?= htmlspecialchars($title) ?> - <?= _( 'Distributeur Officiel Fenplast' ); ?></title>
+        <title><?= htmlspecialchars($title) ?> - <?= _( 'Le Marchand de Fenêtres' ); ?></title>
     <?php else: ?>
-        <title><?= _( 'Distributeur Officiel Fenplast' ); ?></title>
+        <title><?= _( 'Le Marchand de Fenêtres' ); ?></title>
     <?php endif ?>
 
-    <meta name="description" <?= "content=\""._( 'Description du site: Le Marchant de Fenêtres, votre Détaillant Officiel Fenplast' )."\""; ?> >
-    <link rel="author" href="humans.txt" />
+    <meta name="description" <?= "content=\""._( 'Le Marchant de Fenêtres, votre détaillant autorisé Fenplast vous offre une vaste gamme de produits et services. Portes - Fenêtres - Rampes - Balcons - Revêtement Extérieur - Installation Professionelle - Service Clefs en Main - Perçage de Béton - Modification de Dimensions - Garantie' )."\""; ?> >
 
     <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
 
     <!-- Schema.org markup for Facebook -->
-    <meta property="og:title" <?= "content=\"" . _( 'head-og-title' ) . "\""; ?>/>
-    <meta property="og:image" <?= "content=\"" . _( 'head-og-image' ) . "\""; ?>/>
+    <meta property="og:title" <?= "content=\"" . _( 'Le Marchand de Fenêtres' ) . "\""; ?>/>
+    <meta property="og:image" <?= "content=\"" . _( 'http://www.lemarchanddefenetres.ca/public/img/og/og.jpg' ) . "\""; ?>/>
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="2000">
     <meta property="og:image:height" content="1050">
-    <meta property="og:url" <?= "content=\"" . _( 'head-og-url' ) . "\""; ?>/> <!-- http://www.fenplastsite.oneprojct.space/?lang=en_CA -->
-    <meta property="og:site_name" content="Fenplast Site"/>
-    <meta property="og:locale:alternate" <?= "content=\"" . _( 'head-og-fb-locale' ) . "\""; ?>/>
-    <meta property="og:description" <?= "content=\"" . _( 'head-og-description' ) . "\""; ?>/>
+    <meta property="og:url" <?= "content=\"" . _( 'http://www.lemarchanddefenetres.ca/' ) . "\""; ?>/> <!-- http://www.lemarchanddefenetres.ca/public/?lang=fr_CA -->
+    <meta property="og:site_name" content="Le Marchand de Fenêtres"/>
+    <meta property="og:locale:alternate" <?= "content=\"" . _( 'fr_CA' ) . "\""; ?>/>
+    <meta property="og:description" <?= "content=\"" . _( 'Le Marchant de Fenêtres, votre détaillant autorisé Fenplast vous offre une vaste gamme de produits et services.' ) . "\""; ?>/>
 
 
     <!-- Place favicon.ico in the root directory
@@ -89,11 +88,6 @@
         <li class="js-viewport-size"><span id="js-vw"></span> x <span id="js-vh"></span></li>
     </ul> -->
 
-    <!-- Loading Spinner -->
-    <!-- <div class="m-loading">
-        <div><i class="fa fa-circle-o-notch fa-lg fa-spin" aria-hidden="true"></i>&nbsp;&nbsp;<?= _( 'Patientez s\'il vous plaît...' ) ?></div>
-    </div> -->
-
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -128,13 +122,13 @@
 
               <!-- Mobile/Device Menu -->
               <ul id="js-nav-menu" class="clearfix">
-                <li><a href="index.php"><?= gettext( 'ACCEUIL' ); ?></a></li>
+                <li><a href="http://www.lemarchanddefenetres.ca/"><?= gettext( 'ACCEUIL' ); ?></a></li>
                 <li class="js-sub-nav-btn"><span><?= _( 'PRODUITS' ); ?></span>
                     <ul class="m-sub-nav clearfix is-collapsed">
-                      <li><a href="produit-portes.php"><?= _( 'PORTES' ); ?></a></li>
-                      <li><a href="produit-fenetres.php"><?= _( 'FENÊTRES' ); ?></a></li>
-                      <li><a href="produit-balcons.php"><?= _( 'RAMPES ET BALCONS' ); ?></a></li>
-                      <li><a href="produit-revetement-exterieur.php"><?= _( 'REVÊTEMENT EXTÉRIEUR' ); ?></a></li>
+                      <li><a href="portes.php"><?= _( 'PORTES' ); ?></a></li>
+                      <li><a href="fenetres.php"><?= _( 'FENÊTRES' ); ?></a></li>
+                      <li><a href="rampes-et-balcons.php"><?= _( 'RAMPES ET BALCONS' ); ?></a></li>
+                      <li><a href="revetement-exterieur.php"><?= _( 'REVÊTEMENT EXTÉRIEUR' ); ?></a></li>
                     </ul>
                 </li>
                 <li class="js-sub-nav-btn"><span><?= _( 'SERVICES' ); ?></span>

@@ -4,6 +4,13 @@
   color: white;
   padding-bottom: 60px;
   border-top: 11px solid $accentOrange;
+
+
+  h3 {
+    font-weight: 900;
+  }
+
+
   @include breakpoint (laptop) {
     padding-bottom: 10px;
   }
@@ -21,7 +28,7 @@
   padding: 0;
   margin: 0 auto 75px;
 
-  @include breakpoint (tablet) {
+  @include breakpoint (laptop) {
     margin: 0;
     padding: 0;
   }
@@ -63,10 +70,12 @@
 
 
 .m-footer-module {
-  max-width: 300px;
+  width: 100%;
+  max-width: 550px;
+  margin: auto;
   margin-bottom: 70px;
 
-  @include breakpoint (tablet) {
+  @include breakpoint (laptop) {
     font-size: 0.8em;
     margin: 0;
   }
@@ -127,6 +136,11 @@
 
 .m-open-hours {
   width: 150px;
+}
+
+.m-open-newline {
+  width: 100%;
+  height: 1px;
 }
 
 

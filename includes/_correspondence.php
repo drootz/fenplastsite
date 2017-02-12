@@ -32,15 +32,17 @@
         //Set this to true if SMTP host requires authentication to send email
         $mail->SMTPAuth = true;
         //Provide username and password
+        //P
         $mail->Username = "noreply.tetsingstuff@gmail.com";
         $mail->Password = "YevwnWGitaXGCZaXni9WG7ZN7y2mo3*js92MKh6Wocam8R9Twe";
+
         //If SMTP requires TLS encryption then set it
         $mail->SMTPSecure = "tls";
         //Set TCP port to connect to
         $mail->Port = 587;
 
-        $mail->setFrom('noreply.tetsingstuff@gmail.com', 'FenplastSite');
-        $mail->addAddress("mailto.danielracine@gmail.com", 'Daniel Racine');
+        $mail->setFrom('siteweb@lemarchanddefenetres.ca', 'Web');
+        $mail->addAddress("info@lemarchanddefenetres.ca", 'Service à la clientèle');
         $mail->isHTML(true);
         $mail->Subject = $info['subject'];
         $mail->Body    = $_body;
@@ -97,8 +99,8 @@
             $template = preg_replace('/{CORR}/', $info['correspondence'], $template);
         }
 
-        $template = preg_replace('/{SITEPATH}/','http://www.fenplastsite.oneprojct.space', $template);
-        $template = preg_replace('/{SITEPATH_ROOT}/','http://www.fenplastsite.oneprojct.space', $template);
+        $template = preg_replace('/{SITEPATH}/','http://www.lemarchanddefenetres.ca/public/', $template);
+        $template = preg_replace('/{SITEPATH_ROOT}/','http://www.lemarchanddefenetres.ca/public/', $template);
         $template = preg_replace('/{YEAR}/', date('Y'), $template);
 
         //return the html of the template

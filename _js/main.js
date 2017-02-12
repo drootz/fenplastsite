@@ -32,7 +32,7 @@
 
 	// mQuery viewport width size parameters
 	var vwDesktop = 1440;
-	var vwLaptop = 1024;
+	var vwLaptop = 1040;
 	var vwTablet = 768;
 	var vwPhablet = 600;
 
@@ -714,7 +714,7 @@ $( document ).ready(function() {
 
 
     	var MqM= 768,
-    		  MqL = 1024;
+    		  MqL = 1040;
 
     	var faqsSections = $('.faq-group'),
     		faqTrigger = $('.trigger'),

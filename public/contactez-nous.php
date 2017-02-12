@@ -48,9 +48,9 @@
                 exit;
             }
 
-            $contextRef = '0';
-            $uniqueRef = date("U");
-            $subject = 'WEB - ' . $post["opt_reason"] . ' - ref: ' . $contextRef . $uniqueRef . '  |  ' . $post["txt_username"];
+            $subject = 'REQUÊTE WEB - ' . $post["opt_reason"] . '  |  ' . $post["txt_username"];
+
+            // $subject = 'REQUÊTE WEB - ' . $post["opt_reason"] . '  |  ' . $post["txt_username"];
 
             //put info into an array to send to the function
             $info = array(
@@ -68,10 +68,6 @@
                 'data'           => _('
 
 Votre message a bien été reçu!
-
-Prenez note de votre numéro de référence:
-
-') . $contextRef . $uniqueRef . _('
 
 Nous garantissons un retour d\'appel au plus tard dans la prochaine journée ouvrable.
 
