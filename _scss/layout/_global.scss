@@ -36,6 +36,7 @@
 	}
 }
 
+
 .l-laptop {
 	display: none;
 	@include breakpoint (laptop) {
@@ -55,6 +56,13 @@
 	display: inline;
 	@include breakpoint (laptop) {
 		display: none;
+	}
+}
+
+.l-tablet-inline {
+	display: none;
+	@include breakpoint (tablet) {
+		display: inline;
 	}
 }
 
