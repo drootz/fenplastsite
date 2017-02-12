@@ -993,7 +993,7 @@ $( document ).ready(function() {
     	}
     },
 		submitHandler: function(form) {
-			$.post('contact.php', formContact.serialize())
+			$.post('contactez-nous.php', formContact.serialize())
 			.done(function( data ) {
 				formDone(formContact, data);
 			})
