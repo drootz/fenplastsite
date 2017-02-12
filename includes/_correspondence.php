@@ -99,8 +99,8 @@
             $template = preg_replace('/{CORR}/', $info['correspondence'], $template);
         }
 
-        $template = preg_replace('/{SITEPATH}/','http://www.lemarchanddefenetres.ca/public/', $template);
-        $template = preg_replace('/{SITEPATH_ROOT}/','http://www.lemarchanddefenetres.ca/public/', $template);
+        $template = preg_replace('/{SITEPATH}/','http://www.lemarchanddefenetres.ca/public', $template);
+        $template = preg_replace('/{SITEPATH_ROOT}/','http://www.lemarchanddefenetres.ca/public', $template);
         $template = preg_replace('/{YEAR}/', date('Y'), $template);
 
         //return the html of the template
