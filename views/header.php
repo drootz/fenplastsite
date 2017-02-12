@@ -111,7 +111,7 @@
           <div class="l-wrapper">
 
             <div class="m-logo">
-              <a href="index.php"><img src="img/logos/logo_lemarchanddefenetres_small_400.png" <?= "alt=\"" . _( 'Le Marchant de Fenêtres - Détaillant Autorisé Fenplast' ) . "\""; ?> <?= "title=\"" . _( 'Le Marchant de Fenêtres - Détaillant Autorisé Fenplast' ) . "\""; ?> width="200px" height="auto"/></a>
+              <a href="http://www.lemarchanddefenetres.ca/"><img src="img/logos/logo_lemarchanddefenetres_small_400.png" <?= "alt=\"" . _( 'Le Marchant de Fenêtres - Détaillant Autorisé Fenplast' ) . "\""; ?> <?= "title=\"" . _( 'Le Marchant de Fenêtres - Détaillant Autorisé Fenplast' ) . "\""; ?> width="200px" height="auto"/></a>
             </div>
 
             <div class="m-menu-toggle">

@@ -229,6 +229,7 @@ Options -MultiViews
 
   # Other
 
+    AddType application/x-httpd-php70                   .php
     AddType application/octet-stream                    safariextz
     AddType application/x-bb-appworld                   bbaw
     AddType application/x-chrome-extension              crx
@@ -343,6 +344,14 @@ AddDefaultCharset utf-8
     RewriteCond %{HTTP_HOST} ^lemarchanddefenetres\.oneprojct\.space$ [OR]
     RewriteCond %{HTTP_HOST} ^www\.lemarchanddefenetres\.oneprojct\.space$
     RewriteRule ^/?$ "http\:\/\/www\.lemarchanddefenetres\.oneprojct\.space\/public\/" [R=301,L]
+
+    RewriteCond %{HTTP_HOST} ^lemarchanddefenetres\.com$ [OR]
+    RewriteCond %{HTTP_HOST} ^www\.lemarchanddefenetres\.com$
+    RewriteRule ^/?$ "http\:\/\/www\.lemarchanddefenetres\.ca" [R=301,L]
+
+    RewriteCond %{HTTP_HOST} ^lemarchanddefenetres\.ca$ [OR]
+    RewriteCond %{HTTP_HOST} ^www\.lemarchanddefenetres\.ca$
+    RewriteRule ^/?$ "http\:\/\/www\.lemarchanddefenetres\.ca\/public\/" [R=301,L]
 
 </IfModule>
 
