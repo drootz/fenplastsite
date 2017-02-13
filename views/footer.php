@@ -187,12 +187,6 @@
 <!-- End Document –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
     <!-- All libraries concatenated and minified in main-min.js -->
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
-    <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script> -->
-    <!-- <script src="http://cdn.jsdelivr.net/jquery.validation/1.13.1/jquery.validate.js"></script> -->
-    <!-- <script src="js/plugins-min.js" async></script> -->
-    <!-- <script src="js/vendor/flickity.pkgd2-0-5.js"></script> -->
-
     <script src="js/main-min.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsNjXlBV6NkmDOSCXHXVdhGEtmXVeW6K8&language=fr&region=CA&callback=initMap"></script>
 
@@ -212,7 +206,6 @@
         if($('#captcha').length)
         {
             var widgetId1;
-            // var c_theme = $("body").hasClass("th-light") ? "light" : "dark";
             var onloadCallback = function() {
                 widgetId1 = grecaptcha.render('captcha', {
                     'sitekey' : '6LfhxRMUAAAAALJUuY8uMIpu4GR7uS6ueSkepSfX',
