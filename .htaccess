@@ -735,6 +735,8 @@ ServerSignature Off
 
 <IfModule mod_deflate.c>
 
+    AddOutputFilterByType DEFLATE application/x-javascript application/javascript text/javascript text/css text/html text/xml
+
     # Force compression for mangled `Accept-Encoding` request headers
     # https://developer.yahoo.com/blogs/ydn/pushing-beyond-gzipping-25601.html
 
