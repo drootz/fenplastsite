@@ -17,7 +17,7 @@
         <title><?= _( 'Le Marchand de Fenêtres' ); ?></title>
     <?php endif ?>
 
-    <meta name="description" <?= "content=\""._( 'Le Marchant de Fenêtres, votre détaillant autorisé Fenplast vous offre une vaste gamme de produits et services. Portes - Fenêtres - Rampes - Balcons - Revêtement Extérieur - Installation Professionelle - Service Clefs en Main - Perçage de Béton - Modification de Dimensions - Garantie' )."\""; ?> >
+    <meta name="description" <?= "content=\""._( 'Votre détaillant autorisé Fenplast. Portes, Fenêtres, Rampes, Balcons, Revêtement, Installation, Perçage de béton, Garantie' )."\""; ?> >
 
     <!-- Mobile Specific Metas
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -32,7 +32,7 @@
     <meta property="og:url" <?= "content=\"" . _( 'http://www.lemarchanddefenetres.ca/' ) . "\""; ?>/> <!-- http://www.lemarchanddefenetres.ca/public/?lang=fr_CA -->
     <meta property="og:site_name" content="Le Marchand de Fenêtres"/>
     <meta property="og:locale:alternate" <?= "content=\"" . _( 'fr_CA' ) . "\""; ?>/>
-    <meta property="og:description" <?= "content=\"" . _( 'Le Marchant de Fenêtres, votre détaillant autorisé Fenplast vous offre une vaste gamme de produits et services.' ) . "\""; ?>/>
+    <meta property="og:description" <?= "content=\"" . _( 'Votre détaillant autorisé Fenplast' ) . "\""; ?>/>
 
 
     <!-- Place favicon.ico in the root directory
