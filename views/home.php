@@ -72,7 +72,7 @@
 
 
 
-  <div id="produits-fenplast" class="l-section m-home-banner">
+  <div id="produits-fenplast-banner" class="l-section m-home-banner">
     <div>
       <!-- <h3>Section "Produits et Services"</h3> -->
 
@@ -80,30 +80,30 @@
           <div class="col-12">
 
             <ul class="m-logo-banner">
-              <li class="first"><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" /></li>
-              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" /></li>
+              <li class="first"><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/fenplast-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/energy-star-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
+              <li><img src="img/logos/accord-logo-white.png" height="50px" width="auto" <?= "alt=\"" . _( 'bannière de logo' ) . "\""; ?>/></li>
             </ul>
 
           </div>
@@ -245,7 +245,7 @@
           </div>
           <div class="col-pad-06">
               <div class="m-info-wrapper">
-                <img src="http://placehold.it/700x500/ee343f/002543.jpg?text=Équipe">
+                <img src="http://placehold.it/700x500/ee343f/002543.jpg?text=Équipe" <?= "alt=\"" . _( 'photo équipe' ) . "\""; ?>>
               </div>
           </div>
         </div>
