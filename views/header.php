@@ -148,12 +148,14 @@
               </div>
             </div>
 
+            <!-- 
             <div class="m-langage">
               <ul>
                 <li><a href="?lang=fr_CA"><span class="l-laptop-inline">FRANÇAIS</span><span class="l-mobile-inline">FR&nbsp;</span></a></li>
                 <li><a href="?lang=en_CA"><span class="l-laptop-inline">ENGLISH</span><span class="l-mobile-inline">&nbsp;EN</span></a></li>
               </ul>
             </div>
+             -->
 
           </div>
 

@@ -2,7 +2,7 @@
 
 
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div id="produit-balcons" class="l-section m-produit-balcons white-overlay">
       <div class="l-wrapper">
 
@@ -11,7 +11,7 @@
 
         <div class="row">
           <div class="col-pad-12">
-            <h1>Notre sélection de Rampes et Balcons</h1>
+            <h1><?= _( 'Notre sélection de Rampes et Balcons' ); ?></h1>
           </div>
         </div>
 

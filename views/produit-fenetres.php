@@ -1,27 +1,27 @@
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div class="l-section white-overlay m-produit-fenetres">
       <div class="l-wrapper">
 
         <div class="row">
           <div class="col-pad-12">
-            <h1>Notre sélection de fenêtres</h1>
+            <h1><?= _( 'Notre sélection de fenêtres' ); ?></h1>
           </div>
         </div>
 
         <div class="row">
           <div class="col-06">
             <ul class="m-product-list bg-white">
-              <li><a target="_BLANK" href="#battant"><?= _( 'Fenêtres à battants' ); ?></a></li>
-              <li><a target="_BLANK" href="#coulissante"><?= _( 'Fenêtres coulissantes' ); ?></a></li>
-              <li><a target="_BLANK" href="#saillie"><?= _( 'Fenêtres en saillie' ); ?></a></li>
+              <li><a href="#battant"><?= _( 'Fenêtres à battants' ); ?></a></li>
+              <li><a href="#coulissante"><?= _( 'Fenêtres coulissantes' ); ?></a></li>
+              <li><a href="#saillie"><?= _( 'Fenêtres en saillie' ); ?></a></li>
             </ul>
           </div>
           <div class="col-06">
             <ul class="m-product-list bg-white">
-              <li><a target="_BLANK" href="#fixe"><?= _( 'Fenêtres fixes' ); ?></a></li>
-              <li><a target="_BLANK" href="#irreguliere"><?= _( 'Fenêtres en forme irrégulières' ); ?></a></li>
-              <li><a target="_BLANK" href="#guillotine"><?= _( 'Fenêtres en guillotines' ); ?></a></li>
+              <li><a href="#fixe"><?= _( 'Fenêtres fixes' ); ?></a></li>
+              <li><a href="#irreguliere"><?= _( 'Fenêtres en forme irrégulières' ); ?></a></li>
+              <li><a href="#guillotine"><?= _( 'Fenêtres en guillotines' ); ?></a></li>
             </ul>
           </div>
         </div>
@@ -68,7 +68,6 @@
             <p><?= _( 'La fenêtre EcoPlus© est une fenêtre à battant structurale avec triple coupe-froid. Le cadre et le volet sont en PVC multichambre très robuste et tous les coins sont soudés à 45° pour une efficacité et une rigidité incomparable. Des extrusions d’aluminium sont serties à la partie en PVC à l’extérieur assurant ainsi une force structurale remarquable.' ); ?></p>
             <p><?= _( 'Deux parcloses peuvent s’adapter au système, vous donnant le choix entre une unité scellée double vitrage ou, pour une efficacité énergétique inégalée, un triple vitrage d’une épaisseur totale d’un 1¼ pouce.' ); ?></p>
             <p><?= _( 'Cette même fenêtre peut aussi être employée avec un système d’ouverture de type <strong>auvent</strong>.' ); ?></p>
-            <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-battant-eco.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
           </div>
 
 
@@ -101,7 +100,6 @@
             </div>
             <div class="col-09">
               <p><?= _( 'Cette fenêtre, innovatrice dans le marché de la fenêtre de PVC, se distingue par un cadre, de type structural, lui donnant un aspect  tout à fait contemporain, tout en minimisant l’épaisseur du « poteau » du centre. Ce système de fenêtre a été conçu pour vous en offrir « Plus »; un volet élégamment profilé, tout en rondeurs, ainsi qu’un cadre de fenêtre qui intègre des moulures répondant à vos besoins. Son étanchéité est assurée par trois coupe-froid (deux sur le volet et un sur le cadre), garantissant des performances irréprochables. Elle peut être munie d’un triple vitrage pour des performances énergétiques supérieures.' ); ?></p>
-              <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-battant-iso.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
               </ul>
             </div>
           </div>
@@ -116,7 +114,6 @@
             <div class="col-09">
               <p><?= _( 'L’une des alternatives les plus négligées pour les petites ouvertures est la fenêtre à auvent. Cette fenêtre possède les mêmes caractéristiques de sécurité et de performance que la fenêtre à battant. La manivelle de type « ciseau » au bas de la fenêtre alloue une ventilation indirecte.' ); ?></p>
               <p><?= _( 'Vous pouvez également superposer ce type de fenêtre pour lui donner un aspect chaleureux de fenêtre guillotine, en conservant les avantages d’une fenêtre qui se ferme « à compression ».' ); ?></p>
-              <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-battant-iso.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
               </ul>
             </div>
           </div>
@@ -130,7 +127,7 @@
 
 
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div id="coulissante" class="l-section m-product-second white-overlay">
       <div class="l-wrapper">
 
@@ -145,7 +142,6 @@
             </div>
             <div class="col-09">
               <p><?= _( 'Les deux volets sont mobiles pour une ventilation du côté gauche ou du côté droit. Les deux volets s’inclinent vers l’intérieur permettant de manipuler les volets aisément pour le nettoyage sans devoir retirer les volets du cadre. Ce système alloue une ouverture libre maximale pour l’entrée ou la sortie de matériel. Cette fenêtre peut être commandée avec une moustiquaire pleine, pour choisir le côté privilégié à ouvrir, ou une demi-moustiquaire pour une luminosité accrue .' ); ?></p>
-              <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-coulissante-iso.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
             </div>
           </div>
 
@@ -158,7 +154,6 @@
             </div>
             <div class="col-09">
               <p><?= _( 'Avec un seul volet mobile, cette fenêtre économique est une merveille de simplicité et de sobriété. L’unité scellée fixe est maintenue non pas dans un volet, mais par le cadre de la fenêtre lui-même, ainsi que par le meneau. Vous pouvez spécifier le côté opérant selon vos besoins. Le meneau est désigné avec raffinement, donnant à l’ensemble une apparence de fenêtre à battant. La simplicité d’opération ainsi que la robustesse de cette fenêtre en fait un choix recherché. ' ); ?></p>
-              <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-coulissante-iso.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
             </div>
           </div>
 
@@ -194,7 +189,7 @@
   </div>
 
 
-<div class="m-hero hero-02">
+<div class="m-hero hero-03">
   <div id="fixe" class="l-section m-product-fourth white-overlay">
     <div class="l-wrapper">
 
@@ -208,7 +203,6 @@
           </div>
           <div class="col-09">
             <p><?= _( 'La fenêtre EcoPano© est un cadre de type panoramique de 5 ¾" d’épaisseur, employée pour des applications nécessitant une fenêtre fixe.' ); ?></p>
-            <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-fixe-eco.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
           </div>
         </div>
 
@@ -221,7 +215,6 @@
           </div>
           <div class="col-09">
             <p><?= _( 'La fenêtre IsoPano© est un cadre de type panoramique employée pour des applications nécessitant une fenêtre fixe.' ); ?></p>
-            <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-fixe-iso.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
           </div>
         </div>
 
@@ -248,7 +241,6 @@
             </div>
             <div class="col-09">
               <p><?= _( 'Au fil des ans, Fenplast a acquis une expertise pour vous offrir des fenêtres ayant des formes géométriques diverses, respectant ainsi vos besoins en matière d’architecture et permettant de personnaliser votre résidence selon vos souhaits. Les formes illustrées ci-contre ne sont qu’un exemple des multiples possibilités offertes. Ces formes EcoGeo© sont fabriquées à partir du cadre EcoPano©. Seulement le cadre plat peut être utilisé dans une forme irrégulière arrondie. Il nous est impossible de cintrer le fini aluminium clair.' ); ?></p>
-              <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-f-i-eco.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
             </div>
           </div>
 
@@ -262,7 +254,6 @@
             </div>
             <div class="col-09">
               <p><?= _( 'Au fil des ans, Fenplast a acquis une expertise pour vous offrir des fenêtres ayant des formes géométriques diverses, respectant ainsi vos besoins en matière d’architecture et permettant de personnaliser votre résidence selon vos souhaits. Les formes illustrées ci-contre ne sont qu’un exemple des multiples possibilités offertes. Ces formes IsoGeo© sont fabriquées à partir du cadre IsoPano©.' ); ?></p>
-              <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-f-i-iso.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
             </div>
           </div>
 
@@ -274,7 +265,7 @@
 
 
 
-<div class="m-hero hero-02">
+<div class="m-hero hero-03">
   <div id="guillotine" class="l-section m-product-sixth white-overlay">
     <div class="l-wrapper">
 
@@ -289,7 +280,6 @@
           </div>
           <div class="col-09">
             <p><?= _( 'Cette fenêtre avec ses deux volets mobiles apporte une bonne ventilation. La performance hors du commun aux différents tests d’étanchéité constitue un atout indéniable. Vous pouvez, au choix, opter pour une moustiquaire complète (tel qu’illustré) ou une demi-moustiquaire.' ); ?></p>
-            <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-guillotine-iso.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
           </div>
         </div>
 
@@ -303,7 +293,6 @@
           </div>
           <div class="col-09">
             <?= _( 'Toujours le même type de fenêtre, mais fabriquée avec uniquement le volet du bas comme partie mobile. Cette fenêtre, plus économique, sans rien céder aux performances, surprendra par son aspect intégré. Le meneau horizontal, très sobre, est assemblé de façon mécanique, garantissant ainsi, une rigidité à l’ensemble.' ); ?>
-            <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/fenetre-guillotine-iso.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
           </div>
         </div>
 

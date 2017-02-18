@@ -1,11 +1,11 @@
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div class="l-section white-overlay m-produit-portes">
       <div class="l-wrapper">
 
         <div class="row">
           <div class="col-pad-12">
-            <h1>Notre sélection de portes</h1>
+            <h1><?= _( 'Notre sélection de portes' ); ?></h1>
           </div>
         </div>
 
@@ -49,7 +49,6 @@
             <p><?= _( 'Ce système de porte coulissante a été conçu afin d’offrir la meilleure option sur le marché.' ); ?></p>
             <p><?= _( 'Avec des volets de style colonial élégamment profilés, elle s’harmonise à toute la gamme de produits Fenplast. Son étanchéité est assurée par un double coupe-froid continu au périmètre et des rencontres robustes également à doubles coupe-froid, lui permettant d’atteindre des performances incomparables.' ); ?></p>
             <p><?= _( 'Elle peut être munie d’un triple vitrage pour des performances énergétiques inégalées.' ); ?></p>
-            <p><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/portes-coulissantes-calopatio.aspx' ); ?>"><?= _( 'En savoir plus...' ); ?></a></p>
           </div>
         </div>
 
@@ -75,7 +74,7 @@
 
 
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div id="acier" class="l-section m-product-second white-overlay">
       <div class="l-wrapper">
 
@@ -89,12 +88,6 @@
             <div class="col-08">
               <p><?= _( 'Les portes que nous fabriquons vont des plus conventionnelles aux plus personnalisées en maintenant toujours le plus haut standard de qualité. Notre apport au marché de la porte d\'acier peut être défini par une recherche constante d\'innovation, tant au niveau de la structure de la porte que des accessoires et des options offertes.' ); ?></p>
               <p><strong><?= _( 'Nos portes sont certifiées ENERGY STAR®' ); ?></strong></p>
-              <ul class="m-list-bullet">
-                <li><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/portes_lateraux_base.aspx' ); ?>"><?= _( 'Portes et latéraux de base' ); ?></a></li>
-                <li><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/porte-panneaux-evo.aspx' ); ?>"><?= _( 'Panneaux Évolution' ); ?></a></li>
-                <li><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/verres-decoratifs.aspx' ); ?>"><?= _( 'Verres Décoratif' ); ?></a></li>
-                <li><a target="_BLANK" href="<?= _( 'http://www.fenplast.com/fr/porte-autres-vitraux.aspx' ); ?>"><?= _( 'Autres Vitraux' ); ?></a></li>
-              </ul>
             </div>
           </div>
 

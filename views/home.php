@@ -10,7 +10,7 @@
   }(document, 'script', 'facebook-jssdk'));
   </script>
 
-  <div id="js-header-hero" class="m-hero hero-02">
+  <div id="js-header-hero" class="m-hero hero-03">
     <div class="white-overlay">
 
       <div class="l-wrapper">
@@ -23,9 +23,9 @@
 
                    <div class="m-slider-slide slide-greetings">
                      <h1 class="clearfix">
-                       <div class="m-title clearfix"><span class="js-hero-bg hero-02">Le</span></div>
-                       <div class="m-title clearfix"><span class="js-hero-bg hero-02">Marchand</span></div>
-                       <div class="m-title clearfix"><span class="js-hero-bg hero-02">De Fenêtres</span></div>
+                       <div class="m-title clearfix"><span class="js-hero-bg hero-03">Le</span></div>
+                       <div class="m-title clearfix"><span class="js-hero-bg hero-03">Marchand</span></div>
+                       <div class="m-title clearfix"><span class="js-hero-bg hero-03">De Fenêtres</span></div>
                      </h1>
                    </div>
 
@@ -64,9 +64,9 @@
 
                   <div class="m-slider-slide slide-promo-accordd">
                     <div class="js-promo-carousel txt-wrapper">
-                      <h2>FINANCEMENT <span>Accord D Disponible</span></h2>
+                      <h2><?= _( 'FINANCEMENT' ); ?> <span><?= _( 'Accord D Disponible' ); ?></span></h2>
                       <img src="img/promo/promo-accordd-logo-lemarchanddefenetres.png" alt="logo accord d" />
-                      <div class="alt-txt">Parlez-en à nos conseiller</div>
+                      <div class="alt-txt"><?= _( 'Parlez-en à nos conseiller' ); ?></div>
                     </div>
                   </div>
 
@@ -133,21 +133,21 @@
           <div class="col-pad-04">
             <div class="m-feature-container left">
               <div class="m-icon ico-install"></div>
-              <h2><a href="services.php">Installation Professionelle</a></h2>
+              <h2><a href="services.php"><?= _( 'Installation Professionelle' ); ?></a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>
           <div class="col-pad-04">
             <div class="m-feature-container">
               <div class="m-icon ico-satisfaction main"></div>
-              <h2><a href="services.php">Qualité Supérieur</a></h2>
+              <h2><a href="services.php"><?= _( 'Qualité Supérieur' ); ?></a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>
           <div class="col-pad-04">
             <div class="m-feature-container right">
               <div class="m-icon ico-key"></div>
-              <h2><a href="services.php">Service Clefs<br />en Main</a></h2>
+              <h2><a href="services.php"><?= _( 'Service Clefs' ); ?><br /><?= _( 'en Main' ); ?></a></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
             </div>
           </div>
@@ -160,7 +160,7 @@
 
 
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div id="clientele-fenplast" class="l-section m-home-second white-overlay">
       <div class="l-wrapper">
         <!-- <h3>Section "Témoignage"</h3> -->
@@ -170,21 +170,21 @@
             <div class="testimonial">
                 <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar image">
               <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
-              <span class="testimonial-author">Aline Poitras, Propriétaire</span>
+              <span class="testimonial-author">Aline Poitras, <?= _( 'Propriétaire' ); ?></span>
             </div>
           </div>
           <div class="gallery-cell">
              <div class="testimonial">
                 <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg" alt="avatar image">
               <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
-              <span class="testimonial-author">Sylvie Tremblay, Propriétaire</span>
+              <span class="testimonial-author">Sylvie Tremblay, <?= _( 'Propriétaire' ); ?></span>
             </div>
           </div>
           <div class="gallery-cell">
                 <div class="testimonial">
                 <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/andretacuyan/128.jpg" alt="avatar image">
               <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
-              <span class="testimonial-author">Amit Khadir, Propriétaire</span>
+              <span class="testimonial-author">Amit Khadir, <?= _( 'Propriétaire' ); ?></span>
             </div>
           </div>
         </div>
@@ -198,7 +198,7 @@
 
   <div id ="media-sociaux-fenplast" class="l-section m-home-third">
     <div class="l-wrapper">
-      <h3>Dernières Nouvelles</h3>
+      <h3><?= _( 'Dernières Nouvelles' ); ?></h3>
 
       <div class="row">
         <div class="col-pad-06">
@@ -223,10 +223,10 @@
           <div class="row">
             <div class="col-12">
 
-              <h4>Une image renouvelée pour Fenplast</h4>
+              <h4><?= _( 'Une image renouvelée pour Fenplast' ); ?></h4>
               <div class="m-vimeo">
                 <iframe src="https://player.vimeo.com/video/192534635" class="vimeo" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                <p><a href="https://vimeo.com/192534635">Ligne du temps</a> from <a href="https://vimeo.com/fenplast">Fenplast</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                <p><a href="https://vimeo.com/192534635"><?= _( 'Ligne du temps' ); ?></a> <?= _( 'de' ); ?> <a href="https://vimeo.com/fenplast">Fenplast</a> <?= _( 'sur' ); ?> <a href="https://vimeo.com">Vimeo</a>.</p>
               </div>
 
             </div>
@@ -246,10 +246,10 @@
 
 
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div id="information-compagnie" class="white-overlay l-section m-home-fourth">
       <div class="l-wrapper">
-        <h3>Notre Entreprise</h3>
+        <h3><?= _( 'Notre Entreprise' ); ?></h3>
 
         <div class="row">
           <div class="col-pad-06">

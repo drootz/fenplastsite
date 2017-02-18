@@ -25,7 +25,7 @@
               <div class="m-footer-module">
               <div class="m-micro-address" itemscope itemtype="http://schema.org/Organization">
                  <h4 itemprop="brand"><?= _( 'Le Marchand de Fenêtres' ); ?></h4>
-                 <div class="m-subtitle">Détaillant Autorisé Fenplast</div>
+                 <div class="m-subtitle"><?= _( 'Détaillant Autorisé Fenplast' ); ?></div>
 
                  <ul>
                    <li>
@@ -37,12 +37,12 @@
                        </div>
                        <div class="col-10">
                          <div class="m-address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <a href="https://www.google.ca/maps/dir//1370+Rue+Notre+Dame,+Lavaltrie,+QC" target="_BLANK">
-                              <div><span itemprop="streetAddress"><?= _( '1370, rue Notre-Dame' ); ?></span></div>
+                            <a href="https://www.google.ca/maps/dir//3247+Rue+Dandurand,+Montreal,+QC" target="_BLANK">
+                              <div><span itemprop="streetAddress"><?= _( '3247, rue Dandurand' ); ?></span></div>
                               <div>
-                                <span itemprop="addressLocality"><?= _( 'Lavaltrie' ); ?></span><span>&nbsp;</span>
+                                <span itemprop="addressLocality"><?= _( 'Montréal' ); ?></span><span>&nbsp;</span>
                                 <span itemprop="addressRegion">QC</span><span>&nbsp;&nbsp;</span>
-                                <span itemprop="postalCode">IOI OIO</span>
+                                <span itemprop="postalCode">H1Y 1V6</span>
                               </div>
                             </a>
                         </div>
@@ -134,19 +134,19 @@
               <div class="m-footer-module">
                 <h4><?= _( 'Heures d\'ouvertures' ); ?></h4>
                 <div class="m-hours clearfix">
-                  <div class="m-open-day"><span><?= _( 'Dimanche' ); ?> :</span></div>  <div class="m-open-hours"><span>Fermé</span></div>
+                  <div class="m-open-day"><span><?= _( 'Dimanche' ); ?> :</span></div>  <div class="m-open-hours"><span><?= _( 'Fermé' ); ?></span></div>
                   <div class="m-open-newline"></div>
-                  <div class="m-open-day"><span><?= _( 'Lundi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-day"><span><?= _( 'Lundi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 <?= _( 'à' ); ?> 17h00</span></div>
                   <div class="m-open-newline"></div>
-                  <div class="m-open-day"><span><?= _( 'Mardi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-day"><span><?= _( 'Mardi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 <?= _( 'à' ); ?> 17h00</span></div>
                   <div class="m-open-newline"></div>
-                  <div class="m-open-day"><span><?= _( 'Mercredi' ); ?> :</span></div>  <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-day"><span><?= _( 'Mercredi' ); ?> :</span></div>  <div class="m-open-hours"><span>9h00 <?= _( 'à' ); ?> 17h00</span></div>
                   <div class="m-open-newline"></div>
-                  <div class="m-open-day"><span><?= _( 'Jeudi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-day"><span><?= _( 'Jeudi' ); ?> :</span></div>     <div class="m-open-hours"><span>9h00 <?= _( 'à' ); ?> 17h00</span></div>
                   <div class="m-open-newline"></div>
-                  <div class="m-open-day"><span><?= _( 'Vendredi' ); ?> :</span></div>  <div class="m-open-hours"><span>9h00 à 17h00</span></div>
+                  <div class="m-open-day"><span><?= _( 'Vendredi' ); ?> :</span></div>  <div class="m-open-hours"><span>9h00 <?= _( 'à' ); ?> 17h00</span></div>
                   <div class="m-open-newline"></div>
-                  <div class="m-open-day"><span><?= _( 'Samedi' ); ?> :</span></div>    <div class="m-open-hours"><span>Fermé</span></div>
+                  <div class="m-open-day"><span><?= _( 'Samedi' ); ?> :</span></div>    <div class="m-open-hours"><span><?= _( 'Fermé' ); ?></span></div>
                   <div class="m-open-newline"></div>
                 </div>
               </div>

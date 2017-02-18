@@ -1,6 +1,6 @@
 
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div id="realisations" class="l-section m-realisations white-overlay">
       <div class="l-wrapper">
 
@@ -9,7 +9,7 @@
 
         <div class="row">
           <div class="col-pad-12">
-            <h1>Réalisations Portes et Fenêtres</h1>
+            <h1><?= _( 'Réalisations Portes et Fenêtres' ); ?></h1>
           </div>
         </div>
 

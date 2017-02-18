@@ -183,20 +183,20 @@
 
 .m-nav-primary {
   position: absolute;
-  width: 199.75px;
-  top: 59px; right: 0px;
+  top: 61px; right: 0px;
   z-index: 20;
   font-size: 0.9em;
+
+  &.is-closed {
+    width: 150px;
+    transition: width 300ms ease-in;
+  }
 
   &.is-opened {
     width: 100%;
     transition: width 300ms ease-out;
   }
 
-  &.is-closed {
-    width: 199.75px;
-    transition: width 300ms ease-in;
-  }
 
   @include breakpoint (laptop) {
     position: static;

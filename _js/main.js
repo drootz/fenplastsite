@@ -113,17 +113,17 @@
    */
   	function pageLoadInit() {
 
-      var bgHeroClass = ['hero-01','hero-02','hero-03','hero-04'];
-      var activeHero = bgHeroClass[Math.floor(Math.random()*bgHeroClass.length)];
-
-      if ($('.m-hero').length) {
-        fromToClass($('.m-hero'), "hero-02", activeHero);
-      }
-
-      if ($('.js-hero-bg').length) {
-
-        fromToClass($('.js-hero-bg'),"hero-02", activeHero);
-      }
+      // var bgHeroClass = ['hero-01','hero-02','hero-03','hero-04'];
+      // var activeHero = bgHeroClass[Math.floor(Math.random()*bgHeroClass.length)];
+      //
+      // if ($('.m-hero').length) {
+      //   fromToClass($('.m-hero'), "hero-02", activeHero);
+      // }
+      //
+      // if ($('.js-hero-bg').length) {
+      //
+      //   fromToClass($('.js-hero-bg'),"hero-02", activeHero);
+      // }
 
       // if ($('body').hasClass('js-laptop') || $('body').hasClass('js-desktop')) {
       //
@@ -388,72 +388,31 @@ function viewportIni() {
 
 // Google Map Integration
 function initMap() {
-  var posFenplast = {lat: 45.8830136, lng: -73.2761306};
+  var posFenplast = {lat: 45.5518806, lng: -73.5786761};
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 15,
-    center: {lat: 45.8847, lng: -73.2761306}
+    center: {lat: 45.5535, lng: -73.5786761}
   });
   var markerFenplast = new google.maps.Marker({
     position: posFenplast,
     map: map
   });
 
-
-
-  var directionurl = "https://www.google.ca/maps/dir//1370+Rue+Notre+Dame,+Lavaltrie,+QC";
-
+  var directionurl = "https://www.google.ca/maps/dir//3247+Rue+Dandurand,+Montreal,+QC";
 
   var infoWindowFenplast = new google.maps.InfoWindow({
-    content: '<div class="l-gmap-row row clearfix"><div class="col-02 m-gmap-logo"><img src="favicon-32x32.png" alt="logo" width="16px" height="auto"></div><div class="col-10 m-gmap-name">Le Marchand de Fenêtres</div><div class="col-10 m-gmap-address">1370, rue Notre-Dame<br />Lavaltrie QC &nbsp;IOI OIO</div><div class="col-10 m-gmap-direction"><a href="'+ directionurl +'" target="_BLANK">Direction</a></div></div>'
+    content: '<div class="l-gmap-row row clearfix"><div class="col-02 m-gmap-logo"><img src="favicon-32x32.png" alt="logo" width="16px" height="auto"></div><div class="col-10 m-gmap-name">Le Marchand de Fenêtres</div><div class="col-10 m-gmap-address">3247, rue Dandurand<br />Montreal QC &nbsp;H1Y 1V6</div><div class="col-10 m-gmap-direction"><a href="'+ directionurl +'" target="_BLANK">Direction</a></div></div>'
   });
 
   markerFenplast.addListener('click', function() {
       infoWindowFenplast.open(map, markerFenplast);
   });
 
-  // var infoWindowUser = new google.maps.InfoWindow({
-  //   content: '<span>Direction</span>'
-  // });
-
-  // var infoWindow = new google.maps.InfoWindow({
-  //   map: map
-  // });
-
-  //
-  // // Try HTML5 geolocation.
-  // if (navigator.geolocation) {
-  //   navigator.geolocation.getCurrentPosition(function(position) {
-  //     var pos = {
-  //       lat: position.coords.latitude,
-  //       lng: position.coords.longitude
-  //     };
-  //
-  //     // infoWindow.setPosition(pos);
-  //     // infoWindow.setContent('<span>Vous êtes ici</span>');
-  //
-  //     markerUser.setPosition(pos);
-  //
-  //     map.setCenter(pos);
-  //   }, function() {
-  //     handleLocationError(true, infoWindow, map.getCenter());
-  //   });
-  // } else {
-  //   // Browser doesn't support Geolocation
-  //   handleLocationError(false, infoWindow, map.getCenter());
-  // }
-
   var transitLayer = new google.maps.TransitLayer();
   transitLayer.setMap(map);
 
   infoWindowFenplast.open(map, markerFenplast);
 
-
-  // markerFenplast.addListener('click', function() {
-  //   infoWindowFenplast.open(map, markerFenplast);
-  // });
-  // markerUser.addListener('click', function() {
-  //   infoWindowUser.open(map, markerUser);
-  // });
 }
 
 
@@ -463,98 +422,6 @@ function handleLocationError(browserHasGeolocation, infoWindowFenplast, posFenpl
                         'Error: The Geolocation service failed.' :
                         'Error: Your browser doesn\'t support geolocation.');
 }
-
-//
-// var directionsDisplay;
-// var directionsService;
-// var map;
-//
-// // 45.5001806,-73.5674628 PLace Bonaventure
-// // 45.8830136,-73.2761306 Lavaltrie
-// var posFenplast = {lat: 45.5001806, lng: -73.5674628};
-// var posLavaltrie = {lat: 45.8830136, lng: -73.2761306};
-//
-// function initMap() {
-//
-//   console.log("preGeo");
-//
-//   // Try HTML5 geolocation.
-//   if (navigator.geolocation) {
-//
-//     navigator.geolocation.getCurrentPosition(function(position) {
-//       var posGeo = {
-//         lat: position.coords.latitude,
-//         lng: position.coords.longitude
-//       };
-//
-//       // infoWindow.setPosition(pos);
-//       // infoWindow.setContent('<span>Vous êtes ici</span>');
-//       // markerUser.setPosition(pos);
-//       // map.setCenter(pos);
-//
-//       console.log("ifGeo");
-//       console.log(posGeo);
-//
-//       directionsDisplay = new google.maps.DirectionsRenderer();
-//       directionsService = new google.maps.DirectionsService();
-//       map = new google.maps.Map(document.getElementById('map'), {
-//         zoom: 13,
-//         center: posFenplast
-//       });
-//       directionsDisplay.setMap(map);
-//       calcRoute(posGeo);
-//
-//
-//     }, function() {
-//       // Browser support Geolocation
-//       // handleLocationError(true, infoWindow, map.getCenter());
-//
-//     });
-//   } else {
-//     // Browser doesn't support Geolocation
-//     // handleLocationError(false, infoWindow, map.getCenter());
-//
-//     console.log("elseGeo");
-//
-//     map = new google.maps.Map(document.getElementById('map'), {
-//       zoom: 13,
-//       center: posFenplast
-//     });
-//     var markerFenplast = new google.maps.Marker({
-//       position: posFenplast,
-//       map: map
-//     });
-//     var infoWindowFenplast = new google.maps.InfoWindow({
-//       content: '<span>Fenplast</span>'
-//     });
-//     infoWindowFenplast.open(map, markerFenplast);
-//   }
-//
-// }
-//
-//
-// function calcRoute(pos) {
-//
-//   // Example:
-//   // var start = {lat: 45.869620, lng: -73.292352};
-//   // var end = {lat: 45.869620, lng: -73.276939};
-//   // OR
-//   // var start = 'montreal, qc';
-//   // var end = 'quebec, qc';
-//
-//   var start = pos;
-//   var end = posLavaltrie;
-//   var request = {
-//     origin: start,
-//     destination: end,
-//     travelMode: 'DRIVING'
-//   };
-//   directionsService.route(request, function(result, status) {
-//     if (status == 'OK') {
-//       directionsDisplay.setDirections(result);
-//     }
-//   });
-// }
 
 function detectBrowser() {
   var useragent = navigator.userAgent;

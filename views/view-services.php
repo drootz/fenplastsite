@@ -1,11 +1,11 @@
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div class="l-section white-overlay m-services-header">
       <div class="l-wrapper">
 
         <div class="row">
           <div class="col-pad-12">
-            <h1>Nos Services</h1>
+            <h1><?= _( 'Nos Services' ); ?></h1>
           </div>
         </div>
 
@@ -56,7 +56,7 @@
 
 
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div id="clefs-en-main" class="l-section m-services-second white-overlay">
       <div class="l-wrapper">
 
@@ -99,7 +99,7 @@
 
 
 
-  <div class="m-hero hero-02">
+  <div class="m-hero hero-03">
     <div id="dimension" class="l-section m-services-fourth white-overlay">
       <div class="l-wrapper">
 
