@@ -67,7 +67,7 @@
 
   @include breakpoint (laptop) {
     position: absolute;
-    bottom: inherit; left: inherit; right: 0px; top: 5px;
+    bottom: inherit; left: inherit; right: 0px; top: 6px;
     width: 250px;
     // outline: 1px solid green;
   }
@@ -154,11 +154,11 @@
 
 .m-logo {
   float: right;
-  width: 200px;
+  width: 150px;
 
   @include breakpoint (laptop) {
     float: left;
-    width: 200px;
+    width: 150px;
   }
 
   img {
@@ -233,7 +233,7 @@
       width: auto;
       background-color: transparent;
       margin-left: 5px;
-      margin-top: 33px;
+      margin-top: 34px;
       border: none;
       height: 40px;
       font-size: 0.8em;
