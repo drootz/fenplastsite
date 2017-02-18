@@ -266,12 +266,13 @@ button.flickity-prev-next-button svg {
     }
 
     @include breakpoint (laptop) {
+      // outline: 1px solid red;
       margin-top: 0;
       font-size: 6em;
       position: absolute;
       // width: 100%;
       // height: 485px;
-      height: 300px;
+      height: 315px;
       left: 0; right: 0; bottom: 165px;
       // outline: 1px solid red;
     }
