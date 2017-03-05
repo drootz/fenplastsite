@@ -133,4 +133,26 @@
   }
   &.img-porteAcier-02 { background-image: url(../img/product/porteAcier_02_thumb.jpg);
   margin-top: -20px; }
+
+  //REVETEMENT
+  &.img-canexel { background-image: url(../img/product/canexel_thumb.png); }
+  &.img-selectderoyal { background-image: url(../img/product/selectderoyal_thumb.png); }
 }
+
+.m-img-alt {
+  outline: 1px solid red;
+  width: 225px;
+  height: 225px;
+  margin: 0px auto 25px;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @include breakpoint (laptop) {
+    margin: 0 0 15px;
+  }
+}
+
+//REVETEMENT
+.img-canexel { background-image: url(../img/product/canexel_thumb.png); }
+.img-selectderoyal { background-image: url(../img/product/selectderoyal_thumb.png); }

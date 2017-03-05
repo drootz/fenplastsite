@@ -41,10 +41,10 @@
 
         <h3><?= _( 'Gamme CaloPatio©' ); ?></h3>
         <div class="row">
-          <div class="col-03">
+          <div class="col-04">
             <div class="m-img img-caloPatio"></div>
           </div>
-          <div class="col-09">
+          <div class="col-08">
             <p><?= _( 'Cette porte coulissante, se distingue par un cadre robuste, entièrement de PVC à multi-cavités isolantes, lui assurant une durabilité exceptionnelle en plus d\'offrir un meilleur rendement énergétique.' ); ?></p>
             <p><?= _( 'Ce système de porte coulissante a été conçu afin d’offrir la meilleure option sur le marché.' ); ?></p>
             <p><?= _( 'Avec des volets de style colonial élégamment profilés, elle s’harmonise à toute la gamme de produits Fenplast. Son étanchéité est assurée par un double coupe-froid continu au périmètre et des rencontres robustes également à doubles coupe-froid, lui permettant d’atteindre des performances incomparables.' ); ?></p>

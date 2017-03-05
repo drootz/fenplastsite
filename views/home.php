@@ -140,21 +140,21 @@
             <div class="m-feature-container left">
               <div class="m-icon ico-install"></div>
               <h2><a href="services.php"><?= _( 'Installation Professionelle' ); ?></a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
+              <p><?= _( 'Nos experts certifiés s\'occupent de tous les détails, de la planification jusqu\'à la réalisation.' ); ?></p>
             </div>
           </div>
           <div class="col-pad-04">
             <div class="m-feature-container">
               <div class="m-icon ico-satisfaction main"></div>
               <h2><a href="services.php"><?= _( 'Qualité Supérieur' ); ?></a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
+              <p><?= _( 'Notre équipe d\'experts formés et certifiés offre la meilleure qualité d\'installation sur le marché.' ); ?></p>
             </div>
           </div>
           <div class="col-pad-04">
             <div class="m-feature-container right">
               <div class="m-icon ico-key"></div>
-              <h2><a href="services.php"><?= _( 'Service Clefs' ); ?><br /><?= _( 'en Main' ); ?></a></h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</p>
+              <h2><a href="services.php"><?= _( 'Service Clé' ); ?><br /><?= _( 'en Main' ); ?></a></h2>
+              <p><?= _( 'Nous somme les seuls de l\'industrie à offrir une prise en charge de toutes les étapes de votre projet!' ); ?></p>
             </div>
           </div>
 
@@ -175,22 +175,22 @@
           <div class="gallery-cell">
             <div class="testimonial">
                 <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar image">
-              <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
-              <span class="testimonial-author">Aline Poitras, <?= _( 'Propriétaire' ); ?></span>
+              <q class="testimonial-quote">"<?= _( 'Quelle précision dans leur exécution.' ); ?>"</q>
+              <span class="testimonial-author"><?= _( 'Mme Legault' ); ?>, <?= _( 'Propriétaire' ); ?></span>
             </div>
           </div>
           <div class="gallery-cell">
              <div class="testimonial">
                 <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg" alt="avatar image">
-              <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
-              <span class="testimonial-author">Sylvie Tremblay, <?= _( 'Propriétaire' ); ?></span>
+              <q class="testimonial-quote">"<?= _( 'Le représentant a su évaluer mes besoins.' ); ?>"</q>
+              <span class="testimonial-author"><?= _( 'M. Maltais' ); ?>, <?= _( 'Propriétaire' ); ?></span>
             </div>
           </div>
           <div class="gallery-cell">
                 <div class="testimonial">
                 <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/andretacuyan/128.jpg" alt="avatar image">
-              <q class="testimonial-quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla."</q>
-              <span class="testimonial-author">Amit Khadir, <?= _( 'Propriétaire' ); ?></span>
+              <q class="testimonial-quote">"<?= _( '"Je suis surpris à quel point nous avons une amélioration sur notre confort."' ); ?>"</q>
+              <span class="testimonial-author"><?= _( 'M. Boucher' ); ?>, <?= _( 'Propriétaire' ); ?></span>
             </div>
           </div>
         </div>
@@ -259,12 +259,11 @@
 
         <div class="row">
           <div class="col-pad-06">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis blandit dolor vel tempor laoreet. Sed cursus dolor quis malesuada suscipit. Suspendisse lectus eros, facilisis sed aliquam sed, semper quis nisl. Praesent et blandit risus. Phasellus dignissim, justo eget facilisis elementum, diam orci pretium lorem, eu euismod libero eros vel enim. Etiam vitae aliquam velit, ac dignissim mauris. Nam fermentum dolor eu posuere volutpat.</p>
-              <p>Maecenas rhoncus lobortis gravida. Cras vestibulum a nisi eu bibendum. Nulla ut felis ut risus bibendum vulputate eu a tortor. Donec pellentesque erat vel neque volutpat iaculis. Aenean sit amet metus velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam dictum sed lacus in aliquet. Nulla convallis, ligula vel pellentesque egestas, quam orci dignissim leo, et iaculis diam lectus nec diam.</p>
+              <p><?= _( 'Nous sommes des entrepreneurs dévoués, avec un cumulatif de vingt ans d’expérience dans le domaine de la construction. Nous souhaitons offrir un service personnalisé, qui tient compte des attentes de nos clients et qui répond entièrement à leurs besoins. Nous avons pris la décision de nous lancer en affaires afin d’offrir un service à la hauteur de ces attentes, et ce, avec toute notre expertise dans ce domaine.' ); ?></p>
           </div>
           <div class="col-pad-06">
               <div class="m-info-wrapper">
-                <img src="http://placehold.it/700x500/ee343f/002543.jpg?text=Équipe" <?= "alt=\"" . _( 'photo équipe' ) . "\""; ?>>
+                <img src="http://placehold.it/700x400/ee343f/002543.jpg?text=Équipe" <?= "alt=\"" . _( 'photo équipe' ) . "\""; ?>>
               </div>
           </div>
         </div>

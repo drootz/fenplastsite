@@ -90,14 +90,6 @@
             				</div> <!-- faq-content -->
             			</li>
 
-            			<li>
-            				<a class="trigger" href="#0"><?= _( 'Qu\'est-ce que l\'indice RE?' ); ?></a>
-            				<div class="faq-content">
-            					<p><?= _( '<strong>L\'indice de rendement énergétique</strong> (RE) est fondé sur divers facteurs, dont <strong>la valeur U*</strong> et l\'étanchéité à l\'air.' ); ?></p>
-                      <p><?= _( 'Cette valeur établit le rendement énergétique exigé pour la certification ENERGY STAR® d\'un produit pour une zone climatique donnée. Plus l\'indice RE est élevé, plus le produit est efficace sur le plan énergétique. Ainsi, il facilite la comparaison de différents produits de fenêtrage entre eux et le choix de ceux ayant le meilleur rendement énergétique.' ); ?></p>
-                      <p><?= _( '<strong>* Valeur U</strong> : Coefficient de perte ou de gain de chaleur non solaire. La valeur U mesure donc le taux de transfert thermique. Plus la valeur U est basse, plus la fenêtre est isolante et meilleur sera son rendement énergétique. Elle est exprimée en W/m2K.' ); ?></p>
-            				</div> <!-- faq-content -->
-            			</li>
             		</ul> <!-- faq-group -->
 
 
@@ -106,12 +98,26 @@
 
             		<ul id="generale" class="faq-group">
             			<li class="faq-title"><h2><?= _( 'Générale' ); ?></h2></li>
+
             			<li>
-            				<a class="trigger" href="#0">Mettre le titre du sujet ou question ici.</a>
+            				<a class="trigger" href="#0"><?= _( 'Que veulent dire concrètement les chiffres de performance (A-3, B-7 etc...) rattachés aux portes et fenêtres?' ); ?></a>
             				<div class="faq-content">
-            					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit quidem delectus rerum eligendi mollitia, repudiandae quae beatae. Et repellat quam atque corrupti iusto architecto impedit explicabo repudiandae qui similique aut iure ipsum quis inventore nulla error aliquid alias quia dolorem dolore, odio excepturi veniam odit veritatis. Quo iure magnam, et cum. Laudantium, eaque non? Tempore nihil corporis cumque dolor ipsum accusamus sapiente aliquid quis ea assumenda deserunt praesentium voluptatibus, accusantium a mollitia necessitatibus nostrum voluptatem numquam modi ab, sint rem.</p>
+            					<p><?= _( 'Ces chiffres donnent une indication de la valeur des portes et fenêtres aux tests suivants:<br />A= Étanchéité à l’air, l\'échelle est de 1 à 3.<br />B= Résistance à la pénétration d\’eau, l\'échelle est de 1 à 7.<br />C= Résistance aux surcharges dues au vent (donc la capacité d\'une porte ou fenêtre de résister à un ouragan ou des vents extrêmement violents), l\'échelle est de 1 à 5. ' ); ?></p>
+                      <p><?= _( 'Ces tests doivent être passés dans un laboratoire d\'essai homologué et sont essentiels en vue de l\'obtention d\'un numéro d\'acceptation de la CCMC, <a href="http://www.nrc-cnrc.gc.ca/fra/solutions/consultatifs/ccmc/services_evaluation.html">Centre canadien de matériaux de construction</a>.' ); ?></p>
+                      <p><?= _( 'Une chose importante est de vous assurer que ce soit le manufacturier même (non seulement l\'extrudeur de PVC) qui a passé les tests, pour vous assurer que la porte ou  fenêtre sera en tout point identique à celle qui a été testée.' ); ?></p>
+                      <p><?= _( 'Fenplast a l\'habitude de faire tester aléatoirement certains produits de sa ligne de montage pour s\'assurer qu\'ils seront aussi efficaces que ceux qui ont passé les tests.' ); ?></p>
             				</div> <!-- faq-content -->
             			</li>
+
+            			<li>
+            				<a class="trigger" href="#0"><?= _( 'Qu\'est-ce que l\'indice RE?' ); ?></a>
+            				<div class="faq-content">
+            					<p><?= _( '<strong>L\'indice de rendement énergétique</strong> (RE) est fondé sur divers facteurs, dont <strong>la valeur U*</strong> et l\'étanchéité à l\'air.' ); ?></p>
+                      <p><?= _( 'Cette valeur établit le rendement énergétique exigé pour la certification ENERGY STAR® d\'un produit pour une zone climatique donnée. Plus l\'indice RE est élevé, plus le produit est efficace sur le plan énergétique. Ainsi, il facilite la comparaison de différents produits de fenêtrage entre eux et le choix de ceux ayant le meilleur rendement énergétique.' ); ?></p>
+                      <p><?= _( '<strong>* Valeur U</strong> : Coefficient de perte ou de gain de chaleur non solaire. La valeur U mesure donc le taux de transfert thermique. Plus la valeur U est basse, plus la fenêtre est isolante et meilleur sera son rendement énergétique. Elle est exprimée en W/m2K.' ); ?></p>
+            				</div> <!-- faq-content -->
+            			</li>
+
             		</ul> <!-- faq-group -->
 
 

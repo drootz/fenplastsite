@@ -41,8 +41,10 @@
         //Set TCP port to connect to
         $mail->Port = 587;
 
-        $mail->setFrom('siteweb@lemarchanddefenetres.ca', 'Web');
-        $mail->addAddress("info@lemarchanddefenetres.ca", 'Service à la clientèle');
+        // $mail->setFrom('siteweb@lemarchanddefenetres.ca', 'Web');
+        // $mail->addAddress("info@lemarchanddefenetres.ca", 'Service à la clientèle');
+        $mail->setFrom('noreply.tetsingstuff@gmail.com', 'Web');
+        $mail->addAddress("mailto.danielracine@gmail.com", 'Daniel Racine');
         $mail->isHTML(true);
         $mail->Subject = $info['subject'];
         $mail->Body    = $_body;

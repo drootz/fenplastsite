@@ -811,6 +811,7 @@ $( document ).ready(function() {
 		// Display Modal Box Message
 		if (obj.modal)
 		{
+      alert(obj.notification);
 			alert(obj.data);
 		}
 
@@ -827,7 +828,7 @@ $( document ).ready(function() {
 		// Redirect to another page
 		if (obj.redirect)
 		{
-			window.location.href = obj.location;
+			// window.location.href = obj.location;
 		}
 		// Output an error message
 		else
