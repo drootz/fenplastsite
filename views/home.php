@@ -23,16 +23,16 @@
 
                    <div class="m-slider-slide slide-greetings">
                      <h1 class="clearfix">
-                       <!--
+
                        <div class="m-title clearfix"><span class="js-hero-bg hero-03">Le</span></div>
                        <div class="m-title clearfix"><span class="js-hero-bg hero-03">Marchand</span></div>
                        <div class="m-title clearfix"><span class="js-hero-bg hero-03">De Fenêtres</span></div>
-                        -->
-                       <div class="m-title clearfix"><span class="js-hero-bg hero-03">Le Marchand</span></div>
-                       <div class="m-title clearfix"><span class="js-hero-bg hero-03">De Fenêtres</span></div>
+
+                       <!-- <div class="m-title clearfix"><span class="js-hero-bg hero-03">Le Marchand</span></div> -->
+                       <!-- <div class="m-title clearfix"><span class="js-hero-bg hero-03">De Fenêtres</span></div> -->
                        <!-- <div class="m-title clearfix"><span class="js-hero-bg hero-03">Votre Détaillant Autorisé Fenplast</span></div> -->
                      </h1>
-                     <h2 class="m-subtitle-greet"><span class="l-laptop-inline">Votre </span>Détaillant Autorisé Fenplast</h2>
+                     <!-- <h2 class="m-subtitle-greet"><span class="l-laptop-inline">Votre </span>Détaillant Autorisé Fenplast</h2> -->
                    </div>
 
                  </div>

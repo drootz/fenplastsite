@@ -252,12 +252,11 @@ button.flickity-prev-next-button svg {
   position: relative;
 
   h1 {
-    // outline: 1px solid red;
     text-align: left;
     line-height: 1.3em;
     margin-top: 170px;
     overflow: hidden;
-    font-size: 2.25em;
+    font-size: 2.5em;
     font-weight: 900;
     letter-spacing: -0.04em;
 
@@ -270,10 +269,8 @@ button.flickity-prev-next-button svg {
       margin-top: 0;
       font-size: 6em;
       position: absolute;
-      // width: 100%;
-      // height: 485px;
-      height: 315px;
-      left: 0; right: 0; bottom: 165px;
+      height: 485px;
+      left: 0; right: 0; bottom: 0;
       // outline: 1px solid red;
     }
 
@@ -283,7 +280,7 @@ button.flickity-prev-next-button svg {
 
       span {
         display: block;
-        width: 290px;
+        width: 253px;
         background: transparentize(#fff, 0.2);
         padding: 0 0 0 15px;
         margin-bottom: 10px;
@@ -291,39 +288,40 @@ button.flickity-prev-next-button svg {
         overflow: hidden;
 
         @include breakpoint (phablet) {
-          width: 380px;
+          padding: 0 0 0 15px;
+          width: 303px;
         }
 
         @include breakpoint (laptop) {
           padding: 0 0 0 30px;
-          width: 755px;
+          width: 598px;
           margin-bottom: 15px;
         }
       }
 
       &:first-child span {
-        width: 290px;
+        width: 87px;
 
         @include breakpoint (phablet) {
-          width: 380px;
+          width: 99px;
         }
 
-        @include breakpoint (laptop) {
-          width: 755px;
+        @include breakpoint (tablet) {
+          width: 198px;
         }
       }
 
-      // &:last-child span {
-      //   width: 290px;
-      //
-      //   @include breakpoint (phablet) {
-      //     width: 350px;
-      //   }
-      //
-      //   @include breakpoint (tablet) {
-      //     width: 693px;
-      //   }
-      // }
+      &:last-child span {
+        width: 290px;
+
+        @include breakpoint (phablet) {
+          width: 350px;
+        }
+
+        @include breakpoint (tablet) {
+          width: 693px;
+        }
+      }
 
       @include breakpoint (laptop) {
         &:hover {
