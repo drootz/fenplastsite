@@ -59,12 +59,12 @@
                        </div>
                        <div class="col-10">
                          <div class="m-address">
-                            <div><span style="font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;" itemprop="telephone">&#43;&#49; &#40;&#52;&#51;&#56;&#41; &#57;&#57;&#57;&#45;&#57;&#57;&#57;&#57;</span></div>
+                            <div><span style="font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;" itemprop="telephone">&#43;&#49; &#40;&#53;&#49;&#52;&#41; &#51;&#55;&#57;&#45;&#49;&#51;&#51;&#52;</span></div>
                         </div>
                        </div>
                      </div>
                    </li>
-
+<!--
                    <li>
                      <div class="row">
                        <div class="col-02">
@@ -78,7 +78,7 @@
                         </div>
                        </div>
                      </div>
-                   </li>
+                   </li> -->
 
                    <li>
                      <div class="row">
@@ -104,7 +104,7 @@
                        </div>
                        <div class="col-10">
                          <div class="m-address">
-                            <div><a href="https://www.facebook.com/lemarchanddeglass/" target="_BLANK"><span><?= _( 'Suivez nous sur Facebook' ); ?></span></a></div>
+                            <div><a href="https://www.facebook.com/Le-marchand-de-fenêtres-1414801491895546" target="_BLANK"><span><?= _( 'Suivez nous sur Facebook' ); ?></span></a></div>
                         </div>
                        </div>
                      </div>
@@ -146,7 +146,7 @@
                   <div class="m-open-newline"></div>
                   <div class="m-open-day"><span><?= _( 'Vendredi' ); ?> :</span></div>  <div class="m-open-hours"><span>9h00 <?= _( 'à' ); ?> 17h00</span></div>
                   <div class="m-open-newline"></div>
-                  <div class="m-open-day"><span><?= _( 'Samedi' ); ?> :</span></div>    <div class="m-open-hours"><span><?= _( 'Fermé' ); ?></span></div>
+                  <div class="m-open-day"><span><?= _( 'Samedi' ); ?> :</span></div>    <div class="m-open-hours"><span>9h00 <?= _( 'à' ); ?> 14h00</span></div>
                   <div class="m-open-newline"></div>
                 </div>
               </div>
@@ -158,7 +158,7 @@
 
 
       <div class="row m-copyright">
-        <div class="col-12">
+        <div class="col-09">
             <div class="m-float-left"><small><?= date("Y")?> &copy; <?= _( 'Le Marchand de Fenêtres' ); ?>, <?= _('Tous droits réservé'); ?></small></div>
             <div class="m-float-left l-laptop">&nbsp;-&nbsp;</div>
             <div class="m-float-left m-copy-container">
@@ -171,6 +171,9 @@
                 </small>
               </div>
             </div>
+        </div>
+        <div class="col-03">
+          <small><?= _( 'Numéro de licence R.B.Q.: 5733-4971-01' ); ?></small>
         </div>
       </div>
 
