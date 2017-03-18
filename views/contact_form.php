@@ -6,7 +6,7 @@
 
       <div class="row">
         <div class="col-pad-06">
-          <p><?= _( 'Nous garantissons un retour d\'appel au plus tard dans la prochaine journée ouvrable suivant la réception de votre courriel. Assurez-vous de remplir tous les champs sur le formulaire ci-joint et prenez note du numéro de références une fois le message soumis.' ); ?></p>
+          <p><?= _( 'Nous garantissons un retour d\'appel au plus tard dans la prochaine journée ouvrable suivant la réception de votre courriel. Assurez-vous de remplir tous les champs sur le formulaire ci-joint.' ); ?></p>
         </div>
         <div class="col-pad-06">
 
@@ -58,7 +58,7 @@
 
         <div class="col-pad-06">
           <div class="m-contact-img">
-            <img src="http://placehold.it/500x500/ee343f/002543.jpg?text=Photo">
+            <img src="img/home/equipe_lemarchanddefenetres.jpg">
           </div>
         </div>
       </div>

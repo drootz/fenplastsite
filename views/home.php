@@ -140,7 +140,7 @@
             <div class="m-feature-container left">
               <div class="m-icon ico-install"></div>
               <h2><a href="services.php"><?= _( 'Installation Professionelle' ); ?></a></h2>
-              <p><?= _( 'Nos experts certifiés s\'occupent de tous les détails, de la planification jusqu\'à la réalisation.' ); ?></p>
+              <p><?= _( '<strong>L\'estimation est gratuite!</strong><br />Nos experts certifiés s\'occupent de tous les détails, de la planification jusqu\'à la réalisation.' ); ?></p>
             </div>
           </div>
           <div class="col-pad-04">
@@ -174,22 +174,22 @@
         <div class="main-gallery">
           <div class="gallery-cell">
             <div class="testimonial">
-                <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg" alt="avatar image">
+                <img class="testimonial-avatar" src="img/home/testimonial_1.jpg" alt="avatar image">
               <q class="testimonial-quote">"<?= _( 'Quelle précision dans leur exécution.' ); ?>"</q>
               <span class="testimonial-author"><?= _( 'Mme Legault' ); ?>, <?= _( 'Propriétaire' ); ?></span>
             </div>
           </div>
           <div class="gallery-cell">
              <div class="testimonial">
-                <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg" alt="avatar image">
+                <img class="testimonial-avatar" src="img/home/testimonial_2.jpg" alt="avatar image">
               <q class="testimonial-quote">"<?= _( 'Le représentant a su évaluer mes besoins.' ); ?>"</q>
               <span class="testimonial-author"><?= _( 'M. Maltais' ); ?>, <?= _( 'Propriétaire' ); ?></span>
             </div>
           </div>
           <div class="gallery-cell">
                 <div class="testimonial">
-                <img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/andretacuyan/128.jpg" alt="avatar image">
-              <q class="testimonial-quote">"<?= _( '"Je suis surpris à quel point nous avons une amélioration sur notre confort."' ); ?>"</q>
+                <img class="testimonial-avatar" src="img/home/testimonial_3.jpg" alt="avatar image">
+              <q class="testimonial-quote">"<?= _( 'Je suis surpris à quel point nous avons une amélioration sur notre confort.' ); ?>"</q>
               <span class="testimonial-author"><?= _( 'M. Boucher' ); ?>, <?= _( 'Propriétaire' ); ?></span>
             </div>
           </div>
@@ -255,15 +255,15 @@
   <div class="m-hero hero-03">
     <div id="information-compagnie" class="white-overlay l-section m-home-fourth">
       <div class="l-wrapper">
-        <h3><?= _( 'Notre Entreprise' ); ?></h3>
 
         <div class="row">
           <div class="col-pad-06">
+              <h3><?= _( 'Notre Entreprise' ); ?></h3>
               <p><?= _( 'Nous sommes des entrepreneurs dévoués, avec un cumulatif de vingt ans d’expérience dans le domaine de la construction. Nous souhaitons offrir un service personnalisé, qui tient compte des attentes de nos clients et qui répond entièrement à leurs besoins. Nous avons pris la décision de nous lancer en affaires afin d’offrir un service à la hauteur de ces attentes, et ce, avec toute notre expertise dans ce domaine.' ); ?></p>
           </div>
           <div class="col-pad-06">
               <div class="m-info-wrapper">
-                <img src="http://placehold.it/700x400/ee343f/002543.jpg?text=Équipe" <?= "alt=\"" . _( 'photo équipe' ) . "\""; ?>>
+                <img src="img/home/equipe_lemarchanddefenetres.jpg" <?= "alt=\"" . _( 'photo équipe' ) . "\""; ?>>
               </div>
           </div>
         </div>

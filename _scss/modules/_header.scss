@@ -6,7 +6,7 @@
 .m-langage {
   position: absolute;
   top: 84px; left: -3px;
-  z-index: 15;
+  z-index: 55;
   line-height: 15px;
   height: 15px;
   font-weight: bold;
@@ -144,7 +144,7 @@
   min-width: 320px;
   position: absolute;
   top: 0; left: 0; right: 0;
-  z-index: 10;
+  z-index: 50;
   @include breakpoint (laptop) {
     background-color: transparentize(#fff, 0.1);
     position: fixed;
@@ -184,7 +184,7 @@
 .m-nav-primary {
   position: absolute;
   top: 61px; right: 0px;
-  z-index: 20;
+  z-index: 60;
   font-size: 0.9em;
 
   &.is-closed {

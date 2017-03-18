@@ -25,11 +25,11 @@
 
     <!-- Schema.org markup for Facebook -->
     <meta property="og:title" <?= "content=\"" . _( 'Le Marchand de Fenêtres' ) . "\""; ?>/>
-    <meta property="og:image" <?= "content=\"" . _( 'http://www.lemarchanddefenetres.ca/public/img/og/og.jpg' ) . "\""; ?>/>
+    <meta property="og:image" <?= "content=\"" . _( 'http://www.lemarchanddefenetres.ca/img/og/og.jpg' ) . "\""; ?>/>
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="2000">
     <meta property="og:image:height" content="1050">
-    <meta property="og:url" <?= "content=\"" . _( 'http://www.lemarchanddefenetres.ca/' ) . "\""; ?>/> <!-- http://www.lemarchanddefenetres.ca/public/?lang=fr_CA -->
+    <meta property="og:url" <?= "content=\"" . _( 'http://www.lemarchanddefenetres.ca/' ) . "\""; ?>/> <!-- http://www.lemarchanddefenetres.ca/public_html/?lang=fr_CA -->
     <meta property="og:site_name" content="Le Marchand de Fenêtres"/>
     <meta property="og:locale:alternate" <?= "content=\"" . _( 'fr_CA' ) . "\""; ?>/>
     <meta property="og:description" <?= "content=\"" . _( 'Votre détaillant autorisé Fenplast' ) . "\""; ?>/>

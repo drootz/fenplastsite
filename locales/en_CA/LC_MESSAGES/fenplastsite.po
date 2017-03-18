@@ -1,56 +1,49 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Fenplast Distributor Site\n"
-"POT-Creation-Date: 2017-02-09 20:02-0500\n"
-"PO-Revision-Date: 2017-02-09 20:05-0500\n"
+"POT-Creation-Date: 2017-03-18 09:53-0400\n"
+"PO-Revision-Date: 2017-03-18 09:53-0400\n"
 "Last-Translator: Daniel Racine <idaniel.racine@gmail.com>\n"
 "Language-Team: Daniel Racine <mailto.danielracine@gmail.com>\n"
 "Language: en_CA\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.11\n"
+"X-Generator: Poedit 1.8.12\n"
 "X-Poedit-Basepath: ../../..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: views\n"
-"X-Poedit-SearchPath-1: public\n"
-"X-Poedit-SearchPathExcluded-0: public/css\n"
-"X-Poedit-SearchPathExcluded-1: public/font\n"
-"X-Poedit-SearchPathExcluded-2: public/img\n"
-"X-Poedit-SearchPathExcluded-3: public/js\n"
+"X-Poedit-SearchPath-1: public_html\n"
+"X-Poedit-SearchPathExcluded-0: public_html/css\n"
+"X-Poedit-SearchPathExcluded-1: public_html/img\n"
+"X-Poedit-SearchPathExcluded-2: public_html/js\n"
 
-#: public/contact.php:10
-msgid "Envoyez nous un courriel"
-msgstr "Send us an email"
+#: public_html/403.php:6 views/403.php:5
+msgid "Oups! Erreur 403"
+msgstr ""
 
-#: public/contact.php:24
+#: public_html/404.php:6 views/404.php:5
+msgid "Oups! Erreur 404"
+msgstr ""
+
+#: public_html/contactez-nous.php:10
+msgid "Envoyez nous un courriel - Contactez-nous"
+msgstr ""
+
+#: public_html/contactez-nous.php:24
 msgid "Le reCAPTCHA est obligatoire."
 msgstr "The reCAPTCHA is required."
 
-#: public/contact.php:40
+#: public_html/contactez-nous.php:40
 msgid "Impossible de traiter votre demande pour le moment."
 msgstr "Unable to proceed with your request at this time."
 
-#: public/contact.php:68
+#: public_html/contactez-nous.php:68
 msgid ""
 "\n"
 "\n"
 "Votre message a bien été reçu!\n"
-"\n"
-"Prenez note de votre numéro de référence:\n"
-"\n"
-msgstr ""
-"\n"
-"\n"
-"We have succesfully received your message!\n"
-"\n"
-"Please take note of your reference number:\n"
-"\n"
-
-#: public/contact.php:74
-msgid ""
-"\n"
 "\n"
 "Nous garantissons un retour d'appel au plus tard dans la prochaine journée "
 "ouvrable.\n"
@@ -58,49 +51,46 @@ msgid ""
 "Merci!\n"
 "\n"
 msgstr ""
-"\n"
-"\n"
-"We garanty a call back on the next business day following the receipt of the "
-"message.\n"
-"\n"
-"Thank you!\n"
-"\n"
 
-#: public/faq.php:6
+#: public_html/faq.php:6 views/view-faq.php:11
 msgid "Foire aux Questions"
 msgstr ""
 
-#: public/index.php:6
+#: public_html/fenetres.php:6
+msgid "Fenêtres"
+msgstr "Windows"
+
+#: public_html/index.php:6
 msgid "Acceuil"
 msgstr "Home"
 
-#: public/produit-balcons.php:6
-msgid "Balcons"
-msgstr "Balcony"
+#: public_html/portes.php:6
+msgid "Portes"
+msgstr "Doors\t"
 
-#: public/produit-fenetres.php:6
-msgid "Fenêtres Fenplast"
-msgstr "Fenplast Windows"
+#: public_html/rampes-et-balcons.php:6
+msgid "Rampes et Balcons"
+msgstr "Ramps and Balcony"
 
-#: public/produit-portes.php:6
-msgid "Portes Fenplast"
-msgstr "Fenplast Doors"
+#: public_html/realisations.php:6
+msgid "Réalisations"
+msgstr ""
 
-#: public/produit-revetement-exterieur.php:6 views/view-faq.php:140
+#: public_html/revetement-exterieur.php:6
 msgid "Revêtements Extérieur"
 msgstr ""
 
-#: public/realisations.php:6
-msgid "Réalisations Portes et Fenêtres"
-msgstr ""
-
-#: public/services.php:6
+#: public_html/services.php:6 views/view-services.php:8
 msgid "Nos Services"
 msgstr ""
 
-#: views/_apology.php:2
-msgid "Désolé"
-msgstr "Sorry"
+#: views/403.php:6
+msgid "Désolé, vous tentez d'accéder à une page dont vous n'avez pas accès."
+msgstr ""
+
+#: views/404.php:6
+msgid "Désolé, vous tentez d'accéder à une page inexistante."
+msgstr ""
 
 #: views/contact_form.php:5
 msgid "Contactez Nous"
@@ -110,12 +100,8 @@ msgstr "Contact Us"
 msgid ""
 "Nous garantissons un retour d'appel au plus tard dans la prochaine journée "
 "ouvrable suivant la réception de votre courriel. Assurez-vous de remplir "
-"tous les champs sur le formulaire ci-joint et prenez note du numéro de "
-"références une fois le message soumis."
+"tous les champs sur le formulaire ci-joint."
 msgstr ""
-"We garanty a call back on the next business day following the receipt of the "
-"message. All the fields on the following form are required. Please take note "
-"of the reference number once your message is submitted."
 
 #: views/contact_form.php:28
 msgid " -- choisir une option -- "
@@ -153,7 +139,7 @@ msgstr "Your Message..."
 msgid "Soumettre"
 msgstr "Submit"
 
-#: views/contact_form.php:72 views/header.php:94
+#: views/contact_form.php:72
 msgid "Patientez s'il vous plaît..."
 msgstr "Please wait…"
 
@@ -161,16 +147,21 @@ msgstr "Please wait…"
 msgid "Nous Joindre"
 msgstr "Contact Us"
 
-#: views/footer.php:27 views/footer.php:140
+#: views/footer.php:27 views/footer.php:162 views/header.php:15
+#: views/header.php:17 views/header.php:27
 msgid "Le Marchand de Fenêtres"
 msgstr ""
 
+#: views/footer.php:28
+msgid "Détaillant Autorisé Fenplast"
+msgstr ""
+
 #: views/footer.php:41
-msgid "1370, rue Notre-Dame"
+msgid "3247, rue Dandurand"
 msgstr ""
 
 #: views/footer.php:43
-msgid "Lavaltrie"
+msgid "Montréal"
 msgstr ""
 
 #: views/footer.php:92
@@ -181,143 +172,282 @@ msgstr "By email"
 msgid "Suivez nous sur Facebook"
 msgstr "Follow us on Facebook"
 
-#: views/footer.php:120
+#: views/footer.php:122
+msgid "Partagez nous sur Facebook"
+msgstr ""
+
+#: views/footer.php:135
 msgid "Heures d'ouvertures"
 msgstr "Open Hours"
 
-#: views/footer.php:122
+#: views/footer.php:137
 msgid "Dimanche"
 msgstr "Sunday"
 
-#: views/footer.php:123
+#: views/footer.php:137
+msgid "Fermé"
+msgstr ""
+
+#: views/footer.php:139
 msgid "Lundi"
 msgstr "Monday"
 
-#: views/footer.php:124
+#: views/footer.php:139 views/footer.php:141 views/footer.php:143
+#: views/footer.php:145 views/footer.php:147 views/footer.php:149
+msgid "à"
+msgstr ""
+
+#: views/footer.php:141
 msgid "Mardi"
 msgstr "Tuesday"
 
-#: views/footer.php:125
+#: views/footer.php:143
 msgid "Mercredi"
 msgstr "Wednesday"
 
-#: views/footer.php:126
+#: views/footer.php:145
 msgid "Jeudi"
 msgstr "Thursday"
 
-#: views/footer.php:127
+#: views/footer.php:147
 msgid "Vendredi"
 msgstr "Friday"
 
-#: views/footer.php:128
+#: views/footer.php:149
 msgid "Samedi"
 msgstr "Saturday"
 
-#: views/footer.php:140
+#: views/footer.php:162
 msgid "Tous droits réservé"
 msgstr "All rights reserved"
 
-#: views/footer.php:143
+#: views/footer.php:165
 msgid "Developpement web par "
 msgstr "Web Development by "
 
-#: views/header.php:15 views/header.php:17
-msgid "Distributeur Officiel Fenplast"
-msgstr "Fenplast Dealer"
+#: views/footer.php:176
+msgid "Numéro de licence R.B.Q.: 5733-4971-01"
+msgstr ""
 
 #: views/header.php:20
 msgid ""
-"Description du site: Le Marchant de Fenêtres, votre Détaillant Officiel "
-"Fenplast"
+"Votre détaillant autorisé Fenplast. Portes, Fenêtres, Rampes, Balcons, "
+"Revêtement, Installation, Perçage de béton, Garantie"
 msgstr ""
 
 #: views/header.php:28
-msgid "head-og-title"
+msgid "http://www.lemarchanddefenetres.ca/img/og/og.jpg"
 msgstr ""
 
-#: views/header.php:29
-msgid "head-og-image"
+#: views/header.php:32
+msgid "http://www.lemarchanddefenetres.ca/"
 msgstr ""
 
-#: views/header.php:33
-msgid "head-og-url"
+#: views/header.php:34
+msgid "fr_CA"
 msgstr ""
 
 #: views/header.php:35
-msgid "head-og-fb-locale"
+msgid "Votre détaillant autorisé Fenplast"
 msgstr ""
 
-#: views/header.php:36
-msgid "head-og-description"
-msgstr ""
-
-#: views/header.php:120
+#: views/header.php:106
 msgid "Le Marchant de Fenêtres - Détaillant Autorisé Fenplast"
 msgstr ""
 
-#: views/header.php:131
+#: views/header.php:117
 msgid "ACCEUIL"
 msgstr "HOME"
 
-#: views/header.php:132
+#: views/header.php:118
 msgid "PRODUITS"
 msgstr "PRODUCTS"
 
-#: views/header.php:134
+#: views/header.php:120
 msgid "PORTES"
 msgstr "DOORS"
 
-#: views/header.php:135
+#: views/header.php:121
 msgid "FENÊTRES"
 msgstr "WINDOWS"
 
-#: views/header.php:136
+#: views/header.php:122
 msgid "RAMPES ET BALCONS"
 msgstr ""
 
-#: views/header.php:137
+#: views/header.php:123
 msgid "REVÊTEMENT EXTÉRIEUR"
 msgstr ""
 
-#: views/header.php:140
+#: views/header.php:126
 msgid "SERVICES"
 msgstr "SERVICES"
 
-#: views/header.php:142
+#: views/header.php:128
 msgid "INSTALLATION PROFESSIONEL"
 msgstr "INSTALLATION"
 
-#: views/header.php:143
+#: views/header.php:129
 msgid "CLEF EN MAIN"
 msgstr "TURN-KEY"
 
-#: views/header.php:144
+#: views/header.php:130
 msgid "PERÇAGE DE BÉTON"
 msgstr "CONCRETE HOLES"
 
-#: views/header.php:145
+#: views/header.php:131
 msgid "MODIFICATION DE DIMENSION"
 msgstr "RESIZING"
 
-#: views/header.php:146
+#: views/header.php:132
 msgid "GARANTIE"
 msgstr "WARRANTY"
 
-#: views/header.php:149
+#: views/header.php:135
 msgid "RÉALISATIONS"
 msgstr "REALISATIONS"
 
-#: views/header.php:150
+#: views/header.php:136
 msgid "F.A.Q."
 msgstr "F.A.Q."
 
-#: views/header.php:151
+#: views/header.php:137
 msgid "NOUS JOINDRE"
 msgstr "CONTACT US"
 
-#: views/header.php:161
-msgid "67 rue des Croquettes, Montréal"
-msgstr "67 rue des Croquettes, Montreal"
+#: views/header.php:147
+msgid "3247 rue Dandurand, Montréal"
+msgstr ""
+
+#: views/home.php:73
+msgid "FINANCEMENT"
+msgstr ""
+
+#: views/home.php:73
+msgid "Accord D Disponible"
+msgstr ""
+
+#: views/home.php:75
+msgid "Parlez-en à nos conseiller"
+msgstr ""
+
+#: views/home.php:102 views/home.php:103 views/home.php:104 views/home.php:105
+#: views/home.php:106 views/home.php:107 views/home.php:108 views/home.php:109
+#: views/home.php:110 views/home.php:111 views/home.php:112 views/home.php:113
+#: views/home.php:114 views/home.php:115 views/home.php:116 views/home.php:117
+#: views/home.php:118 views/home.php:119 views/home.php:120 views/home.php:121
+#: views/home.php:122 views/home.php:123 views/home.php:124 views/home.php:125
+msgid "bannière de logo"
+msgstr ""
+
+#: views/home.php:142 views/view-services.php:18 views/view-services.php:39
+msgid "Installation Professionelle"
+msgstr ""
+
+#: views/home.php:143
+msgid ""
+"<strong>L'estimation est gratuite!</strong><br />Nos experts certifiés "
+"s'occupent de tous les détails, de la planification jusqu'à la réalisation."
+msgstr ""
+
+#: views/home.php:149
+msgid "Qualité Supérieur"
+msgstr ""
+
+#: views/home.php:150
+msgid ""
+"Notre équipe d'experts formés et certifiés offre la meilleure qualité "
+"d'installation sur le marché."
+msgstr ""
+
+#: views/home.php:156
+msgid "Service Clé"
+msgstr ""
+
+#: views/home.php:156
+msgid "en Main"
+msgstr ""
+
+#: views/home.php:157
+msgid ""
+"Nous somme les seuls de l'industrie à offrir une prise en charge de toutes "
+"les étapes de votre projet!"
+msgstr ""
+
+#: views/home.php:178
+msgid "Quelle précision dans leur exécution."
+msgstr ""
+
+#: views/home.php:179
+msgid "Mme Legault"
+msgstr ""
+
+#: views/home.php:179 views/home.php:186 views/home.php:193
+msgid "Propriétaire"
+msgstr ""
+
+#: views/home.php:185
+msgid "Le représentant a su évaluer mes besoins."
+msgstr ""
+
+#: views/home.php:186
+msgid "M. Maltais"
+msgstr ""
+
+#: views/home.php:192
+msgid ""
+"Je suis surpris à quel point nous avons une amélioration sur notre confort."
+msgstr ""
+
+#: views/home.php:193
+msgid "M. Boucher"
+msgstr ""
+
+#: views/home.php:207
+msgid "Dernières Nouvelles"
+msgstr ""
+
+#: views/home.php:232
+msgid "Une image renouvelée pour Fenplast"
+msgstr ""
+
+#: views/home.php:235
+msgid "Ligne du temps"
+msgstr ""
+
+#: views/home.php:235
+msgid "de"
+msgstr ""
+
+#: views/home.php:235
+msgid "sur"
+msgstr ""
+
+#: views/home.php:261
+msgid "Notre Entreprise"
+msgstr ""
+
+#: views/home.php:262
+msgid ""
+"Nous sommes des entrepreneurs dévoués, avec un cumulatif de vingt ans "
+"d’expérience dans le domaine de la construction. Nous souhaitons offrir un "
+"service personnalisé, qui tient compte des attentes de nos clients et qui "
+"répond entièrement à leurs besoins. Nous avons pris la décision de nous "
+"lancer en affaires afin d’offrir un service à la hauteur de ces attentes, et "
+"ce, avec toute notre expertise dans ce domaine."
+msgstr ""
+
+#: views/home.php:266
+msgid "photo équipe"
+msgstr ""
+
+#: views/produit-balcons.php:14
+msgid "Notre sélection de Rampes et Balcons"
+msgstr ""
+
+#: views/produit-fenetres.php:8
+msgid "Notre sélection de fenêtres"
+msgstr ""
 
 #: views/produit-fenetres.php:15 views/produit-fenetres.php:41
 msgid "Fenêtres à battants"
@@ -327,15 +457,15 @@ msgstr ""
 msgid "Fenêtres coulissantes"
 msgstr ""
 
-#: views/produit-fenetres.php:17 views/produit-fenetres.php:177
+#: views/produit-fenetres.php:17 views/produit-fenetres.php:172
 msgid "Fenêtres en saillie"
 msgstr ""
 
-#: views/produit-fenetres.php:22 views/produit-fenetres.php:201
+#: views/produit-fenetres.php:22 views/produit-fenetres.php:196
 msgid "Fenêtres fixes"
 msgstr ""
 
-#: views/produit-fenetres.php:23 views/produit-fenetres.php:240
+#: views/produit-fenetres.php:23 views/produit-fenetres.php:233
 msgid "Fenêtres en forme irrégulières"
 msgstr ""
 
@@ -367,7 +497,7 @@ msgid ""
 "avec la norme Novoclimat."
 msgstr ""
 
-#: views/produit-fenetres.php:53 views/produit-fenetres.php:90
+#: views/produit-fenetres.php:53 views/produit-fenetres.php:89
 msgid "mesures"
 msgstr ""
 
@@ -409,54 +539,38 @@ msgid ""
 "type <strong>auvent</strong>."
 msgstr ""
 
-#: views/produit-fenetres.php:71
-msgid "http://www.fenplast.com/fr/fenetre-battant-eco.aspx"
-msgstr ""
-
-#: views/produit-fenetres.php:71 views/produit-fenetres.php:104
-#: views/produit-fenetres.php:119 views/produit-fenetres.php:148
-#: views/produit-fenetres.php:161 views/produit-fenetres.php:211
-#: views/produit-fenetres.php:224 views/produit-fenetres.php:251
-#: views/produit-fenetres.php:265 views/produit-fenetres.php:292
-#: views/produit-fenetres.php:306 views/produit-fenetres.php:341
-#: views/produit-fenetres.php:352 views/produit-fenetres.php:365
-#: views/produit-fenetres.php:376 views/produit-fenetres.php:389
-#: views/produit-fenetres.php:400 views/produit-portes.php:52
-msgid "En savoir plus..."
-msgstr ""
-
-#: views/produit-fenetres.php:77 views/produit-fenetres.php:181
+#: views/produit-fenetres.php:76 views/produit-fenetres.php:176
 msgid "Gamme Iso©"
 msgstr ""
 
-#: views/produit-fenetres.php:83
+#: views/produit-fenetres.php:82
 msgid ""
 "Tel qu’illustré, la série Iso© est disponible en épaisseur de 4 1/2\", 5 "
 "3/4\" plat (fenêtres à battant, auvent et panoramiques seulement) ou de 5 "
 "3/4\" avec moulure extérieure (ME). "
 msgstr ""
 
-#: views/produit-fenetres.php:84
+#: views/produit-fenetres.php:83
 msgid ""
 "L’extérieur du cadre 5 3/4\" ME en surplomb permet d’y accoter une brique, "
 "d’y insérer un revêtement dans la cavité prévue à cette fin ou encore de le "
 "commander réduit d’un demi-pouce pour une rénovation spécifique. "
 msgstr ""
 
-#: views/produit-fenetres.php:85
+#: views/produit-fenetres.php:84
 msgid ""
 "La partie intérieure du cadre de la série Iso© est prévue pour recevoir un "
 "soufflage ou un gypse pour combler l’espace entre le cadre de la fenêtre et "
 "le mur intérieur."
 msgstr ""
 
-#: views/produit-fenetres.php:87
+#: views/produit-fenetres.php:86
 msgid ""
 "Dans une nouvelle construction, elle permet un positionnement du volet plus "
 "rapproché  de la partie chaude du mur (réduisant ainsi la condensation)."
 msgstr ""
 
-#: views/produit-fenetres.php:88
+#: views/produit-fenetres.php:87
 msgid ""
 "Lors d’une rénovation impliquant un remplacement de boîte, vous profiterez "
 "des avantages énoncés plus haut en plus d’une variété de moulures et de "
@@ -464,11 +578,11 @@ msgid ""
 "adaptée aux exigences particulières de votre maison."
 msgstr ""
 
-#: views/produit-fenetres.php:97
+#: views/produit-fenetres.php:96
 msgid "Gamme IsoPlus©"
 msgstr ""
 
-#: views/produit-fenetres.php:103
+#: views/produit-fenetres.php:102
 msgid ""
 "Cette fenêtre, innovatrice dans le marché de la fenêtre de PVC, se distingue "
 "par un cadre, de type structural, lui donnant un aspect  tout à fait "
@@ -481,15 +595,11 @@ msgid ""
 "des performances énergétiques supérieures."
 msgstr ""
 
-#: views/produit-fenetres.php:104 views/produit-fenetres.php:119
-msgid "http://www.fenplast.com/fr/fenetre-battant-iso.aspx"
-msgstr ""
-
-#: views/produit-fenetres.php:111
+#: views/produit-fenetres.php:109
 msgid "Gamme IsoPlus© à auvent"
 msgstr ""
 
-#: views/produit-fenetres.php:117
+#: views/produit-fenetres.php:115
 msgid ""
 "L’une des alternatives les plus négligées pour les petites ouvertures est la "
 "fenêtre à auvent. Cette fenêtre possède les mêmes caractéristiques de "
@@ -497,22 +607,22 @@ msgid ""
 "ciseau » au bas de la fenêtre alloue une ventilation indirecte."
 msgstr ""
 
-#: views/produit-fenetres.php:118
+#: views/produit-fenetres.php:116
 msgid ""
 "Vous pouvez également superposer ce type de fenêtre pour lui donner un "
 "aspect chaleureux de fenêtre guillotine, en conservant les avantages d’une "
 "fenêtre qui se ferme « à compression »."
 msgstr ""
 
-#: views/produit-fenetres.php:137
+#: views/produit-fenetres.php:134
 msgid "Fenêtres coulissantes IsoVision©"
 msgstr ""
 
-#: views/produit-fenetres.php:141
+#: views/produit-fenetres.php:138
 msgid "Fenêtre DOUBLE"
 msgstr ""
 
-#: views/produit-fenetres.php:147
+#: views/produit-fenetres.php:144
 msgid ""
 "Les deux volets sont mobiles pour une ventilation du côté gauche ou du côté "
 "droit. Les deux volets s’inclinent vers l’intérieur permettant de manipuler "
@@ -523,15 +633,11 @@ msgid ""
 "pour une luminosité accrue ."
 msgstr ""
 
-#: views/produit-fenetres.php:148 views/produit-fenetres.php:161
-msgid "http://www.fenplast.com/fr/fenetre-coulissante-iso.aspx"
-msgstr ""
-
-#: views/produit-fenetres.php:154
+#: views/produit-fenetres.php:150
 msgid "Fenêtre SIMPLE"
 msgstr ""
 
-#: views/produit-fenetres.php:160
+#: views/produit-fenetres.php:156
 msgid ""
 "Avec un seul volet mobile, cette fenêtre économique est une merveille de "
 "simplicité et de sobriété. L’unité scellée fixe est maintenue non pas dans "
@@ -542,7 +648,7 @@ msgid ""
 "en fait un choix recherché. "
 msgstr ""
 
-#: views/produit-fenetres.php:187
+#: views/produit-fenetres.php:182
 msgid ""
 "Quoi de mieux qu’une fenêtre en baie (3 sections) ou en arc (4 ou 5 "
 "sections) pour mettre en valeur votre résidence ? Ces fenêtres sont offertes "
@@ -551,7 +657,7 @@ msgid ""
 "type d’ouverture. "
 msgstr ""
 
-#: views/produit-fenetres.php:188
+#: views/produit-fenetres.php:183
 msgid ""
 "Ces fenêtres peuvent également être fabriquées avec des angles propres à vos "
 "exigences, procurant ainsi une finition impeccable, particulièrement pour "
@@ -560,46 +666,38 @@ msgid ""
 "vos fleurs et plantes."
 msgstr ""
 
-#: views/produit-fenetres.php:189
+#: views/produit-fenetres.php:184
 msgid ""
 "À l'extérieur, ces fenêtres peuvent aussi être enjolivées par des panneaux "
 "<a target=\"_BLANK\" href=\"http://www.fenplast.com/fr/evo-i.aspx\">Evoi©</"
 "a>."
 msgstr ""
 
-#: views/produit-fenetres.php:204
+#: views/produit-fenetres.php:199
 msgid "Gamme EcoPano©"
 msgstr ""
 
-#: views/produit-fenetres.php:210
+#: views/produit-fenetres.php:205
 msgid ""
 "La fenêtre EcoPano© est un cadre de type panoramique de 5 ¾\" d’épaisseur, "
 "employée pour des applications nécessitant une fenêtre fixe."
 msgstr ""
 
 #: views/produit-fenetres.php:211
-msgid "http://www.fenplast.com/fr/fenetre-fixe-eco.aspx"
-msgstr ""
-
-#: views/produit-fenetres.php:217
 msgid "Gamme IsoPano©"
 msgstr ""
 
-#: views/produit-fenetres.php:223
+#: views/produit-fenetres.php:217
 msgid ""
 "La fenêtre IsoPano© est un cadre de type panoramique employée pour des "
 "applications nécessitant une fenêtre fixe."
 msgstr ""
 
-#: views/produit-fenetres.php:224
-msgid "http://www.fenplast.com/fr/fenetre-fixe-iso.aspx"
-msgstr ""
-
-#: views/produit-fenetres.php:244
+#: views/produit-fenetres.php:237
 msgid "Gamme EcoGeo©"
 msgstr ""
 
-#: views/produit-fenetres.php:250
+#: views/produit-fenetres.php:243
 msgid ""
 "Au fil des ans, Fenplast a acquis une expertise pour vous offrir des "
 "fenêtres ayant des formes géométriques diverses, respectant ainsi vos "
@@ -611,15 +709,11 @@ msgid ""
 "cintrer le fini aluminium clair."
 msgstr ""
 
-#: views/produit-fenetres.php:251
-msgid "http://www.fenplast.com/fr/fenetre-f-i-eco.aspx"
-msgstr ""
-
-#: views/produit-fenetres.php:258
+#: views/produit-fenetres.php:250
 msgid "Gamme IsoGeo©"
 msgstr ""
 
-#: views/produit-fenetres.php:264
+#: views/produit-fenetres.php:256
 msgid ""
 "Au fil des ans, Fenplast a acquis une expertise pour vous offrir des "
 "fenêtres ayant des formes géométriques diverses, respectant ainsi vos "
@@ -629,19 +723,15 @@ msgid ""
 "fabriquées à partir du cadre IsoPano©."
 msgstr ""
 
-#: views/produit-fenetres.php:265
-msgid "http://www.fenplast.com/fr/fenetre-f-i-iso.aspx"
-msgstr ""
-
-#: views/produit-fenetres.php:281
+#: views/produit-fenetres.php:272
 msgid "Fenêtres en guillotines IsoVent©"
 msgstr ""
 
-#: views/produit-fenetres.php:285
+#: views/produit-fenetres.php:276
 msgid "Guillotine DOUBLE"
 msgstr ""
 
-#: views/produit-fenetres.php:291
+#: views/produit-fenetres.php:282
 msgid ""
 "Cette fenêtre avec ses deux volets mobiles apporte une bonne ventilation. La "
 "performance hors du commun aux différents tests d’étanchéité constitue un "
@@ -649,15 +739,11 @@ msgid ""
 "complète (tel qu’illustré) ou une demi-moustiquaire."
 msgstr ""
 
-#: views/produit-fenetres.php:292 views/produit-fenetres.php:306
-msgid "http://www.fenplast.com/fr/fenetre-guillotine-iso.aspx"
-msgstr ""
-
-#: views/produit-fenetres.php:299
+#: views/produit-fenetres.php:289
 msgid "Guillotine SIMPLE"
 msgstr ""
 
-#: views/produit-fenetres.php:305
+#: views/produit-fenetres.php:295
 msgid ""
 "Toujours le même type de fenêtre, mais fabriquée avec uniquement le volet du "
 "bas comme partie mobile. Cette fenêtre, plus économique, sans rien céder aux "
@@ -666,11 +752,15 @@ msgid ""
 "l’ensemble."
 msgstr ""
 
+#: views/produit-portes.php:8
+msgid "Notre sélection de portes"
+msgstr ""
+
 #: views/produit-portes.php:15 views/produit-portes.php:37
 msgid "Portes coulissantes"
 msgstr ""
 
-#: views/produit-portes.php:20 views/produit-portes.php:82
+#: views/produit-portes.php:20 views/produit-portes.php:81
 msgid "Portes d'acier"
 msgstr ""
 
@@ -706,15 +796,11 @@ msgid ""
 "inégalées."
 msgstr ""
 
-#: views/produit-portes.php:52
-msgid "http://www.fenplast.com/fr/portes-coulissantes-calopatio.aspx"
-msgstr ""
-
-#: views/produit-portes.php:59
+#: views/produit-portes.php:58
 msgid "Gamme CaloFixe©"
 msgstr ""
 
-#: views/produit-portes.php:66
+#: views/produit-portes.php:65
 msgid ""
 "Si votre application nécessite une imposte ou un panneau latéral "
 "rectangulaire, le cadre CaloFixe©, entièrement de PVC, d’une épaisseur de "
@@ -722,7 +808,7 @@ msgid ""
 "assurant un ensemble esthétiquement équilibré."
 msgstr ""
 
-#: views/produit-portes.php:90
+#: views/produit-portes.php:89
 msgid ""
 "Les portes que nous fabriquons vont des plus conventionnelles aux plus "
 "personnalisées en maintenant toujours le plus haut standard de qualité. "
@@ -731,72 +817,50 @@ msgid ""
 "que des accessoires et des options offertes."
 msgstr ""
 
-#: views/produit-portes.php:91
+#: views/produit-portes.php:90
 msgid "Nos portes sont certifiées ENERGY STAR®"
 msgstr ""
 
-#: views/produit-portes.php:93
-msgid "http://www.fenplast.com/fr/portes_lateraux_base.aspx"
+#: views/produit-revetement-exterieur.php:9
+msgid "Notre sélection de Revêtement Extérieur"
 msgstr ""
 
-#: views/produit-portes.php:93
-msgid "Portes et latéraux de base"
+#: views/produit-revetement-exterieur.php:16
+#: views/produit-revetement-exterieur.php:38
+msgid "CanExel"
 msgstr ""
 
-#: views/produit-portes.php:94
-msgid "http://www.fenplast.com/fr/porte-panneaux-evo.aspx"
+#: views/produit-revetement-exterieur.php:21
+#: views/produit-revetement-exterieur.php:62
+msgid "Celect de Royal"
 msgstr ""
 
-#: views/produit-portes.php:94
-msgid "Panneaux Évolution"
+#: views/produit-revetement-exterieur.php:45
+msgid ""
+"CanExel va plus loin en établissant les normes en matière de parement "
+"préfini. L'apparence authentique de la fibre de bois et la durabilité."
 msgstr ""
 
-#: views/produit-portes.php:95
-msgid "http://www.fenplast.com/fr/verres-decoratifs.aspx"
+#: views/produit-revetement-exterieur.php:69
+msgid ""
+"La toute dernière génération de clins a été conçue pour les propriétaires de "
+"maison les plus exigeants en matière d’esthétisme et de performance, à la "
+"recherche d’un produit qui requière un entretien minimal."
 msgstr ""
 
-#: views/produit-portes.php:95
-msgid "Verres Décoratif"
-msgstr ""
-
-#: views/produit-portes.php:96
-msgid "http://www.fenplast.com/fr/porte-autres-vitraux.aspx"
-msgstr ""
-
-#: views/produit-portes.php:96
-msgid "Autres Vitraux"
-msgstr ""
-
-#: views/view-faq.php:23 views/view-faq.php:39
+#: views/view-faq.php:23 views/view-faq.php:35
 msgid "Je rénove"
 msgstr ""
 
-#: views/view-faq.php:24 views/view-faq.php:112
-msgid "Rampes et Balcons"
-msgstr "Ramps and Balcony"
-
-#: views/view-faq.php:25
-msgid "Revêtements"
+#: views/view-faq.php:24 views/view-faq.php:100
+msgid "Générale"
 msgstr ""
 
-#: views/view-faq.php:26 views/view-faq.php:175 views/view-services.php:23
-#: views/view-services.php:126
-msgid "Garantie"
-msgstr ""
-
-#: views/view-faq.php:27 views/view-faq.php:203
-msgid "Subvention"
-msgstr ""
-
-#: views/view-faq.php:28 views/view-faq.php:238
-msgid "Installation"
-msgstr ""
-
-#: views/view-faq.php:41
+#: views/view-faq.php:37
 msgid "Comment prendre les mesures approximatives pour une évaluation?"
 msgstr ""
 
-#: views/view-faq.php:51
+#: views/view-faq.php:47
 msgid ""
 "Nous vous suggérons de mesurer les portes et fenêtres en prenant la mesure à "
 "l'intérieur de vos cadrages intérieurs. Un détail qui peut être utile pour "
@@ -804,68 +868,68 @@ msgid ""
 "(boisure) à l'extérieur qui cintre leur  pourtour."
 msgstr ""
 
-#: views/view-faq.php:58
+#: views/view-faq.php:54
 msgid ""
 "Pour mes fenêtres, entre l'installation dans la boîte existante ou le "
 "remplacement de la boîte, quoi choisir?"
 msgstr ""
 
-#: views/view-faq.php:60
+#: views/view-faq.php:56
 msgid ""
 "Chaque distributeur a des préférences et chaque projet a des spécificités à "
 "ce sujet, il est néanmoins  important que vous sachiez que:"
 msgstr ""
 
-#: views/view-faq.php:62
+#: views/view-faq.php:58
 msgid ""
 "L'installation dans les boîtes existantes est généralement une opération "
 "\"plus propre\" en ce sens qu'elle minimise les mauvaises surprises qui "
 "peuvent survenir dans tout projet de rénovation."
 msgstr ""
 
-#: views/view-faq.php:63
+#: views/view-faq.php:59
 msgid ""
 "L'installation dans les boîtes existantes laisse généralement intacte les "
 "cadrages intérieurs autour des ouvertures."
 msgstr ""
 
-#: views/view-faq.php:64
+#: views/view-faq.php:60
 msgid ""
 "Un installateur consciencieux verra à remplacer, au cours des travaux, toute "
 "partie de bois qui lui semble pourrie."
 msgstr ""
 
-#: views/view-faq.php:65
+#: views/view-faq.php:61
 msgid ""
 "Deux joints de calfeutrant doivent être appliqués à l'extérieur; un entre la "
 "fenêtre et une partie d'aluminium qui recouvre votre cadre et un autre entre "
 "votre parement extérieur et ledit aluminium."
 msgstr ""
 
-#: views/view-faq.php:66
+#: views/view-faq.php:62
 msgid ""
 "Le remplacement de boîte, implique des travaux de menuiserie plus importants."
 msgstr ""
 
-#: views/view-faq.php:67
+#: views/view-faq.php:63
 msgid ""
 "Le fait de repartir l'installation directement du bâti de la maison assure "
 "une installation plus homogène et un aspect final davantage intégré."
 msgstr ""
 
-#: views/view-faq.php:68
+#: views/view-faq.php:64
 msgid ""
 "Un seul joint de calfeutrant sera nécessaire (dans la plupart des cas), "
 "entre la fenêtre et le parement extérieur."
 msgstr ""
 
-#: views/view-faq.php:74
+#: views/view-faq.php:70 views/view-faq.php:103
 msgid ""
 "Que veulent dire concrètement les chiffres de performance (A-3, B-7 etc...) "
 "rattachés aux portes et fenêtres?"
 msgstr ""
 
-#: views/view-faq.php:76
+#: views/view-faq.php:72 views/view-faq.php:105
 msgid ""
 "Ces chiffres donnent une indication de la valeur des portes et fenêtres aux "
 "tests suivants:<br />A= Étanchéité à l’air, l'échelle est de 1 à 3.<br />B= "
@@ -875,7 +939,7 @@ msgid ""
 "l'échelle est de 1 à 5. "
 msgstr ""
 
-#: views/view-faq.php:77
+#: views/view-faq.php:73 views/view-faq.php:106
 msgid ""
 "Ces tests doivent être passés dans un laboratoire d'essai homologué et sont "
 "essentiels en vue de l'obtention d'un numéro d'acceptation de la CCMC, <a "
@@ -883,7 +947,7 @@ msgid ""
 "services_evaluation.html\">Centre canadien de matériaux de construction</a>."
 msgstr ""
 
-#: views/view-faq.php:78
+#: views/view-faq.php:74 views/view-faq.php:107
 msgid ""
 "Une chose importante est de vous assurer que ce soit le manufacturier même "
 "(non seulement l'extrudeur de PVC) qui a passé les tests, pour vous assurer "
@@ -891,20 +955,20 @@ msgid ""
 "testée."
 msgstr ""
 
-#: views/view-faq.php:79
+#: views/view-faq.php:75 views/view-faq.php:108
 msgid ""
 "Fenplast a l'habitude de faire tester aléatoirement certains produits de sa "
 "ligne de montage pour s'assurer qu'ils seront aussi efficaces que ceux qui "
 "ont passé les tests."
 msgstr ""
 
-#: views/view-faq.php:84
+#: views/view-faq.php:80
 msgid ""
 "Comment évaluer les qualités du distributeur qui pourrait remplacer les "
 "portes et fenêtres chez moi?"
 msgstr ""
 
-#: views/view-faq.php:86
+#: views/view-faq.php:82
 msgid ""
 "La rénovation des portes et fenêtres n'est pas différente de tout autre "
 "projet de rénovation. Vous devez prendre des références sur le distributeur "
@@ -914,12 +978,12 @@ msgid ""
 "trompent généralement pas."
 msgstr ""
 
-#: views/view-faq.php:91
+#: views/view-faq.php:87
 msgid ""
 "Comment isoler l'espace entre la porte / fenêtre et le bâti de la maison?"
 msgstr ""
 
-#: views/view-faq.php:93
+#: views/view-faq.php:89
 msgid ""
 "Laine minérale ou uréthane injecté, les deux présentent des avantages et des "
 "inconvénients et ils constituent à ce jour les seules solutions éprouvées. "
@@ -928,17 +992,17 @@ msgid ""
 "garder une souplesse maximale (comme une guimauve) pour de longues années."
 msgstr ""
 
-#: views/view-faq.php:98
+#: views/view-faq.php:113
 msgid "Qu'est-ce que l'indice RE?"
 msgstr ""
 
-#: views/view-faq.php:100
+#: views/view-faq.php:115
 msgid ""
 "<strong>L'indice de rendement énergétique</strong> (RE) est fondé sur divers "
 "facteurs, dont <strong>la valeur U*</strong> et l'étanchéité à l'air."
 msgstr ""
 
-#: views/view-faq.php:101
+#: views/view-faq.php:116
 msgid ""
 "Cette valeur établit le rendement énergétique exigé pour la certification "
 "ENERGY STAR® d'un produit pour une zone climatique donnée. Plus l'indice RE "
@@ -947,7 +1011,7 @@ msgid ""
 "choix de ceux ayant le meilleur rendement énergétique."
 msgstr ""
 
-#: views/view-faq.php:102
+#: views/view-faq.php:117
 msgid ""
 "<strong>* Valeur U</strong> : Coefficient de perte ou de gain de chaleur non "
 "solaire. La valeur U mesure donc le taux de transfert thermique. Plus la "
@@ -955,27 +1019,140 @@ msgid ""
 "rendement énergétique. Elle est exprimée en W/m2K."
 msgstr ""
 
-#: views/view-services.php:19 views/view-services.php:40
-msgid "Installation Professionelle"
+#: views/view-faq.php:127
+msgid "Fermer"
 msgstr ""
 
-#: views/view-services.php:20 views/view-services.php:63
-msgid "Clefs en Main"
+#: views/view-realisations.php:12
+msgid "Réalisations Portes et Fenêtres"
 msgstr ""
 
-#: views/view-services.php:21 views/view-services.php:86
-msgid "Perçage de Béton"
+#: views/view-services.php:14
+msgid ""
+"Notre équipe d'experts formés et certifiés offre la meilleure qualité "
+"d'installation sur le marché, avec les connaissances et la rigueur "
+"nécessaires concernant les normes établies pour ce type de travaux. Nos "
+"installateurs sont formés annuellement, et ce, selon les critères et normes "
+"Fenplast."
 msgstr ""
 
-#: views/view-services.php:22 views/view-services.php:106
-msgid "Modification de Dimension"
+#: views/view-services.php:19 views/view-services.php:62
+msgid "Clé en Main"
 msgstr ""
 
-#~ msgid "Portes"
-#~ msgstr "Doors\t"
+#: views/view-services.php:20 views/view-services.php:85
+msgid "Sciage de Béton"
+msgstr ""
 
-#~ msgid "Fenêtres"
-#~ msgstr "Windows"
+#: views/view-services.php:21 views/view-services.php:105
+msgid "Modification de Dimensions"
+msgstr ""
+
+#: views/view-services.php:22 views/view-services.php:125
+msgid "Garantie"
+msgstr ""
+
+#: views/view-services.php:46
+msgid ""
+"Besoin d'un coup de main pour la réalisation de votre projet de rénovation "
+"ou d'installation? Quelle que soit l'envergure des travaux, nos experts "
+"certifiés s'occupent de tous les détails, de la planification jusqu'à la "
+"réalisation."
+msgstr ""
+
+#: views/view-services.php:69
+msgid ""
+"Nous somme les seuls de l'industrie à offrir un service clé en main. Nous "
+"prenons en charge toutes les étapes de votre projet: planification, "
+"installation du matériel, peinture, nettoyage et installation de draperies "
+"et/ou stores. Nous disposons de tous les rebus suite aux travaux effectués. "
+"Nous possédons l’équipement nécessaire afin de minimiser la poussière et/ou "
+"saleté dans votre maison pendant les travaux."
+msgstr ""
+
+#: views/view-services.php:92
+msgid ""
+"Vous avez besoin de faire scier le solage de votre demeure pour installer "
+"une porte-patio ou une fenêtre, nous avons les connaissances nécessaires, "
+"ainsi que les outils pour ce type de travaux."
+msgstr ""
+
+#: views/view-services.php:112
+msgid ""
+"Vous rêvez d'avoir une fenêtre supplémentaire ou une grande fenêtre plutôt "
+"que trois petites dans votre salon, nous pouvons redimensionner vos "
+"ouvertures, selon vos souhaits."
+msgstr ""
+
+#: views/view-services.php:132
+msgid ""
+"Fenplast offre l'une des meilleures garanties sur le marché et Le Marchand "
+"de Fenêtres Inc. offre une garantie de cinq ans sur toute installation, et "
+"ce, pour une complète tranquillité d'esprit."
+msgstr ""
+
+#~ msgid "Envoyez nous un courriel"
+#~ msgstr "Send us an email"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "Votre message a bien été reçu!\n"
+#~ "\n"
+#~ "Prenez note de votre numéro de référence:\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "We have succesfully received your message!\n"
+#~ "\n"
+#~ "Please take note of your reference number:\n"
+#~ "\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "\n"
+#~ "Nous garantissons un retour d'appel au plus tard dans la prochaine "
+#~ "journée ouvrable.\n"
+#~ "\n"
+#~ "Merci!\n"
+#~ "\n"
+#~ msgstr ""
+#~ "\n"
+#~ "\n"
+#~ "We garanty a call back on the next business day following the receipt of "
+#~ "the message.\n"
+#~ "\n"
+#~ "Thank you!\n"
+#~ "\n"
+
+#~ msgid "Balcons"
+#~ msgstr "Balcony"
+
+#~ msgid "Fenêtres Fenplast"
+#~ msgstr "Fenplast Windows"
+
+#~ msgid "Portes Fenplast"
+#~ msgstr "Fenplast Doors"
+
+#~ msgid "Désolé"
+#~ msgstr "Sorry"
+
+#~ msgid ""
+#~ "Nous garantissons un retour d'appel au plus tard dans la prochaine "
+#~ "journée ouvrable suivant la réception de votre courriel. Assurez-vous de "
+#~ "remplir tous les champs sur le formulaire ci-joint et prenez note du "
+#~ "numéro de références une fois le message soumis."
+#~ msgstr ""
+#~ "We garanty a call back on the next business day following the receipt of "
+#~ "the message. All the fields on the following form are required. Please "
+#~ "take note of the reference number once your message is submitted."
+
+#~ msgid "Distributeur Officiel Fenplast"
+#~ msgstr "Fenplast Dealer"
+
+#~ msgid "67 rue des Croquettes, Montréal"
+#~ msgstr "67 rue des Croquettes, Montreal"
 
 #~ msgid "Contactez-Nous"
 #~ msgstr "Contact Us"
