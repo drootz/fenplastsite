@@ -141,7 +141,7 @@
 
             <div class="m-fixed-phone">
               <div>
-                <a href="tel:&#43;&#49;&#53;&#49;&#52;&#51;&#55;&#57;&#49;&#51;&#51;&#52;"><i class="fa fa-phone fa-lg fa-fw l-mobile-inline"></i>&nbsp;&nbsp;<span class="phone-number">&#43;&#49; &#40;&#53;&#49;&#52;&#41; &#51;&#55;&#57;&#45;&#49;&#51;&#51;&#52;</span></a>
+                <a href="tel:&#43;&#49;&#53;&#49;&#52;&#51;&#55;&#57;&#49;&#51;&#51;&#52;"><i class="fa fa-phone fa-lg fa-fw l-mobile-inline"></i>&nbsp;&nbsp;<span class="phone-number">&#40;&#53;&#49;&#52;&#41; &#51;&#55;&#57;&#45;&#49;&#51;&#51;&#52;</span></a>
               </div>
               <div class="l-laptop">
                 <span><?= _( '3247 rue Dandurand, Montréal' ); ?></span>

@@ -1,5 +1,6 @@
 assets
 dandelion.yml
+dandelion_local.yml
 _dev
 *.codekit
 *.codekit3
