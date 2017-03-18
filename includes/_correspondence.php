@@ -33,8 +33,8 @@
         $mail->SMTPAuth = true;
         //Provide username and password
         //P
-        $mail->Username = "noreply.tetsingstuff@gmail.com";
-        $mail->Password = "YevwnWGitaXGCZaXni9WG7ZN7y2mo3*js92MKh6Wocam8R9Twe";
+        $mail->Username = "email@gmail.com";
+        $mail->Password = "password";
 
         //If SMTP requires TLS encryption then set it
         $mail->SMTPSecure = "tls";
@@ -43,8 +43,8 @@
 
         // $mail->setFrom('siteweb@lemarchanddefenetres.ca', 'Web');
         // $mail->addAddress("info@lemarchanddefenetres.ca", 'Service à la clientèle');
-        $mail->setFrom('noreply.tetsingstuff@gmail.com', 'Web');
-        $mail->addAddress("mailto.danielracine@gmail.com", 'Daniel Racine');
+        $mail->setFrom('email@gmail.com', 'Web');
+        $mail->addAddress("email@gmail.com", 'Name');
         $mail->isHTML(true);
         $mail->Subject = $info['subject'];
         $mail->Body    = $_body;

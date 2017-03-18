@@ -15,7 +15,14 @@
           </div>
         </div>
 
-
+        <div class="row">
+          <div class="col-12">
+            <ul class="m-product-list bg-white">
+              <li><?= _( 'Section en construction.<br />Contactez-nous pour les details.' ); ?></li>
+            </ul>
+          </div>
+        </div>
+<!--
         <div class="row">
           <div class="col-pad-06">
             <div class="m-product-wrapper clearfix">
@@ -86,7 +93,7 @@
               <p class="m-product-info"><a href="#">En savoir plus...</a></p>
             </div>
           </div>
-        </div>
+        </div> -->
 
 
       </div>

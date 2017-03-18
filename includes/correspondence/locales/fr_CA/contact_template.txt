@@ -1,11 +1,11 @@
-Accusé de réception
+Requête Web
 
 
 
 
-Bonjour {USERNAME},
+Bonjour,
 
-Ceci est pour confirmer que nous avons reçu votre correspondance. Vous pouvez vous attendre à recevoir une réponse sous peu.
+Vous avez reçu une correspondance de {USERNAME}.
 
 Merci!
 
@@ -19,9 +19,4 @@ Merci!
 
 
 ----
-Copyright {YEAR} Fenplast Site, tous droits réservés.
-
-
-
-
-Vous avez reçu ce courriel parce que vous aviez un compte sur 'Fenplast Site'. Si vous ne devriez pas avoir reçu ce courriel, contacter nous à {ADMIN_EMAIL}.
+Copyright {YEAR} Le Marchand de Fenêtres, tous droits réservés.

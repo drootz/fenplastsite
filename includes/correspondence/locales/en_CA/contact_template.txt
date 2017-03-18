@@ -1,11 +1,11 @@
-Account Deletion Notification
+Web Request
 
 
 
 
-Hi {USERNAME},
+Hi,
 
-This is to confirm that we have received your correspondence. You can expect to receive a response shortly.
+You have received a correspondence from {USERNAME}.
 
 Thanks!
 
@@ -18,9 +18,4 @@ Thanks!
 {PHONE}
 
 ----
-Copyright {YEAR} Fenplast Site, All Rights Reversed.
-
-
-
-
-You received this e-mail because you were a member of 'Fenplast Site'. If you think you should not have received this email, please contact {ADMIN_EMAIL}.
+Copyright {YEAR} Le Marchand de Fenêtres, All Rights Reversed.
