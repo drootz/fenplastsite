@@ -21,7 +21,7 @@
             <section class="faq">
             	<ul class="categories">
             		<li><a class="selected" href="#je-renove"><?= _( 'Je rénove' ); ?></a></li>
-            		<li><a href="#generale"><?= _( 'Générale' ); ?></a></li>
+            		<li><a href="#general"><?= _( 'Général' ); ?></a></li>
             	</ul> <!-- categories -->
 
 
@@ -96,8 +96,8 @@
 
 
 
-            		<ul id="generale" class="faq-group">
-            			<li class="faq-title"><h2><?= _( 'Générale' ); ?></h2></li>
+            		<ul id="general" class="faq-group">
+            			<li class="faq-title"><h2><?= _( 'Général' ); ?></h2></li>
 
             			<li>
             				<a class="trigger" href="#0"><?= _( 'Que veulent dire concrètement les chiffres de performance (A-3, B-7 etc...) rattachés aux portes et fenêtres?' ); ?></a>

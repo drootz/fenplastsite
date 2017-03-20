@@ -72,7 +72,7 @@
                     <div class="js-promo-carousel txt-wrapper">
                       <h2><?= _( 'FINANCEMENT' ); ?> <span><?= _( 'Accord D Disponible' ); ?></span></h2>
                       <img src="img/promo/promo-accordd-logo-lemarchanddefenetres.png" alt="logo accord d" />
-                      <div class="alt-txt"><?= _( 'Parlez-en à nos conseiller' ); ?></div>
+                      <div class="alt-txt"><?= _( 'Parlez-en à nos conseillers' ); ?></div>
                     </div>
                   </div>
 
@@ -146,7 +146,7 @@
           <div class="col-pad-04">
             <div class="m-feature-container">
               <div class="m-icon ico-satisfaction main"></div>
-              <h2><a href="services.php"><?= _( 'Qualité Supérieur' ); ?></a></h2>
+              <h2><a href="services.php"><?= _( 'Qualité Supérieure' ); ?></a></h2>
               <p><?= _( 'Notre équipe d\'experts formés et certifiés offre la meilleure qualité d\'installation sur le marché.' ); ?></p>
             </div>
           </div>

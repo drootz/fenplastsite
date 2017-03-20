@@ -104,7 +104,7 @@
                        </div>
                        <div class="col-10">
                          <div class="m-address">
-                            <div><a href="https://www.facebook.com/Le-marchand-de-fenêtres-1414801491895546" target="_BLANK"><span><?= _( 'Suivez nous sur Facebook' ); ?></span></a></div>
+                            <div><a href="https://www.facebook.com/Le-marchand-de-fenêtres-1414801491895546" target="_BLANK"><span><?= _( 'Suivez-nous sur Facebook' ); ?></span></a></div>
                         </div>
                        </div>
                      </div>
@@ -119,7 +119,7 @@
                         </div>
                         <div class="col-10">
                           <div class="m-address">
-                             <div><a href="https://www.facebook.com/sharer/sharer.php?u=www.lemarchanddefenetres.ca/" target="_BLANK"><span><?= _( 'Partagez nous sur Facebook' ); ?></span></a></div>
+                             <div><a href="https://www.facebook.com/sharer/sharer.php?u=www.lemarchanddefenetres.ca/" target="_BLANK"><span><?= _( 'Partagez-nous sur Facebook' ); ?></span></a></div>
                          </div>
                         </div>
                       </div>
@@ -159,10 +159,10 @@
 
       <div class="row m-copyright">
         <div class="col-09">
-            <div class="m-float-left"><small><?= date("Y")?> &copy; <?= _( 'Le Marchand de Fenêtres' ); ?>, <?= _('Tous droits réservé'); ?></small></div>
+            <div class="m-float-left"><small><?= date("Y")?> &copy; <?= _( 'Le Marchand de Fenêtres' ); ?>, <?= _('Tous droits réservés'); ?></small></div>
             <div class="m-float-left l-laptop">&nbsp;-&nbsp;</div>
             <div class="m-float-left m-copy-container">
-              <small><?= _( 'Developpement web par ' ); ?><a href='mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#46;&#100;&#97;&#110;&#105;&#101;&#108;&#114;&#97;&#99;&#105;&#110;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;' title="&#109;&#97;&#105;&#108;&#116;&#111;&#46;&#100;&#97;&#110;&#105;&#101;&#108;&#114;&#97;&#99;&#105;&#110;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">Daniel Racine</a></small>
+              <small><?= _( 'Développement web par ' ); ?><a href='mailto:&#109;&#97;&#105;&#108;&#116;&#111;&#46;&#100;&#97;&#110;&#105;&#101;&#108;&#114;&#97;&#99;&#105;&#110;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;' title="&#109;&#97;&#105;&#108;&#116;&#111;&#46;&#100;&#97;&#110;&#105;&#101;&#108;&#114;&#97;&#99;&#105;&#110;&#101;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">Daniel Racine</a></small>
               <div class="m-copy-contact">
                 <small>
                   <span><strong>Daniel Racine</strong></span><br />

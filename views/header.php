@@ -125,10 +125,10 @@
                 </li>
                 <li class="js-sub-nav-btn"><span><?= _( 'SERVICES' ); ?></span>
                     <ul class="m-sub-nav clearfix is-collapsed">
-                      <li><a href="services.php"><?= _( 'INSTALLATION PROFESSIONEL' ); ?></a></li>
-                      <li><a href="services.php"><?= _( 'CLEF EN MAIN' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'INSTALLATION PROFESSIONELLE' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'CLÉ EN MAIN' ); ?></a></li>
                       <li><a href="services.php"><?= _( 'PERÇAGE DE BÉTON' ); ?></a></li>
-                      <li><a href="services.php"><?= _( 'MODIFICATION DE DIMENSION' ); ?></a></li>
+                      <li><a href="services.php"><?= _( 'MODIFICATION DE DIMENSIONS' ); ?></a></li>
                       <li><a href="services.php"><?= _( 'GARANTIE' ); ?></a></li>
                     </ul>
                 </li>
